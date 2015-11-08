@@ -1,0 +1,86 @@
+En esta sección estudiaremos los puntos de singulares $\Fol[4]{\alpha}$. Por la construcción, cada ecuación de la familia es de grado cuatro y por lo tanto tiene 21 puntos singulares contando multiplicidades. Veremos que si $\alpha\notin \{1,j,j^{2},\infty \}$ entonces los 21 puntos son distintos y entonces son no degenerados mientras que si  $\alpha\in \{1,j,j^{2},\infty \}$ solo los 12 puntos de $\mathcal{P}$ son puntos singulares, de esos 12 puntos, 9 son no degenerados y los tres restantes están en uno de los subconjuntos $\mathcal{P}_{i}$ del lema 1.
+\\
+
+Primero, obervemos que los 12 puntos de $\mathcal{P}$ son puntos singulares de $\Fol[4]{\alpha}$, ya que por cada uno de ellos pasan 3 rectas invariantes de la foliación. Como cada recta de $\mathcal{L}$ tiene 4 puntos de $\mathcal{P}$, cada recta tiene al menos 4 puntos singulares, pero como la foliación es de grado cuatro, cada recta invariante tiene, contando multiplicidades, 5 puntos singulares.\\
+
+
+\begin{table}[h]
+\begin{center}
+  \begin{tabular}{c|c|c|c|c}
+    \ & $(1,\alpha)$ & $(j,\alpha j^{2})$ & $(j^{2},\alpha j)$ & \  \\ \hline 
+    $y=j^{2}$ & $(1,j^{2})$ & $(j,j^{2})$ & $(j^{2},j^{2})$ & $(\alpha j,j^{2})$ \\ \hline 
+    $y=j$ & $(1,j)$ & $(j,j)$ & $(j^{2},j)$ & $(\alpha j^{2},j)$ \\ \hline 
+    $y=1$ & $(1,1)$ & $(j,1)$ & $(j^{2},1)$ & $(\alpha ,1)$ \\ \hline 
+    \ & $x=1$ & $x=j$ & $x=j^{2}$ & \ \\
+  \end{tabular}
+  \caption{Algunos puntos singulares de $\Fol[4]{\alpha}$.}
+  \label{Tab:PuntSingGrad4}
+\end{center}  
+\end{table}
+
+
+La tabla anterior muestra 4 puntos singulares de 6 rectas de la configuración. En las rectas $y=$cte, el quinto punto singular es $[1 : 0 : 0]$ y en las que $x=$cte, el quinto punto es $[0 : 1 : 0]$. En total, llevamos 17 puntos singulares.
+\\
+
+En las tres rectas restantes, el quinto punto singular es $(\frac{1}{\alpha},\frac{1}{\alpha})\in\{ y=x \}$, $(\frac{j}{\alpha}, \frac{j^{2}}{\alpha})\in\{ y=jx \}$ y $(\frac{j^{2}}{\alpha}, \frac{j}{\alpha})\in\{ y=j^{2}x \}$. Si a estos 20 puntos le añadimos el origen, que también es punto singular, tenemos los 21 puntos singulares de $\Fol[4]{\alpha}$.\\
+
+Observemos que si $\alpha\notin\{1,j,j^{2},\infty \}$, los 21 puntos singulares son distintos y por lo tanto no degenerados. Así, la parte lineal del campo vectorial en estos puntos tiene dos valores propios $(\lambda_{1},\lambda_{1})$ distintos de cero.\\
+
+Por cada punto de $\mathcal{P}$ pasan tres rectas invariantes de $\Fol[4]{\alpha}$, entonces, en estos puntos tenemos que $\lambda_{1} = \lambda_{2}$. Por lo tanto, en estos puntos singulares no hay resonancias y los valores propios están en el dominio de Poincaré. Entonces, por el teorema de linealización de Poincaré, la ecuación es linealizable en una vecindad de cada uno de estos doce puntos.
+
+Lo anterior quiere decir que en una vecindad del punto singular y utlizando coordenadas adecuadas, la ecuación se lee como $ \lambda (u \frac{\partial}{\partial u} + v \frac{\partial}{\partial v})$ y entonces, $\frac{v}{u}$ es una primera integral meromorfa de la ecuación en una vecindad de cada punto de $\mathcal{P}$.
+\\
+
+Denotemos por $q_{i}(\alpha) \ i=1,...,9$ a los otros nueve puntos singulares. La parte lineal del campo que representa a $\Fol[4]{\alpha}$  en el punto singular $(1,\alpha )$ es:
+\\
+
+$$\begin{pmatrix}
+
+3(1-\alpha^{3}) & 0 \\
+-2\alpha(\alpha^{3}-1) & \alpha^{3} -1
+
+\end{pmatrix}$$
+\\
+
+\noindent Así, en este punto, $\lambda_{1} = -3\lambda_{2}$. Haciendo un cálculo similar, podemos ver que en los otros ocho puntos singulares los valores propios de la parte lineal cumplen esta misma relación, pero también podemos usar una transformación proyectiva que lleve la recta de la configuración donde se encuentra el punto singular en cuestión a la recta $x=1$ y que además fije a la configuración  ya que el lema \ref{Lema:Jalando} nos asegura que la nueva foliación también pertenece a la familia de grado cuatro.
+\\
+
+Por ejemplo, si $q_{i}(\alpha)$ está en la recta $\{ x = j \}$ ó $\{ x = j^{2} \}$ las transformaciones proyectivas $(x,y) \rightarrow (j^{2}x,y)$ y $(x,y) \rightarrow (jx,y)$ respectivamente cumplen lo deseado. Si $q_{i}(\alpha)$ está en una recta de la configuración que pasa por $(0,0)$, a las transformaciones anteriores les anteponemos una transformación como las del corolario 2, que intercambie $(0,0)$ con $[0:1:0]$ y fije a la configuración (cualquier transformación que intercambie $(0,0)$ con $[0:1:0]$ lleva las rectas por el origen en rectas $\{y=cte\}$), y si $q_{i}(\alpha)$ está en una recta de la configuración $\{ y = cte \}$, hacemos lo mismo pero ahora intercambiando a los puntos $[1:0:0]$ y $[0:1:0]$.
+\\
+
+Como los valores propios en cada uno de estos nueve puntos cumplen $\lambda_{1} = -3\lambda_{2}$, los valores propios están el dominio de Siegel y por ende, no podemos usar el teorema de linealización de Poincaré. Sin embargo, la ecuación también es linealizable en una vecindad de estos puntos. Para ver esto primero haremos unas definiciones que utilizaremos a lo largo de este capítulo:
+
+\begin{Not}
+\label{Notimp}
+\begin{enumerate}
+
+\*
+
+\item Llamemos M a la variedad que obtenemos de explotar y resolver los 12 puntos singulares de $\mathcal{P}$ y denotemos por $\Pi\colon M \rightarrow \CP$ al mapeo que resuelve las singularidades.
+
+\item $\tilde{\Fol{\alpha}}$ será la foliación en $M$ inducida por $\Fol[4]{\alpha}$,  $\mathit{i.e.} \ \Pi^{*}(\Fol[4]{\alpha}) = \tilde{\Fol{\alpha}}$.
+
+\item $D_{i}$ va a ser el divisor asociado a $p_{i} \in \mathcal{P} \ i=1,...,12. \ D_{i} = \Pi^{-1}(p_{i})$.
+
+\item Para cada $l_{i} \in \mathcal{L}$ denotaremos por $\tilde{l}_{i} = \overline{\Pi^{-1}(l_{i} \setminus \{p_{i1}, p_{i2}, p_{i3}, p_{i4} \})}$, donde $p_{ik} \ k=1,...,4$ son los cuatro puntos de $\mathcal{P}$ que están en $l_{i}$.
+
+\end{enumerate}
+\end{Not}
+Ahora sí, como los 12 puntos singulares de $\mathcal{P}$ son radiales, al explotar no obtenemos nuevos puntos singulares en los divisores, así, $\tilde{\Fol{\alpha}}$ solo tiene un punto singular en $\tilde{l}_{i}$, a saber $\Pi^{-1}(q_{i}(\alpha)) = q_{i}(\alpha)$. Por lo tanto, $\tilde{l}_{i}\setminus q_{i}(\alpha)$, es una hoja de $\tilde{\Fol{\alpha}}$ que es biholomorfa a $\C$ y entonces la holonomia de esta hoja es la identidad y por un teorema de Mattei Moussu CITA!!!$\tilde{\Fol{\alpha}}$ es linealizable en una vecindad de $q_{i}(\alpha)$.
+\\
+
+Como $\Pi$ es un biholomorfismo en una vecindad de $q_{i}(\alpha)$, $\Fol[4]{\alpha}$ también es linealizable en una vecindad de este punto y en coordenadas adecuadas se ve como $3u\frac{\partial}{\partial u} - v\frac{\partial}{\partial v}$ y por lo tanto, $v^{3}u$ es una primera integral en una vecindad de $q_{i}(\alpha)$.
+\\
+
+Podemos resumir todo lo anterior en la siguiente proposicion:
+
+\begin{Proposicion}
+\label{Prop:2}
+
+Si $\alpha \notin \{1,j,j^{2},\infty \}$ entonces los 21 puntos singulares de $\Fol[4]{\alpha}$  son no degenerados. Los 12 puntos de $\mathcal{P}$ son radiales con primera integral meromorfa local $\frac{v}{u} = cte$. Los otros 9 puntos singulares son de tipo silla y tienen una primera integral holomorfa local de la forma $v^{3}u = cte$.
+
+\end{Proposicion}
+
+
+
+

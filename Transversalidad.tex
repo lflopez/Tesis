@@ -1,0 +1,58 @@
+%Para probar la segunda parte del teorema principal usaremos una curva algebraica que sea transversal a todas las hojas de todas las foliaciones de la familia. Mediante esta tranversal obtendremos un grupo de holonomía. Algunas propiedades de este grupo nos ayudarán a probar la segunda parte del teorema. 
+
+La siguiente porposición nos brinda información de como se intersectan hojas de distintas foliaciones de M que son inducidas por $(\Fol[4]{\alpha})_{\alpha\in\overline\C}$ y $\Pi\colon M\rightarrow\CP$, pero antes, recordemos parte de la notación que se usó antes de la proposición \ref{Prop:2}.
+
+\begin{enumerate}
+
+
+\item Llamemos M a la variedad que obtenemos de explotar y resolver los 12 puntos singulares de $\mathcal{P}$ y denotemos por $\Pi\colon M \rightarrow \CP$ al mapeo que resuelve las singularidades.
+
+\item $\tilde{\Fol{\alpha}}$ será la foliación en $M$ inducida por $\Fol[4]{\alpha}$,  $\mathit{i.e.} \ \Pi^{*}(\Fol[4]{\alpha}) = \tilde{\Fol{\alpha}}$.
+
+\item $D_{i}$ va a ser el divisor asociado a $p_{i} \in \mathcal{P} \ i=1,...,12. \ D_{i} = \Pi^{-1}(p_{i})$.
+
+\item Para cada $l_{j} \in \mathcal{L}$ denotaremos por $\tilde{l}_{i} = \overline{\Pi^{-1}(l_{i} \setminus \{p_{i1}, p_{i2}, p_{i3}, p_{i4} \})}$, donde $p_{ik} \ k=1,...,4$ son los cuatro puntos de $\mathcal{P}$ que están en $l_{i}$.
+
+\end{enumerate}
+
+
+\begin{Proposicion}
+\label{Prop:Transversalidad}
+Si $\alpha\neq\beta$ entonces, $\tilde{\Fol{\alpha}}$ y $\tilde{\Fol{\beta}}$ son transversales afuera del conjunto $\tilde{\mathcal{L}} = \tilde{l}_{1}\cup\cdots\cup\tilde{l}_{9}$.
+\end{Proposicion}
+
+\begin{proof}
+Supongamos que $\alpha , \beta\neq\infty$. Primero probaremos que $\tilde{\Fol{\alpha}},\tilde{\Fol{\beta}}$ son transversales afuera del conjunto $\mathcal{L}\cup D_{1}\cup\cdots\cup D_{12}$. Como $\Pi$ es un biholomorfismo fuera de $D_{1}\cup\cdots\cup D_{12}$, basta demostrar que $\Fol[4]{\alpha},\Fol[4]{\beta}$ son transversales afuera del conjunto $l_{1},\cup\ldots\cup l_{9}$. Si usamos los campos vectoriales que generan a las foliaciones y calculamos su determinante obtenemos:
+
+\begin{equation*}
+P_{\alpha}Q_{\beta}-P_{\beta}Q_{\alpha}=(\beta - \alpha)(x^{3}-1)(y^{3}-1)(y^{3}-x^{3}).
+\end{equation*}
+
+Todavía nos hace falta probar que son transversales en la recta al infinito. Si usamos el corolario \ref{Coro1Prop1} podemos encontrar un automorfismo $S$ de $\CP$ que mande a los puntos $[1:0:0],[0:1:0]$ a otros dos puntos de $\mathcal{P}$ pero que estén en la parte finita y por lo tanto la recta al infinito ahora está en la parte finita. Como las transformaciones que fijan a la configuración cumplen $S^{*}(\Fol[4]{\alpha})=\Fol[4]{\gamma}$, el cálculo anterior muestra que las foliaciones también son transversalen en la recta al infinito.\\
+
+Resta ver que $\tilde{\Fol{\alpha}},\tilde{\Fol{\beta}}$ también son transversales en $D_{1}\cup\cdots\cup D_{12}\setminus\tilde{\mathcal{L}}$. Como por cada punto $p_{i}\in\mathcal{P}$ tenemos un divisor $D_{i}$, si usamos el corolario \ref{Coro2Prop1} sólo tenemos que ver que $\tilde{\Fol{\alpha}},\tilde{\Fol{\beta}}$ son transversales en uno de los doce divisores, usemos  $D_{1}=\Pi^{-1}(p_{1}=(0,0))$. Si explotamos el origen usando la carta $(u,x)$ en la cual  $\Pi(u,x)=(x,ux)$, las tres rectas de $\mathcal{L}$ que pasan por el origen ($y=x,y=jx,y=j^{2}x$) se transforman en las rectas $u=1,u=j,u=j^{2}$, el divisor $D_{1}$ queda descrito por $x=0$ y el campo vectorial que genera a $\tilde{\Fol{\alpha}}$ en esta carta es:
+
+\begin{align*}
+\dot{u}&= \alpha(u^{3}-1) + xh_{1}(u,x)\\
+\dot{x}&= 1 + xh_{2}(u,x).
+\end{align*}  
+
+\noindent donde $h_{1}$ y $h_{2}$ son polinomios. Por lo tanto en el divisor $D_{1}$ las pendientes de $\tilde{\Fol{\alpha}},\tilde{\Fol{\beta}}$ son $\tfrac{du}{dx}=\alpha(u^{3}-1)$ y $\tfrac{du}{dx}=\beta(u^{3}-1)$ respectivamente, esto quiere decir que las foliaciones son transversales en $D_{1}\setminus\tilde{\mathcal{L}}$ (si usamos la otra carta, en la cual $\Pi(y,v)=(vy,y)$, obtenemos un resultado análogo).
+
+\noindent Cuando $\beta=\infty$ un cálculo análogo muestra que $\tilde{\Foli_{\alpha}^{4}}$ y $\tilde{\Foli_{\infty}^{4}}$ son transversales en $M\setminus\tilde{\mathcal{L}}$. 
+\end{proof}
+
+
+La foliación $\Fol[4]{\infty}$ tiene por primera integral a $H=\tfrac{y^{3}-1}{x^{3}-1}$ (proposición \ref{Prop:3}), si usamos coordenadas homogéneas, las hojas de la foliación quedan descritas por $L_{c}=\{\tfrac{y^{3}-z^{3}}{x^{3}-z^{3}}=c\}$. Para $c=0$, $L_{c}=\{(y-z)(y-jz)(y-j^{2}z)=0\}$ y entonces el punto $[1:0:0]$ es un punto singular. Si $c=\infty$, $L_{c}=\{(x-z)(x-jz)(x-j^{2}z)=0\}$ y así, $[0:1:0]$ es un punto singular. Para $c=1$, $L_{c}=\{(y-x)(y-jx)(y-j^{2}x)=0\}$ y entonces $[0:1:0]$ es otro punto singular. Para todas las demás $c\in\C\setminus{0,1}$, $L_{c}=\{y^{3}-z^{3}-c(x^{3}-z^{3})=0\}$ y calculando el gradiente correspondiente, es fácil ver que estas curvas son suaves y como todas están dadas por un polinomio de grado tres entonces tienen género uno (ver \cite{FischerGerd}).\\
+
+Observemos que los doce puntos singulares radiales están contenidos en las curvas de nivel singulares de $H$, por lo tanto, si consideramos la función $h=H\circ\Pi\colon M\rightarrow\overline{\C}$ y $c\in\C\setminus\{0,1\}$ entonces $h^{-1}(c)$ es topológicamente equivalente a un toro. Si $V=M\setminus h^{-1}\{0,1\infty\}$ y $\Omega=\C\setminus\{0,1\}$ entonces $h\colon V\rightarrow\Omega$ satisface las hipótesis del lema (\ref{Lema:HazTopologico}) y por lo tanto, $(V,h,\Omega)$ es un haz topológico. Como $\tilde{\Foli_{\alpha}^{4}}$ es transversal a $\tilde{\Foli_{\infty}^{4}}$, si fijamos una fibra no singular $T_{a}=h^{-1}(a)$ obtenemos el grupo de holonomía global de $\tilde{\Foli_{\alpha}^{4}}$ asociado al haz fibrado $(V,h,\Omega)$.\\
+
+Si denotamos por $G_{\alpha}$ a este grupo de holonomía global, como el grupo fundamental de $\Omega$ está generado por dos elementos, tenemos que $G_{\alpha}$ está generado por dos biholomorfismos $f_{\alpha},g_{\alpha}\colon T_{a}\rightarrow T_{a}$. La foliación $\tilde{\mathcal{F}}_{\alpha}^{4}$ sólo tiene nueve puntos singulares y de manera local, alrededor de cada uno de estos puntos, la foliación está generada por el campo vectorial $3u\tfrac{\partial}{\partial u}-v\tfrac{\partial}{\partial v}$ (proposición \ref{Prop:2}). Así, la transformación de holonomía asociada a la sepatriz local $\{v=0\}$ es $v\mapsto e^{\tfrac{2\pi i}{3}}v$ y tiene orden tres. Si tomamos a $T_{a}$ como una transversal a la separatriz local $\{v=0\}$, entonces $f_{\alpha}^{3}=g_{\alpha}^{3}=Id$ y tanto $f_{\alpha}$ como $g_{\alpha}$ fijan un punto. Un toro que tenga un automorfismo con las propiedades anteriores es biholomorfo a $\C/\Gamma$ donde $\Gamma=\langle 1,j\rangle$ (REFERENCIA).\\
+
+Si fijamos coordenadas de una cubierta universal $P\colon \C\rightarrow T_{a}$ entonces, en esta cubierta $f_{\alpha}(z)=jz+a(\alpha)$ y $g_{\alpha}=jz+b(\alpha)$ (VER UNA FUTURA SECCION O APENDICE). Notemos que $z_{0}(\alpha)=\tfrac{a(\alpha)}{1-j}$ es un punto fijo de $f_{\alpha}$, por lo tanto, si $k_{\alpha}(z)=z+z_{0}$ entonces $k_{\alpha}^{-1}\circ f_{\alpha}\circ k_{\alpha}(z)=jz$. En estas nuevas coordenadas, $k_{\alpha}^{-1}\circ g_{\alpha}\circ k_{\alpha}(z)=jz+b(\alpha)-a(\alpha)=jz+A(\alpha)$. Todo lo anterior queda resumido en,
+
+\begin{Proposicion}
+\label{Prop:GrupoHolonomia}
+
+\end{Proposicion}
+

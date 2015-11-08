@@ -1,0 +1,127 @@
+De aquí en adelante, denotaremos por $j=e^{\frac{2\pi i}{3}}$.
+\\
+
+
+El ejemplo de grado 4 es una familia de ecuaciones que dejan invariante a 9 rectas, a saber: $\{x=1\}, \{x=j\}, \{x=j^{2}\}, \{y=1\}, \{y=j\}, \{y=j^{2}\}, \{y=x\}, \{y=jx\}, \{y=j^{2}x\}$.
+\\
+
+Estas 9 rectas se intersectan en 12 puntos los cuales son $(1,1),\ (1,j),\ (1,j^{2}),\ (j,1),\ (j,j),$\\ $(j,j^{2}),\ (j^{2},1),\ (j^{2},j),\ (j^{2},j^{2}),\ [0:0:1],\ [0:1:0]$ y $[1:0:0]$.
+\\
+
+Denotemos por $\mathcal{L}$ al conjunto de las 9 rectas, por $\mathcal{P}$ al conjunto de los 12 puntos y por $\mathcal{C=(L,P)}$ a la configuración de las 9 rectas y los 12 puntos.
+\\
+
+Observemos que la configuración cumple las siguientes tres propiedades:
+
+\begin{enumerate}
+
+\item Cada recta tiene 4 puntos de la configuración.
+\item Por cada punto de la configuración pasan 3 rectas de la configuración
+\item Si 3 puntos de $\mathcal{P}$ no están en una recta de la configuración, entonces no están alineados.
+
+\end{enumerate} 
+
+A continuación probaremos que, módulo transformaciones proyectivas, ésta es la única configuración de 9 rectas y 12 puntos que satisfacen los tres propiedades anteriores. Esta proposición y sus dos corolarios serán de gran utilidad en el futuro, pues para muchas cuentas bastará hacer un cálculo en un lugar particular de $\CP$ y después usar alguna transformación proyectiva para argumentar que el cálculo es válido en otros lugares de $\CP$.
+\\
+
+Sea $\mathcal{C'=(L',P')}$ una configuración de 9 rectas y 12 puntos que satisfacen las tres propiedades de arriba. Es importante recordar que los 12 puntos son las intersecciones de las nueve rectas.
+
+\begin{Lema}
+\label{Lema:Conf}
+$\mathcal{P'}$ puede ser dividido en cuatro conjuntos, $\mathcal{P}_{1}$, $\mathcal{P}_{2}$, $\mathcal{P}_{3}$, $\mathcal{P}_{4}$, tales que:
+
+\begin{enumerate}
+
+\item Cada $\mathcal{P}_{i}$ tiene tres elementos de $\mathcal{P'}$.
+\item $\mathcal{P}_{i} \cap \mathcal{P}_{k} = \emptyset$ si $i \neq j$
+\item Los tres puntos en cada $\mathcal{P}_{i}$ no son colineales.
+
+\end{enumerate}
+
+\end{Lema}
+
+\begin{proof}
+
+  Sea $p_{1} \in \mathcal{P'}$, entonces, por la propiedad 2 de la configuración, hay tres rectas $\mathit{l}_{1},\ \mathit{l}_{2}, \mathit{l}_{3} \in \mathcal{L'}$, que pasan por $p_{1}$. Por la propiedad 1, cada una de estas rectas tiene tres puntos de $\mathcal{P'}$ distintos de $p_{1}$. Por lo tanto, de los doce puntos de $\mathcal{P'}$, nueve están unidos a $p_{1}$ con una recta de $\mathcal{L'}$. Así, la recta que une a los dos puntos restantes, $p_{2},\ p_{3} \in \mathcal{P'}$ no es una recta de la configuración y entonces, por la propiedad 3, $p_{1},\ p_{2},\ p_{3}$, no son colineales. Llamemos $\mathcal{P}_{1} = \{p_{1},\ p_{2},\ p_{3} \}$.
+\\
+
+Ahora, si $\mathit{l}_{4},\ \mathit{l}_{5}, \mathit{l}_{6} \in \mathcal{L'}$ son las tres rectas que pasan por $p_{2}$, entonces, por el teorema de Bézout, $\{ \mathit{l}_{1},\ \mathit{l}_{2}, \mathit{l}_{3} \}$ intersecta a  $\{ \mathit{l}_{4},\ \mathit{l}_{5}, \mathit{l}_{6} \}$ en nueve puntos de $\mathcal{P'}$, y como ninguno de ellos puede ser $p_{1}$ ó $p_{3}$, concluímos que deben ser los mismos nueve que descartamos al elegir a $p_{2}$ y a $p_{3}$. Es decir, si a $p_{2}$ le asociamos otros dos puntos de $\mathcal{P'}$ como a $p_{1}$, los puntos que le corresponden son $p_{1}$ y $p_{3}$.
+\\
+
+Por lo tanto, la construcción anterior parte a $\mathcal{P'}$ en cuatro conjuntos con las propiedades deseadas.
+
+\end{proof}
+
+En el caso particular en que $\mathcal{P}'=\mathcal{P}$ los conjuntos $\mathcal{P}_{i}$ son: $\mathcal{P}_{1}=\{ (0,0),[1:0:0][0:1:0]\}, \mathcal{P}_{2}=\{(1,1),(j,j^{2}),(j^{2},j)\}, \mathcal{P}_{3}=\{(1,j,),(j,1),(j^{2},j^{2})\}$ y $\mathcal{P}_{4}=\{(1,j^{2}),(j,j),(j^{2},1)\}$.\\
+
+
+\begin{Proposicion}
+\label{Prop:1}
+Sean $\mathcal{C'},\ \mathcal{P}_{i} = \{p_{1},\ p_{2},\ p_{3} \}$ como en el lema \ref{Lema:Conf}. Entonces existe un automorfismo $T$ de \CP tal que $T(\mathcal{C'})=C$ $(\mathit{i.e.}\ T(\mathcal{L'}) = \mathcal{L},\ T(\mathcal{P'}) = \mathcal{P})$ y además $ T(\mathcal{P}_{i}) = \{ [1:0:0],[0:1:0];[0:0:1] \}$
+
+\end{Proposicion}
+
+\begin{proof}
+
+Como los puntos de $\mathcal{P}_{i}$ no son colineales, podemos encontrar coordenadas de tal forma que: $p_{1} = [0:0:1]\ p_{2} = [0:1:0]\ p_{3} = [1:0:0]$. En estas coordenadas y en la carta afín $z=1$, las retas por $p_{2} = [0:1:0]$ son de la forma $x=a_{1},\ x=a_{2},\ x=a_{3}$ y las que pasan por $p_{3} = [1:0:0]$ son de la forma $y=b_{1},\ y=b_{2},\ y=b_{3}$. Así, las tres rectas restantes (las que pasan por $p_{1} = [0:0:1]$) tienen la forma $ y = \alpha x,\ y = \beta x,\ y = \gamma x$ y los nueve puntos restantes de $\mathcal{P'}$ son $(a_{1},b_{1})\ (a_{1},b_{2})\ (a_{1},b_{3})\ (a_{2},b_{1})\ (a_{2},b_{2})\ (a_{2},b_{3})\ (a_{3},b_{1})\ (a_{3},b_{2})\ (a_{3},b_{3})\ $
+\\
+
+Reordenando los índices, podemos suponer que $(a_{i}, b_{i}) \in \{ y = \alpha x \},\ i=1,2,3$. $\mathit{i.e.}\ \frac{b_{i}}{a_{i}} = \alpha \ i=1,2,3$.
+\\
+
+Supongamos que $(a_{1},b_{2})$ está en la recta $\{ y = \beta x\}$, veamos que otros puntos de $\mathcal{P'}$ están en $\{ y = \beta x\}$. Notemos primero que estos puntos no pueden tener en su primera entrada a $a_{1}$ y en la segunda entrada no pueden tener a $b_{2}$, como además, $(a_{3},b_{3})$ ya está en $\{ y = \alpha x \}$, las únicas posibilidades son: $(a_{2}, b_{3}),\ (a_{2}, b_{1})$ y $(a_{3}, b_{1})$. Pero $(a_{2}, b_{3})$ y $(a_{2}, b_{1})$ no pueden estar ambos en $\{ y = \beta x\}$, así que forzosamente, $(a_{3},b_{1}) \in \{ y = \beta x\}$. De manera análoga, $(a_{2},b_{1})$ y $(a_{3},b_{1})$ no pueden estar ambos en $\{ y = \beta x\}$ y entonces $(a_{2},b_{3}) \in \{ y = \beta x\}$.
+\\
+
+Por lo tanto, $(a_{1},b_{1}),\ (a_{2},b_{2}),\ (a_{3},b_{3})\in \{ y = \alpha x\}$.
+\\
+$(a_{1},b_{2}),\ (a_{2},b_{3}),\ (a_{3},b_{1})\in \{ y = \beta x\}$.
+\\
+$(a_{1},b_{3}),\ (a_{2},b_{1}),\ (a_{3},b_{2})\in \{ y = \gamma x\}$.
+\\
+
+Y entonces, tenemos las siguintes relaciones:
+
+$$\frac{b_{1}}{a_{1}}=\frac{b_{2}}{a_{2}}=\frac{b_{3}}{a_{3}}=\alpha,\ \ \frac{b_{2}}{a_{1}}=\frac{b_{3}}{a_{2}}=\frac{b_{1}}{a_{3}}=\beta,\ \ \frac{b_{3}}{a_{1}}=\frac{b_{1}}{a_{2}}=\frac{b_{2}}{a_{3}}=\gamma.$$
+
+Lo anterior implica que $\alpha^{3} = \beta^{3} = \gamma^{3}$ y así, $\frac{\beta}{\alpha}$ y $\frac{\gamma}{\alpha}$ son raíces cúbicas distintas de la unidad, digamos $j$ y $j^{2}$ respectivamente.
+\\
+
+Por último, veamos que $(a_{1},a_{2},a_{3}) = a_{1}(1,j,j^{2})$ y $(b_{1},b_{2},b_{3}) = \alpha a_{1}(1,j,j^{2})$:
+
+$$a_{1}j = a_{1}\frac{\beta}{\alpha}=a_{1}\frac{\frac{b_{2}}{a_{1}}}{\frac{b_{2}}{a_{2}}} = a_{2},\ \ a_{1}j^{2} = a_{1}\frac{\gamma}{\alpha} = a_{1}\frac{\frac{b_{3}}{a_{1}}}{\frac{b_{3}}{a_{3}}} = a_{3}.$$
+
+Y como $\frac{b_{i}}{a_{i}} = \alpha \ i=1,2,3$
+
+$$b_{1} = \alpha a_{1},\ \ b_{2} = \alpha a_{2} = \alpha a_{1}j,\ \ b_{3} = \alpha a_{3} = \alpha a_{1}j^{2}.$$ 
+
+Y así, finalmente, $T([x:y:x]) = [a_{1}^{-1}x : (\alpha a_{1})^{-1}y : z ]$ cumple las condiciones de la proposición.
+
+\end{proof}
+
+De la proposición anterior se siguen los siguientes dos corolarios:
+
+\begin{Corolario}
+\label{Coro1Prop1}
+  Dados dos conjuntos $\mathcal{P}_{i} \neq \mathcal{P}_{k}$, existe un automorfismo $S$ de \CP tal que $S(\mathcal{C'}) = \mathcal{C'}$ y $S(\mathcal{P}_{i}) = \mathcal{P}_{k}$.
+
+\end{Corolario}
+
+\begin{proof}
+
+Por la proposición 1, existen dos automorfismos $R,T$ de $\mathbb{CP^{\mathrm{2}}}$ tales que, $R(\mathcal{C'}) = \mathcal{C} = T(\mathcal{C'})$ y $ R(\mathcal{P}_{i}) = \{ [1:0:0],[0:1:0],[0:0:1] \} = T(\mathcal{P}_{k})$. Entonces, el automorfismo buscado es: $S = T^{-1} \circ R$.
+
+\end{proof}
+
+\begin{Corolario}
+\label{Coro2Prop1}
+Dados $p_{i}, p_{j} \in \mathcal{P'}$ existe un automorfismo $S$ de \CP tal que $S(\mathcal{C'}) = \mathcal{C'}$ y $S(p_{i}) = p_{j}$. 
+
+\end{Corolario}
+
+\begin{proof}
+
+Primero, observemos que en la transformación que encontramos en la proposición 1, podemos escoger las imágenes de los puntos de $P_{i}$ como queramos. Entonces, basta que en la proposición 1 tomemos $R, T $ de tal manera que $R(p_{i}) = T(p_{j}) = [1:0:0]$ y entonces $S = T^{-1} \circ R$ es el automorfismo que necesitamos.
+
+\end{proof}
+
+

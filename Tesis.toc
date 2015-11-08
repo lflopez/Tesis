@@ -1,0 +1,21 @@
+\select@language {spanish}
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Preliminares}{3}
+\contentsline {section}{\numberline {1.1}Ecuaciones diferenciales y foliaciones.}{3}
+\contentsline {section}{\numberline {1.2}Holonom\IeC {\'\i }a local.}{6}
+\contentsline {section}{\numberline {1.3}Holonom\IeC {\'\i }a Global.}{8}
+\contentsline {section}{\numberline {1.4}El plano proyectico complejo $\ensuremath {\mathbb {C}}\mathbb {P}^{2}$.}{10}
+\contentsline {section}{\numberline {1.5}El teorema de linealizaci\IeC {\'o}n de Poinacar\IeC {\'e}.}{11}
+\contentsline {section}{\numberline {1.6}Explosi\IeC {\'o}n de singularidades.}{13}
+\contentsline {section}{\numberline {1.7}El grado de una foliaci\IeC {\'o}n dicr\IeC {\'\i }tica en $\ensuremath {\mathbb {C}}\mathbb {P}^{2}$.}{16}
+\contentsline {chapter}{\numberline {2}Introducci\IeC {\'o}n}{21}
+\contentsline {section}{\numberline {2.1}El problema de Poincar\IeC {\'e}}{21}
+\contentsline {section}{\numberline {2.2}Escacez de foliaciones con hojas algebraicas.}{22}
+\contentsline {section}{\numberline {2.3}El teorema de Darboux.}{24}
+\contentsline {section}{\numberline {2.4}Teorema principal.}{25}
+\contentsline {chapter}{\numberline {3}La familia de grado 4.}{27}
+\contentsline {section}{\numberline {3.1}La configuraci\IeC {\'o}n.}{27}
+\contentsline {section}{\numberline {3.2}La familia de grado 4.}{29}
+\contentsline {section}{\numberline {3.3}Los puntos singulares de $\Fol [4]{\alpha }$.}{31}
+\contentsline {section}{\numberline {3.4}La transversalidad de las distintas foliaciones.}{35}
+\contentsline {section}{\numberline {3.5}Transformaciones entre toros complejos.}{37}

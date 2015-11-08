@@ -1,0 +1,75 @@
+\documentclass[10pt]{book}
+\usepackage{amsfonts}
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\usepackage{fourier}
+
+\usepackage[margin = .5in]{geometry}
+
+%amsthm
+\newtheorem{Teorema}{Teorema}
+\newtheorem{Proposicion}{Proposición}
+\newtheorem{Lema}{Lema}
+\newtheorem{Corolario}{Corolario}
+\newtheorem*{TeoPrin}{TEOREMA PRINCIPAL}
+\theoremstyle{definition}
+\newtheorem{Ejemplo}{Ejemplo}
+\newtheorem{defn}{Definición}
+\newtheorem{Not}{Notación}
+
+%Macros de este documento
+\input{macros1}
+
+
+\begin{document}
+
+
+\chapter{Preliminares}
+
+En todo este trabajo hablaremos de foliaciones holomorfas del plano proyectivo complejo $\CP$. El propósito de este capítulo es recordar algunas definiciones y resultados importantes.
+
+     \input{PlanoProyectivoComplejo}
+
+\chapter{Introducción}
+
+
+Dada una foliación holomorfa del plano proyectivo complejo $\CP$ se tiene que, como consecuencia del teorema de Chow (el cual afirma que todo subconjunto analítico de una variedad proyectiva es algebraico, ver \cite{Mumford}) , ésta es generada, en cualquier carta afín, por un campo vectorial polinomial \cite[p.~477]{IlyaYako}. A dicho campo vectorial es posible asignarle un grado que no depende de la carta afín que usemos para mirar el campo vectorial y esto nos permite asociarle un grado a cada foliación de \CP.
+
+%Si tenemos una foliación holomorfa del plano proyectivo complejo \CP\ un resultado \cite[p.~477]{IlyaYako} %Aqui va un nombre de un teorema y una cita. Ilyashenko pag.477 ¿Cuál es una buena manera de escibir esto en latex?
+%nos asegura que en cartas afines de \CP\ esta foliación queda descrita por un campo vectorial polinomial. A ese campo vectorial polinomial es posible asignarle un grado que no depende de la carta afin que usemos para mirar el campo vectorial y esto nos permite asociarle un grado a cada foliación de \CP.
+
+  \section{El problema de Poincaré}
+
+    \input{ElProblemaDePoincare}
+
+\chapter{La familia de grado 4.}
+
+El primer contraejemplo al problema de Poincaré que abordaremos es una familia de ecuaciones diferenciales de grado 4. Cada ecuación de esta familia deja fijo a un conjunto de 9 rectas que se intersecan en 12 puntos. 
+
+	\section{La configuración.}
+
+     	    \input{LaConfiguracion}
+
+	\section{La Familia de Grado 4.}
+
+     	    \input{FamiliaDeGrado4}
+
+  	\section{Los puntos singulares de $\Fol[4]{\alpha}$.}
+
+     	    \input{PuntosSing}   
+     	    
+     	    \input{PuntosSingFin}
+
+        \section{La transversalidad de las distintas foliaciones.}
+
+            \input{Transversalidad}
+
+
+\input{Bibliografia}
+
+
+\end{document}
+

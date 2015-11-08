@@ -1,0 +1,28 @@
+\documentclass[10pt]{book}
+\usepackage{amsfonts}
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\usepackage{fourier}
+
+\usepackage[margin = 1.5in]{geometry}
+
+%amsthm
+\newtheorem{Teorema}{Proposición}
+\newtheorem{Lema}{Lema}
+\newtheorem{Ejemplo}{Ejemplo}
+\newtheorem{Corolario}{Corolario}
+\newtheorem*{TeoPrin}{Teorema}
+\theoremstyle{definition}
+\newtheorem{defn}{Definición}
+
+%Macros de este documento
+\input{macros}
+
+\begin{document}
+
+\include{ElProblemaDePoincare}
+
+\end{document}

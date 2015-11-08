@@ -1,0 +1,6 @@
+En esta pequeña sección vamos a estudiar transformaciones entre toros complejos y clasificaremos los automorfismos de un toro que fijan un punto (isomorfismo de grupos).
+
+\begin{defn}
+\label{latiz}
+Sean $\omega,\tilde{\omega}\in\C$ dos números complejos que son linealmente independientes como vectores en $\mathbb{R}^{2}$. Al conjunto $L=\omega\mathbb{Z}\sum\tilde{\omega}\mathbb{Z}$ lo llamaremos la \emph{latiz} generada por $\omega$ y $\tilde{\omega}$
+\end{defn}

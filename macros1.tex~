@@ -1,0 +1,4 @@
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\CP}{\ensuremath{\C\mathbb{P}^2}}
+\newcommand{\Fol}[2][\ ]{\ensuremath{\mathcal{F}^{#1}_{#2}}}
+\newcommand{\Foli}{\mathcal{F}}

@@ -1,0 +1,117 @@
+Como ya habíamos mencionado, la familia de grado 4 deja invariantes a todas las rectas de $\mathcal{C}$. Usando la invarianza de las rectas  $\{x=1\}, \{x=j\}, \{x=j^{2}\}, \{y=1\}, \{y=j\}, \{y=j^{2}\}, \{y=x\}, \{y=jx\}, \{y=j^{2}x\}$ obtenemos un campo vectorial de la forma:
+
+
+
+\begin{align*}
+\dot{x} & =(x^{3}-1)(a_{0} + a_{10}x + a_{01}y + a_{20}x^{2} + a_{11}xy + a_{02}y^{2}) \\
+\dot{y} & =(y^{3}-1)(b_{0} + b_{10}x + b_{01}y + b_{20}x^{2} + b_{11}xy + b_{02}y^{2}).
+\end{align*}
+
+
+
+Como el origen es punto singular, $a_{0}=b_{0}=0$. Y como la foliación es de grado cuatro, la parte homogénea de grado cinco de $\dot{x}$ y $\dot{y}$ son de la forma $xg(x,y)$ y $yg(x,y)$ respectivamente. Así:
+
+
+\begin{align*}
+\dot{x}& =\cdots+a_{20}x^{5} + a_{11}x^{4}y + a_{02}x^{5}y^{2} =\cdots+x(a_{20}x^{4} + a_{11}x^{3}y + a_{02}x^{2}y^{2}) \\
+\dot{y}& =\cdots+b_{20}x^{2}y^{3} + b_{11}xy^{4} + b_{02}y^{5} =\cdots+y(b_{20}x^{2}y^{2} + b_{11}xy^{3} + b_{02}y^{4}) .
+\end{align*}
+
+Por lo tanto, $a_{20}=a_{11}=b_{11}=b_{02}=0$ y $a_{02}=b_{20}=b$. Usando lo anterior, nuestra ecuación adquiere la forma:
+
+
+\begin{align*} 
+\dot{x}&=(x^{3}-1)(a_{10}x + a_{01}y + by^{2}) \\
+\dot{y}&=(y^{3}-1)(b_{10}x + b_{01}y + bx^{2}).
+\end{align*}
+
+Ahora usaremos la invarinza de las tres rectas restantes.
+
+Si $y=x$:
+
+$$ 1 = \frac{dy}{dx} = \frac{b_{10}x + b_{01}x + bx^{2}}{a_{10}x + a_{01}x + bx^{2}}$$
+$$\Rightarrow (a_{10} + a_{01})x = (b_{10} + b_{01})x$$
+\begin{equation}
+\tag{1}
+\Rightarrow a_{10}+a_{01}=b_{10}+b_{01}.
+\end{equation}
+
+De manera análoga, en $y=jx$:
+
+$$j = \frac{dy}{dx} = \frac{(b_{10}+b_{01}j)x + bx^{2}}{(a_{10}+a_{01}j)x + bj^{2}x^{2}}$$
+\begin{equation}
+\tag{2}
+\Rightarrow a_{10}j + a_{01}j^{2} = b_{10} + b_{01}j.
+\end{equation}
+
+Por último, al evaluar en $y=j^{2}x$ obtenemos:
+
+\begin{equation}
+\tag{3}
+a_{10}j^{2} + a_{01}j = b_{10} + b_{01}j^{2}.
+\end{equation}
+
+Sumando $(1),\ (2),\ (3)$ y recordando que $1 + j + j^{2} = 0$:
+
+$$(1 + j + j^{2})(a_{10} + a_{01}) = 3b_{10} + (1+j +j^{2})b_{01}$$
+$$\Rightarrow b_{10}=0.$$
+
+Y sustituyendo en $(1)$, $b_{01}=a_{10} + a_{01}$, e insertando esto en $(2)$:
+
+$$ a_{10}j + a_{01}j^{2 }= (a_{10} + a_{01})j$$
+$$ \Rightarrow a_{01}j^{2} = a_{01}j$$
+$$ \Rightarrow a_{01} = 0.$$
+
+Y de $(1)$ nuevamente:
+
+$$a_{10} = b_{01} = a.$$
+
+Usando todo lo anterior la ecuación se ve como:
+
+\begin{align*}
+\dot{x} &= (x^{3}-1)(ax + by^{2}) \\
+\dot{y} &= (y^{3}-1)(ay + bx^{2}).
+\end{align*}
+
+Y al dividir por $a$ y hacer $\alpha = -\frac{b}{a}$:
+
+\begin{equation}
+\tag{$*$}
+\label{CampVect4}
+\begin{aligned}
+\dot{x} &= (x^{3}-1)(x - \alpha y^{2}) \\
+\dot{y} &= (y^{3}-1)(y - \alpha x^{2}).
+\end{aligned}
+\end{equation}
+
+O sí $a = 0$:
+
+\begin{equation}
+\tag{\#}
+\label{CampVect4Inf}
+\begin{aligned}
+\dot{x} &= (x^{3}-1)y^{2} \\
+\dot{y} &= (y^{3}-1)x^{2}.
+\end{aligned}
+\end{equation}
+
+A la foliación generada por la ecuación (\ref{CampVect4}) la denotaremos por $\Fol[4]{\alpha}$ y a la que es generada por (\ref{CampVect4Inf}) la denotaremos $\Fol[4]{\infty}$.\\
+
+Terminaremos esta sección con un lema que nos facilitará muchos cálculos en el futuro:
+
+\begin{Lema}
+\label{Lema:Jalando}
+Sea $S$ un automorfismo de $\CP$ tal que $S(\mathcal{C})=\mathcal{C}$, entonces $S^{*}(\Fol[4]{\alpha})=\Fol[4]{\beta}$ para alguna $\beta\in\overline\C$.
+\end{Lema}
+
+\begin{proof}
+Como el grado de la foliación no depende de la carta, $S^{*}(\Fol[4]{\alpha})$ también es una foliación de grado cuatro que deja invariantes a las nueve rectas de la configuración y por lo tanto se puede escribir como los campos vectoriales (\ref{CampVect4}) ó (\ref{CampVect4Inf}).
+\end{proof}
+
+
+
+
+
+
+
+

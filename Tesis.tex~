@@ -1,0 +1,64 @@
+\documentclass[10pt]{book}
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[margin = 1.5in]{geometry}
+
+%amsthm
+\newtheorem{Teorema}{Teorema}
+\newtheorem{Proposicion}{Proposición}
+\newtheorem{Lema}{Lema}
+\newtheorem{Corolario}{Corolario}
+\newtheorem*{TeoPrin}{TEOREMA PRINCIPAL}
+\theoremstyle{definition}
+\newtheorem{Ejemplo}{Ejemplo}
+\newtheorem{defn}{Definición}
+\newtheorem{Not}{Notación}
+
+%Macros de este documento
+\input{macros1}
+
+\begin{document}
+\tableofcontents
+\chapter{Preliminares}
+
+En todo este trabajo hablaremos de foliaciones holomorfas del plano proyectivo complejo $\CP$. El propósito de este capítulo es recordar algunas definiciones y resultados importantes.
+
+     \input{PlanoProyectivoComplejo}
+
+\chapter{Introducción}
+
+  \section{El problema de Poincaré}
+
+    \input{ElProblemaDePoincare}
+
+\chapter{La familia de grado 4.}
+
+El primer contraejemplo al problema de Poincaré que abordaremos es una familia de ecuaciones diferenciales de grado 4. Cada ecuación de esta familia deja fijo a un conjunto de 9 rectas que se intersecan en 12 puntos. 
+
+	\section{La configuración.}
+
+     	    \input{LaConfiguracion}
+
+	\section{La familia de grado 4.}
+
+     	    \input{FamiliaDeGrado4}
+
+  	\section{Los puntos singulares de $\Fol[4]{\alpha}$.}
+
+     	    \input{PuntosSing}   
+     	    
+     	    \input{PuntosSingFin}
+
+        \section{La transversalidad de las distintas foliaciones.}
+
+            \input{Transversalidad}
+
+\input{Bibliografia}
+
+
+\end{document}
+

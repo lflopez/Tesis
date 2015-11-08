@@ -1,0 +1,16 @@
+En esta pequeña sección vamos a estudiar transformaciones entre toros complejos y clasificaremos los automorfismos de un toro que fijan un punto (isomorfismo de grupos).
+
+\begin{defn}
+\label{latiz}
+Sean $\omega,\tilde{\omega}\in\C$ dos números complejos que son linealmente independientes como vectores en $\mathbb{R}^{2}$. Al conjunto $L=\omega\mathbb{Z}\sum\tilde{\omega}\mathbb{Z}$ lo llamaremos la \emph{latiz} generada por $\omega$ y $\tilde{\omega}$
+\end{defn}
+
+Observemos que por definición una latiz $L$ es un subgrupo aditivo de $\C$, como $\C$ es conmutativo podemos considerar el grupo cociente $X_{L}:=\C/L$. Este conjunto es bien sabido que es homeomorfo a un toro y con la proyección canónica $\Pi\colon\C\rightarrow L$ podemos hacer de $X_{L}$ una superficie de Riemann.\\
+
+Sean $X,Y$ dos toros con latices asociadas $L$ y $M$ respectivamente. Si $F\colon X\rightarrow Y$ es una función holomorfa, entonces, por la fórmula de Riemann-Hurwitz, $F$ no tiene puntos de ramifiación y por lo tanto es una aplicación cubriente. Como la proyección canónica $\Pi_{L}\colon\C\rightarrow X$ es la  cubriente universal de $X$ tenemos que $F\circ\Pi$ es una aplicación cubriente y como $\Pi_{L}\colon\C\rightarrow Y$ es la cubriente universal de $Y$ debe de existir una función holomorfa $G$ que hace conmutar el siguiente diagrama.
+
+\marginpar{Diagrama}  
+
+A continuación obtendremos una expresión para la función $G$. Para cualquier latiz $M$ y cualquier número complejo $a\in\C$, la traslación $z\mapsto a+z$ respeta las clases de equivalencia de $\C/M$ y por lo tanto la traslación baja a una traslación en el cociente $\C/M$. Así, con una traslación adecuada, siempre podemos suponer que $G(0)=0$. Si $l\in L$, por la conmutatividad del diagrama tenemos que $G(z-l)=G(z)$ (mod$M$) y así, para $l$ fijo la función $G(z-l)-G(z)\colon\C\rightarrow M\subset\C$ toma valores en $M$. Como $M$ es discreto y $G$ es continua tenemos que $G(z-l)-G(z)$ es constante y por lo tanto $G(z-l)'=G(z)'$. Esto quiere decir que todos los valores de $G'$ son tomados en una región contenida en el paralelogramo formado por dos generadores de $M$ y por lo tanto $G'$ es acotada y por el teorema de Liuoville, $G'$ es constante. Así, $G(z)=\gamma z$ para algún $\gamma\in\C$.\\
+
+Como $G(z-l)=G(z)$ (mod$M$) tenemos que $G(l)=G(0)=0$ (mod$M$) y entonces $\gamma L\subset M$. Si $F$ es un isomorfismo entonces $\gamma L=M$
