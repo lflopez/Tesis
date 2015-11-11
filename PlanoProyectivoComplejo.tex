@@ -297,7 +297,7 @@ Los cambios de coordenadas de $\psi_{x}(U_{x})$ a $\psi_{z}(U_{z})$ y de $\psi_{
 
 Como mencionamos anteriormente, un problema fundamental de la teoría de ecuaciones diferenciales es simplificar, mediante un cambio de coordenadas, un campo vectorial $F$. Si este campo vectorial tiene parte lineal, una pregunta natural es cuándo este campo vectorial es analíticamente equivalente a su parte lineal. El teorema de linealización de Poincaré nos dice bajo qué condiciones un campo vectorial es analíticamente equivalente a su parte lineal.\\
 
-Sea $F(x)=Ax+V_{2}(x)+\cdots+V_{m}(x)+\cdots$ donde $A=(\tfrac{\partial F}{\partial x})(0)$ es la parte lineal del campo vectorial en el origen y los $V_{i}$ son campos vectoriales homogéneos de grado $i$. Una manera de atacar el problema de linealización es intentar eliminar el término $V_{2}$ mediante un biholomorfismo $H_{2}$, una vez logrado esto procedemos a eliminar el término $V_{3}$ con un biholomorfismo $H_{3}$ y así sucesivamente.\\
+Sea $F(x)=Ax+V_{2}(x)+\cdots+V_{m}(x)+\cdots$ donde $A=(\tfrac{\partial F}{\partial x})(0)$ es la parte lineal del campo vectorial en el origen y los $V_{i}$ son campos vectoriales homogéneos de grado $i$. Una manera de atacar el problema de linealización es intentar eliminar el término $V_{2}$ mediante un biholomorfismo $H_{2}$. Una vez logrado ésto procedemos a eliminar el término $V_{3}$ con un biholomorfismo $H_{3}$ y así sucesivamente.\\
 
 Supongamos que tenemos un campo vectorial  $F=(F_{1},F_{2})$ del siguiente estilo:
 
@@ -407,7 +407,7 @@ Si los valores propios de la parte lineal del campo vectorial $F$ son no resonan
 
 \begin{Ejemplo}
 \label{Ej:LinealizacionRadial}
-Si los valores propios de la parte lineal de un campo vectorial $F$ son iguales y distintos de cero, entonces el campo vectorial $F$ es analíticamente equivalente a su parte lineal. Esto se debe a que si $\lambda_{1}=\lambda_{2}$ entonces la ecuación (\ref{Denominadores}) solo tiene solución con $\alpha_{1}=1$ y $\alpha_{2}=0$ y en consecuencia la pareja $(\lambda_{1},\lambda_{2})$ es no resonante. Además como los valores propios coinciden, su cerradura convexa es un único punto $\lambda_{1}\neq 0$. 
+Si los valores propios de la parte lineal de un campo vectorial $F$ son iguales y distintos de cero, entonces el campo vectorial $F$ es analíticamente equivalente a su parte lineal. Esto se debe a que si $\lambda_{1}=\lambda_{2}$ entonces la ecuación (\ref{Denominadores}) sólo tiene solución con $\alpha_{1}=1$ y $\alpha_{2}=0$ y en consecuencia la pareja $(\lambda_{1},\lambda_{2})$ es no resonante. Además como los valores propios coinciden, su cerradura convexa es un único punto $\lambda_{1}\neq 0$. 
 \end{Ejemplo}
 
 \section{Explosión de singularidades.}  
@@ -485,7 +485,7 @@ En este caso particular, $\lambda=1$, el campo vectorial que se corresponde con 
 \end{aligned}
 \end{equation}
 
-Una observación muy importante es que todo el proceso de desingularización puede llevarse acabo de manera local (solo hay que restringir toda la construcción a una vecindad del origen $(\C^{2},0)$). Si tenemos una foliación $\mathcal{F}$ con un número finito de singularidades $\Sigma$ en una dos variedad analítica $M$, la observación anterior nos permite hacer una explosión local en cada uno de los puntos singulares para así obtener una nueva variedad $M'$ y una función holomorfa $\Pi\colon M' \rightarrow M$ que satisface las siguientes propiedades:
+Una observación muy importante es que todo el proceso de desingularización puede llevarse acabo de manera local (sólo hay que restringir toda la construcción a una vecindad del origen $(\C^{2},0)$). Si tenemos una foliación $\mathcal{F}$ con un número finito de singularidades $\Sigma$ en una dos variedad analítica $M$, la observación anterior nos permite hacer una explosión local en cada uno de los puntos singulares para así obtener una nueva variedad $M'$ y una función holomorfa $\Pi\colon M' \rightarrow M$ que satisface las siguientes propiedades:
 
 \begin{enumerate}
 \item Si $p\in\Sigma$ entonces $\Pi^{-1}(p):=E_{p}\simeq\C\mathbb{P}^{1}$.
@@ -602,7 +602,7 @@ Todo lo anterior quiere decir que, una foliación dicrítica siempre la podemos 
 
 En el caso de una foliación no dicrítica, vimos que el grado de los polinomios que definen a la foliación no son invariantes bajo cambios de coordenadas. Es por eso que si queremos asociar un grado a una foliación de $\C\mathbb{P}^{2}$ debemos encontrar otra manera de mirar a una foliación de $\C\mathbb{P}^{2}$.\\
 
-Si en $\C^{3}$ consideramos una 1-forma $\Omega=A\, dx+B\, dy+C\, dz$, donde $A,B,C\in\C[x,y,z]$ son polinomios homogéneos de grado $d+1$, el conjunto $\{\Omega=0\}$ define una distribución de planos en $\C^{3}$. Podemos pensar que $\Omega$ asocia a un punto $(x_{0},y_{0},z_{0})$ el $kernel(A(x_{0},y_{0},z_{0})x+B(x_{0},y_{0},z_{0})y+C(x_{0},y_{0},z_{0})z)$.\\
+Si en $\C^{3}$ consideramos una 1-forma $\Omega=A\, dx+B\, dy+C\, dz$, donde $A,B,C\in\C[x,y,z]$ son polinomios homogéneos de grado $d+1$, el conjunto $\{\Omega=0\}$ define una distribución de planos en $\C^{3}$. Podemos pensar que $\Omega$ asocia a un punto $(x_{0},y_{0},z_{0})$ el kernel de la transformación lineal $A(x_{0},y_{0},z_{0})x+B(x_{0},y_{0},z_{0})y+C(x_{0},y_{0},z_{0})z$.\\
 
 Si queremos que $\Omega$, al proyectar en la carta afín de $\C\mathbb{P}^{2},\ z=1$ siga asociando a cada punto $[x_{0}:y_{0}:z_{0}]$ ya no un plano sino una recta, el plano original debe contener a la dirección determinada por $[x_{0}:y_{0}:z_{0}]$. Por ejemplo, si $\Omega$ asocia al punto $(0,0,1)$ el plano $x+z=0$, al proyectar en el plano $z=1$, el plano $x+z=0$ se proyecta en la recta $x=-1$ y esta recta ni siquiera pasa por el punto $(0,0)$ que es el representante de la clase $[0:0:1]$ en el plano $z=1$.\\
 
@@ -724,7 +724,7 @@ Donde $a_{k},b_{k}\in\C[x,y]$ son polinomios homgéneos de grado $k$ y $g\in\C[x
 
 Es fácil convencerse, usando la expresión (\ref{EcuacionEnCP2Infinito}), que el caso no dicrítico se da cuando $g(x,y)\equiv 0$ y el caso dicrítico se da cuando $g(x,y)$ no se anula idénticamente.\\
 
-Como mencionamos anteriormente, podemos pensar que toda foliación en una dos variedad analítica $M$ sólo tiene singularidades aisladas, y en caso de que $M$ sea compacta, sólo hay un número finito de ellas. Así, como $\C\mathbb{P}^{2}$ es compacto, cualquier foliación de él tiene un número finito de singularidades y esto nos permite que siempre podamos tomar una carta afín en la cual la recta al infinito no tenga singularidades. Vamos a usar esta observación en la prueba del siguiente Teorema:
+Como mencionamos anteriormente, podemos pensar que toda foliación en una dos variedad analítica $M$ sólo tiene singularidades aisladas, y en caso de que $M$ sea compacta, sólo hay un número finito de ellas. Así, como $\C\mathbb{P}^{2}$ es compacto, cualquier foliación de él tiene un número finito de singularidades y esto nos permite que siempre podamos tomar una carta afín en la cual la recta al infinito no tenga singularidades. Vamos a usar esta observación en la prueba del siguiente teorema:
 
 \begin{Teorema}
 Sea $\mathcal{F}$ una foliación de grado $d$. Entonces, contando multiplicidades, $\mathcal{F}$ tiene $d^{2}+d+1$ puntos singulares.

@@ -45,14 +45,24 @@ Resta ver que $\tilde{\Fol{\alpha}},\tilde{\Fol{\beta}}$ también son transversa
 
 La foliación $\Fol[4]{\infty}$ tiene por primera integral a $H=\tfrac{y^{3}-1}{x^{3}-1}$ (proposición \ref{Prop:3}), si usamos coordenadas homogéneas, las hojas de la foliación quedan descritas por $L_{c}=\{\tfrac{y^{3}-z^{3}}{x^{3}-z^{3}}=c\}$. Para $c=0$, $L_{c}=\{(y-z)(y-jz)(y-j^{2}z)=0\}$ y entonces el punto $[1:0:0]$ es un punto singular. Si $c=\infty$, $L_{c}=\{(x-z)(x-jz)(x-j^{2}z)=0\}$ y así, $[0:1:0]$ es un punto singular. Para $c=1$, $L_{c}=\{(y-x)(y-jx)(y-j^{2}x)=0\}$ y entonces $[0:1:0]$ es otro punto singular. Para todas las demás $c\in\C\setminus{0,1}$, $L_{c}=\{y^{3}-z^{3}-c(x^{3}-z^{3})=0\}$ y calculando el gradiente correspondiente, es fácil ver que estas curvas son suaves y como todas están dadas por un polinomio de grado tres entonces tienen género uno (ver \cite{FischerGerd}).\\
 
-Observemos que los doce puntos singulares radiales están contenidos en las curvas de nivel singulares de $H$, por lo tanto, si consideramos la función $h=H\circ\Pi\colon M\rightarrow\overline{\C}$ y $c\in\C\setminus\{0,1\}$ entonces $h^{-1}(c)$ es topológicamente equivalente a un toro. Si $V=M\setminus h^{-1}\{0,1\infty\}$ y $\Omega=\C\setminus\{0,1\}$ entonces $h\colon V\rightarrow\Omega$ satisface las hipótesis del lema (\ref{Lema:HazTopologico}) y por lo tanto, $(V,h,\Omega)$ es un haz topológico. Como $\tilde{\Foli_{\alpha}^{4}}$ es transversal a $\tilde{\Foli_{\infty}^{4}}$, si fijamos una fibra no singular $T_{a}=h^{-1}(a)$ obtenemos el grupo de holonomía global de $\tilde{\Foli_{\alpha}^{4}}$ asociado al haz fibrado $(V,h,\Omega)$.\\
-
-Si denotamos por $G_{\alpha}$ a este grupo de holonomía global, como el grupo fundamental de $\Omega$ está generado por dos elementos, tenemos que $G_{\alpha}$ está generado por dos biholomorfismos $f_{\alpha},g_{\alpha}\colon T_{a}\rightarrow T_{a}$. La foliación $\tilde{\mathcal{F}}_{\alpha}^{4}$ sólo tiene nueve puntos singulares y de manera local, alrededor de cada uno de estos puntos, la foliación está generada por el campo vectorial $3u\tfrac{\partial}{\partial u}-v\tfrac{\partial}{\partial v}$ (proposición \ref{Prop:2}). Así, la transformación de holonomía asociada a la sepatriz local $\{v=0\}$ es $v\mapsto e^{\tfrac{2\pi i}{3}}v$ y tiene orden tres. Si tomamos a $T_{a}$ como una transversal a la separatriz local $\{v=0\}$, entonces $f_{\alpha}^{3}=g_{\alpha}^{3}=Id$ y tanto $f_{\alpha}$ como $g_{\alpha}$ fijan un punto. Un toro que tenga un automorfismo con las propiedades anteriores es biholomorfo a $\C/\Gamma$ donde $\Gamma=\langle 1,j\rangle$ (REFERENCIA).\\
-
-Si fijamos coordenadas de una cubierta universal $P\colon \C\rightarrow T_{a}$ entonces, en esta cubierta $f_{\alpha}(z)=jz+a(\alpha)$ y $g_{\alpha}=jz+b(\alpha)$ (VER UNA FUTURA SECCION O APENDICE). Notemos que $z_{0}(\alpha)=\tfrac{a(\alpha)}{1-j}$ es un punto fijo de $f_{\alpha}$, por lo tanto, si $k_{\alpha}(z)=z+z_{0}$ entonces $k_{\alpha}^{-1}\circ f_{\alpha}\circ k_{\alpha}(z)=jz$. En estas nuevas coordenadas, $k_{\alpha}^{-1}\circ g_{\alpha}\circ k_{\alpha}(z)=jz+b(\alpha)-a(\alpha)=jz+A(\alpha)$. Todo lo anterior queda resumido en,
-
+Observemos que los doce puntos singulares radiales están contenidos en las curvas de nivel singulares de $H$, por lo tanto, si consideramos la función $h=H\circ\Pi\colon M\rightarrow\overline{\C}$ y $c\in\C\setminus\{0,1\}$ entonces $h^{-1}(c)$ es topológicamente equivalente a un toro. Si $V=M\setminus h^{-1}\{0,1\infty\}$ y $\Omega=\C\setminus\{0,1\}$ entonces $h\colon V\rightarrow\Omega$ satisface las hipótesis del lema (\ref{Lema:HazTopologico}) y por lo tanto, $(V,h,\Omega)$ es un haz topológico. Como $\tilde{\Foli_{\alpha}^{4}}$ es transversal a $\tilde{\Foli_{\infty}^{4}}$, si fijamos una fibra no singular $T_{a}=h^{-1}(a)$ obtenemos el grupo de holonomía global $G_{\alpha}$ de $\tilde{\Foli_{\alpha}^{4}}$ asociado al haz fibrado $(V,h,\Omega)$. Antes de continuar veamos quién es la fibra de este haz topológico.
 \begin{Proposicion}
-\label{Prop:GrupoHolonomia}
-
+\label{Prop:FibraDelHaz}
+Sea $(V,h,\Omega)$ el haz vectorial de arriba, si $\Gamma=\mathbb{Z}\oplus j\mathbb{Z}$ entonces, $h^{-1}(a)\simeq\C/\Gamma$.
 \end{Proposicion}
+\begin{proof}
+Si fijamos una foliación $\tilde{\Foli_{\alpha}^{4}}$ ,como el grupo fundamental de $\Omega$ está generado por dos elementos, entonces  el grupo de holonomía $G_{\alpha}$ está generado por dos biholomorfismos $f_{\alpha},g_{\alpha}\colon T_{a}\rightarrow T_{a}$. La foliación $\tilde{\mathcal{F}}_{\alpha}^{4}$ sólo tiene nueve puntos singulares y de manera local, alrededor de cada uno de estos puntos, la foliación está generada por el campo vectorial $3u\tfrac{\partial}{\partial u}-v\tfrac{\partial}{\partial v}$ (proposición \ref{Prop:2}). Así, la transformación de holonomía asociada a la sepatriz local $\{v=0\}$ es $v\mapsto e^{\tfrac{2\pi i}{3}}v$ y tiene orden tres. Si tomamos a $T_{a}$ como una transversal a la separatriz local $\{v=0\}$, entonces $f_{\alpha}^{3}=g_{\alpha}^{3}=Id$ y tanto $f_{\alpha}$ como $g_{\alpha}$ fijan un punto. Un toro que tenga un automorfismo con las propiedades anteriores es biholomorfo a $\C/\Gamma$ donde $\Gamma=\langle 1,j\rangle$ (ver apéndice \ref{ApendiceToros}).
+\end{proof}
+
+\section{El grupo de holonomía global de $\tilde{\Foli_{\alpha}^{4}}$.}
+
+Para probar que una foliación $\Foli_{\alpha}^{4}$ tiene una primera integral racional vamos a usar agunas propiedades del grupo de holonomía global que se construyó en la sección anterior. En está sección probaremos algunas propiedades de este grupo. 
+
+\begin{Lema}
+\label{Prop:GrupoHolonomia}
+Sea $G_{\alpha}$ el grupo de holonomía global asociado al haz fibrado $(V,h,\Omega)$ y la foliación $\tilde{\Foli_{\alpha}^{4}}$. Entonces en una carta de adecuada de $\C$, $G_{\alpha}$ está generado por $f_{\alpha}(z)=jz$ y $g_{\alpha}(z)=jz+A(\alpha)$.
+\end{Lema}
+\begin{proof}
+Si fijamos coordenadas de una cubierta universal $P\colon \C\rightarrow T_{a}$ entonces, en esta cubierta $f_{\alpha}(z)=jz+a(\alpha)$ y $g_{\alpha}=jz+b(\alpha)$. Notemos que $z_{0}(\alpha)=\tfrac{a(\alpha)}{1-j}$ es un punto fijo de $f_{\alpha}$, por lo tanto, si $k_{\alpha}(z)=z+z_{0}$ entonces $k_{\alpha}^{-1}\circ f_{\alpha}\circ k_{\alpha}(z)=jz$. En estas nuevas coordenadas, $k_{\alpha}^{-1}\circ g_{\alpha}\circ k_{\alpha}(z)=jz+b(\alpha)-a(\alpha)=jz+A(\alpha)$. 
+\end{proof}
 
