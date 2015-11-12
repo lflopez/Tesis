@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.24)  11 NOV 2015 16:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.24)  12 NOV 2015 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1091,15 +1091,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
 LaTeX Info: Redefining \. on input line 55.
 LaTeX Info: Redefining \% on input line 55.
-[36])
+[36]
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+ [37])
 LaTeX Info: Redefining \. on input line 61.
 LaTeX Info: Redefining \% on input line 61.
- [37]
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
- [38
-
-]
+ [38]
 Ap\'{e}ndice A.
 (./TransformacionesEntreToros.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
@@ -1111,7 +1109,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-[39]) (./Bibliografia.tex
+[39
+
+]) (./Bibliografia.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [40]) [41
@@ -1123,10 +1123,10 @@ LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 ) ) 
 Here is how much of TeX's memory you used:
- 2614 strings out of 493304
- 32509 string characters out of 6139871
- 111067 words of memory out of 5000000
- 6033 multiletter control sequences out of 15000+600000
+ 2616 strings out of 493304
+ 32555 string characters out of 6139871
+ 111085 words of memory out of 5000000
+ 6035 multiletter control sequences out of 15000+600000
  10455 words of font info for 39 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  27i,9n,32p,1218b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1147,7 +1147,7 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Tesis.pdf (41 pages, 354097 bytes).
+Output written on Tesis.pdf (41 pages, 357179 bytes).
 PDF statistics:
  210 PDF objects out of 1000 (max. 8388607)
  147 compressed objects within 2 object streams

@@ -51,7 +51,7 @@ Observemos que los doce puntos singulares radiales están contenidos en las curv
 Sea $(V,h,\Omega)$ el haz vectorial de arriba, si $\Gamma=\mathbb{Z}\oplus j\mathbb{Z}$ entonces, $h^{-1}(a)\simeq\C/\Gamma$.
 \end{Proposicion}
 \begin{proof}
-Si fijamos una foliación $\tilde{\Foli_{\alpha}^{4}}$ ,como el grupo fundamental de $\Omega$ está generado por dos elementos, entonces  el grupo de holonomía $G_{\alpha}$ está generado por dos biholomorfismos $f_{\alpha},g_{\alpha}\colon T_{a}\rightarrow T_{a}$. La foliación $\tilde{\mathcal{F}}_{\alpha}^{4}$ sólo tiene nueve puntos singulares y de manera local, alrededor de cada uno de estos puntos, la foliación está generada por el campo vectorial $3u\tfrac{\partial}{\partial u}-v\tfrac{\partial}{\partial v}$ (proposición \ref{Prop:2}). Así, la transformación de holonomía asociada a la sepatriz local $\{v=0\}$ es $v\mapsto e^{\tfrac{2\pi i}{3}}v$ y tiene orden tres. Si tomamos a $T_{a}$ como una transversal a la separatriz local $\{v=0\}$, entonces $f_{\alpha}^{3}=g_{\alpha}^{3}=Id$ y tanto $f_{\alpha}$ como $g_{\alpha}$ fijan un punto. Un toro que tenga un automorfismo con las propiedades anteriores es biholomorfo a $\C/\Gamma$ donde $\Gamma=\langle 1,j\rangle$ (ver apéndice \ref{ApendiceToros}).
+Si fijamos una foliación $\tilde{\Foli_{\alpha}^{4}}$ ,como el grupo fundamental de $\Omega$ está generado por dos elementos, entonces  el grupo de holonomía $G_{\alpha}$ está generado por dos biholomorfismos $f_{\alpha},g_{\alpha}\colon T_{a}\rightarrow T_{a}$. La foliación $\tilde{\mathcal{F}}_{\alpha}^{4}$ sólo tiene nueve puntos singulares y de manera local, alrededor de cada uno de estos puntos, la foliación está generada por el campo vectorial $3u\tfrac{\partial}{\partial u}-v\tfrac{\partial}{\partial v}$ (proposición \ref{Prop:2}). Así, la transformación de holonomía asociada a la sepatriz local $\{v=0\}$ es $v\mapsto e^{\tfrac{2\pi i}{3}}v$ y tiene orden tres. Si tomamos a $T_{a}$ como una transversal a la separatriz local $\{v=0\}$, entonces $f_{\alpha}^{3}=g_{\alpha}^{3}=Id$ y tanto $f_{\alpha}$ como $g_{\alpha}$ fijan un punto. Un toro que tenga un automorfismo con las propiedades anteriores es biholomorfo a $\C/\Gamma$ donde $\Gamma=\mathbb{Z}\oplus j\mathbb{Z} \}$ (ver apéndice \ref{ApendiceToros}).
 \end{proof}
 
 \section{El grupo de holonomía global de $\tilde{\Foli_{\alpha}^{4}}$.}
@@ -66,3 +66,31 @@ Sea $G_{\alpha}$ el grupo de holonomía global asociado al haz fibrado $(V,h,\Om
 Si fijamos coordenadas de una cubierta universal $P\colon \C\rightarrow T_{a}$ entonces, en esta cubierta $f_{\alpha}(z)=jz+a(\alpha)$ y $g_{\alpha}=jz+b(\alpha)$. Notemos que $z_{0}(\alpha)=\tfrac{a(\alpha)}{1-j}$ es un punto fijo de $f_{\alpha}$, por lo tanto, si $k_{\alpha}(z)=z+z_{0}$ entonces $k_{\alpha}^{-1}\circ f_{\alpha}\circ k_{\alpha}(z)=jz$. En estas nuevas coordenadas, $k_{\alpha}^{-1}\circ g_{\alpha}\circ k_{\alpha}(z)=jz+b(\alpha)-a(\alpha)=jz+A(\alpha)$. 
 \end{proof}
 
+A continuación veremos como un subrgupo de biholomorfismos de $\C/\Gamma$ generado por dos elementos se ve.
+
+\begin{Proposicion}
+\label{Prop:DescripcionDelGrupo}
+Sea $G$ un subgrupo de biholomorfismos de $\C/\Gamma$ generado por $f(z)=jz$ y $g(z)=jz+A$, entonces $G=\{j^{i}z+A;\, i\in\{0,1,2\},\, d\in\mathbb{Z}\oplus j\mathbb{Z} \}$.
+\end{Proposicion}
+\begin{proof}
+Si $G_{1}=\{j^{i}z+A;\, i\in\{0,1,2\},\, d\in\mathbb{Z}\oplus j\mathbb{Z} \}$, es claro que $G\subset G_{1}$. Para demostrar que $G_{1}\subset G$ basta ver que $z+A$ y $z+jA$ están en $G$ pues en este caso, si $d=m+jn$ tenemos que $\mu(z)=z+dA=z+(m+nj)A=z+mA+njA\in G$ y si a $\mu$ le anteponemos $f$ y $f^{2}$ obtenemos las transformaciones $jz+dA$ y $j^{2}z+dA$. $g\circ f^{2}=j(j^{2}z)+A=z+A$ y $f\circ g\circ f=j(j^{2}z+A)=z+jA$
+\end{proof}
+
+Ahora vienen unas equivalencias que nos van a ayudar a probar la existencia de primeral integrales racionales.
+
+\begin{Corolario}
+\label{Coro:Equivalencias}
+Sea $G$ un grupo como el de arriba, entonces son equivalentes:
+\begin{enumerate}
+\item $G$ es finito.
+\item $G$ tiene órbita finita en $\C/\Gamma$.
+\item Existe $n\in\mathbb{N}$ tal que $nA\in\Gamma$.
+\end{enumerate}
+\end{Corolario}
+\begin{proof}
+$1\Rightarrow 2$. Es claro.
+
+\noindent $2\Rightarrow 3$ Sea $\mu(z)=z+A$, fijemos $z_{0}\in\C/\Gamma$ y consideremos al conjunto $\{z_{0},\mu(z_{0}),\mu^{2}(z_{0}),\ldots \}$. Como la órbita de $z_{0}$ es finita tienen que existir $m,n\in\mathbb{N},\, m<n$ tales que $\mu^{m}(z_{0})=\mu(z_{0})^{n}$ (mod $\Gamma$). Esto quiere decir que $mA=nA$ (mod $\Gamma$) y por lo tanto $(n-m)A\in\Gamma$.
+
+\noindent $3\Rightarrow 1$. Para probar este úlitmo inciso y para uso posterior, vamos a calcular explícitamente el número de elementos de $G$. Sea $k\in\mathbb{N}$ el natural más pequeño que satisface $kA\in\Gamma$ y $\mu(z)=j^{i}z+dA\in G$. Si $d=(p+jq)$ y dividimos a $p$ y $q$ entre $k$ obtenemos $p=ka +\tilde{p}$ y $q=kb+\tilde{q}$ con $0\leq\tilde{p},\tilde{q}<k$ y entonces podemos escribir a $\mu$ como $\mu(z)=j^{i}+k(a+jb)A+(\tilde{p}+j\tilde{q})A$ pero módulo $\Gamma$, $k(a+jb)A=0$, así, $\mu(z)$ induce la misma transformación que $\tilde{\mu}(z)=j^{i}z+(\tilde{p}+j\tilde{q})A$ y además $0\leq\tilde{p},\tilde{q}<k$. Con esto no es difícil convencerse de que $G$ tiene $3k^{2}$ elementos.
+\end{proof}
