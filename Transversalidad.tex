@@ -60,23 +60,23 @@ Para probar que una foliación $\Foli_{\alpha}^{4}$ tiene una primera integral r
 
 \begin{Lema}
 \label{Prop:GrupoHolonomia}
-Sea $G_{\alpha}$ el grupo de holonomía global asociado al haz fibrado $(V,h,\Omega)$ y la foliación $\tilde{\Foli_{\alpha}^{4}}$. Entonces en una carta de adecuada de $\C$, $G_{\alpha}$ está generado por $f_{\alpha}(z)=jz$ y $g_{\alpha}(z)=jz+A(\alpha)$.
+Sea $G_{\alpha}$ el grupo de holonomía global asociado al haz fibrado $(V,h,\Omega)$ y la foliación $\tilde{\Foli_{\alpha}^{4}}$. Entonces en una carta adecuada de $\C$, $G_{\alpha}$ está generado por $f_{\alpha}(z)=jz$ y $g_{\alpha}(z)=jz+A(\alpha)$.
 \end{Lema}
 \begin{proof}
-Si fijamos coordenadas de una cubierta universal $P\colon \C\rightarrow T_{a}$ entonces, en esta cubierta $f_{\alpha}(z)=jz+a(\alpha)$ y $g_{\alpha}=jz+b(\alpha)$. Notemos que $z_{0}(\alpha)=\tfrac{a(\alpha)}{1-j}$ es un punto fijo de $f_{\alpha}$, por lo tanto, si $k_{\alpha}(z)=z+z_{0}$ entonces $k_{\alpha}^{-1}\circ f_{\alpha}\circ k_{\alpha}(z)=jz$. En estas nuevas coordenadas, $k_{\alpha}^{-1}\circ g_{\alpha}\circ k_{\alpha}(z)=jz+b(\alpha)-a(\alpha)=jz+A(\alpha)$. 
+Si fijamos coordenadas de una cubierta universal $P\colon \C\rightarrow T_{a}$ entonces en esta cubierta, $f_{\alpha}(z)=jz+a(\alpha)$ y $g_{\alpha}=jz+b(\alpha)$. Notemos que $z_{0}(\alpha)=\tfrac{a(\alpha)}{1-j}$ es un punto fijo de $f_{\alpha}$, por lo tanto, si $k_{\alpha}(z)=z+z_{0}(\alpha)$ entonces $k_{\alpha}^{-1}\circ f_{\alpha}\circ k_{\alpha}(z)=jz$. En estas nuevas coordenadas, $k_{\alpha}^{-1}\circ g_{\alpha}\circ k_{\alpha}(z)=jz+b(\alpha)-a(\alpha)=jz+A(\alpha)$. 
 \end{proof}
 
-A continuación veremos como un subrgupo de biholomorfismos de $\C/\Gamma$ generado por dos elementos se ve.
+A continuación veremos como se ve un subrgupo de biholomorfismos de $\C/\Gamma$ generado por dos elementos $f(z)=jz$ y $g(z)=jz+A$.
 
 \begin{Proposicion}
 \label{Prop:DescripcionDelGrupo}
 Sea $G$ un subgrupo de biholomorfismos de $\C/\Gamma$ generado por $f(z)=jz$ y $g(z)=jz+A$, entonces $G=\{j^{i}z+A;\, i\in\{0,1,2\},\, d\in\mathbb{Z}\oplus j\mathbb{Z} \}$.
 \end{Proposicion}
 \begin{proof}
-Si $G_{1}=\{j^{i}z+A;\, i\in\{0,1,2\},\, d\in\mathbb{Z}\oplus j\mathbb{Z} \}$, es claro que $G\subset G_{1}$. Para demostrar que $G_{1}\subset G$ basta ver que $z+A$ y $z+jA$ están en $G$ pues en este caso, si $d=m+jn$ tenemos que $\mu(z)=z+dA=z+(m+nj)A=z+mA+njA\in G$ y si a $\mu$ le anteponemos $f$ y $f^{2}$ obtenemos las transformaciones $jz+dA$ y $j^{2}z+dA$. $g\circ f^{2}=j(j^{2}z)+A=z+A$ y $f\circ g\circ f=j(j^{2}z+A)=z+jA$
+Si $G_{1}=\{j^{i}z+A;\, i\in\{0,1,2\},\, d\in\mathbb{Z}\oplus j\mathbb{Z} \}$, es claro que $G\subset G_{1}$. Para demostrar que $G_{1}\subset G$ basta ver que $z+A$ y $z+jA$ están en $G$ pues en este caso, si $d=m+jn$ tenemos que $\mu(z)=z+dA=z+(m+nj)A=z+mA+njA\in G$ y si a $\mu$ le anteponemos $f$ y $f^{2}$ obtenemos las transformaciones $jz+dA$ y $j^{2}z+dA$ respectivamente. Así pues, $g\circ f^{2}=j(j^{2}z)+A=z+A$ y $f\circ g\circ f=j(j^{2}z+A)=z+jA$
 \end{proof}
 
-Ahora vienen unas equivalencias que nos van a ayudar a probar la existencia de primeral integrales racionales.
+Ahora vienen unas equivalencias que nos van a ayudar a probar la existencia de primeras integrales racionales.
 
 \begin{Corolario}
 \label{Coro:Equivalencias}
@@ -92,5 +92,24 @@ $1\Rightarrow 2$. Es claro.
 
 \noindent $2\Rightarrow 3$ Sea $\mu(z)=z+A$, fijemos $z_{0}\in\C/\Gamma$ y consideremos al conjunto $\{z_{0},\mu(z_{0}),\mu^{2}(z_{0}),\ldots \}$. Como la órbita de $z_{0}$ es finita tienen que existir $m,n\in\mathbb{N},\, m<n$ tales que $\mu^{m}(z_{0})=\mu(z_{0})^{n}$ (mod $\Gamma$). Esto quiere decir que $mA=nA$ (mod $\Gamma$) y por lo tanto $(n-m)A\in\Gamma$.
 
-\noindent $3\Rightarrow 1$. Para probar este úlitmo inciso y para uso posterior, vamos a calcular explícitamente el número de elementos de $G$. Sea $k\in\mathbb{N}$ el natural más pequeño que satisface $kA\in\Gamma$ y $\mu(z)=j^{i}z+dA\in G$. Si $d=(p+jq)$ y dividimos a $p$ y $q$ entre $k$ obtenemos $p=ka +\tilde{p}$ y $q=kb+\tilde{q}$ con $0\leq\tilde{p},\tilde{q}<k$ y entonces podemos escribir a $\mu$ como $\mu(z)=j^{i}+k(a+jb)A+(\tilde{p}+j\tilde{q})A$ pero módulo $\Gamma$, $k(a+jb)A=0$, así, $\mu(z)$ induce la misma transformación que $\tilde{\mu}(z)=j^{i}z+(\tilde{p}+j\tilde{q})A$ y además $0\leq\tilde{p},\tilde{q}<k$. Con esto no es difícil convencerse de que $G$ tiene $3k^{2}$ elementos.
+\noindent $3\Rightarrow 1$. Para probar este úlitmo inciso y para uso posterior, vamos a calcular explícitamente el número de elementos de $G$. Sea $k\in\mathbb{N}$ el natural más pequeño que satisface $kA\in\Gamma$ y $\mu(z)=j^{i}z+dA\in G$, encontraremos una manera equivalente de escribir a $\mu$. Si $d=(p+jq)$ y dividimos a $p$ y $q$ entre $k$ obtenemos $p=ka +\tilde{p}$ y $q=kb+\tilde{q}$ con $0\leq\tilde{p},\tilde{q}<k$ y entonces podemos escribir a $\mu$ como $\mu(z)=j^{i}+k(a+jb)A+(\tilde{p}+j\tilde{q})A$ pero módulo $\Gamma$, $k(a+jb)A=0$, pues $kA\in\Gamma$ por lo tanto, $\mu(z)$ induce la misma transformación que $\tilde{\mu}(z)=j^{i}z+(\tilde{p}+j\tilde{q})A$ y además $0\leq\tilde{p},\tilde{q}<k$. Lo anterior quiere decir que toda transformación $\mu(z)=j^{i}z+dA$ la podemos escribir con una $d=m+jn$ tal que $0\leq m,n<k$. Con esto no es difícil convencerse de que $G$ tiene $3k^{2}$ elementos.
+\end{proof}
+
+Y ahora por fin, algunas consecuencias que tiene la cardinalidad del grupo de holonomía global $G_{\alpha}$ sobre la integrabilidad de la foliación $\Foli_{\alpha}^{4}$ de $\CP$.
+
+\begin{Proposicion}
+\label{Prop:EquivalenciasIntegrabilidad}
+Sea $G_{\alpha}=\langle jz,jz+A(\alpha)\rangle$ el grupo de holonomía global asociado a $\tilde{F}_{\alpha}$, entonces son equivalentes:
+\begin{enumerate}
+\item $\Foli_{\alpha}^{4}$ tiene una primera integral racional.
+\item $\Foli_{\alpha}^{4}$ tiene una hoja algebraica que no está contenida en las líneas invariantes de $\mathcal{L}$.
+\item Existe un natural $n\in\mathbb{N}$ tal que $nA(\alpha)\in\Gamma$.
+\end{enumerate}
+\end{Proposicion} 
+\begin{proof}
+$1\Rightarrow 2$. Es claro.
+
+\noindent $2\Rightarrow 3$ Sea $L$ una hoja algebraica de $\Foli_{\alpha}^{4}$ que no está contenida en las líneas de $\mathcal{L}$. Por el teorema de Bézout tenemos que $L\cap H^{-1}(a)$ es un conjunto finito. Si $\tilde{L}$ es el transformado estricto de $L$ ($\mathcal{i.e.}$ $\tilde{L}=\overline{\Pi^{-1}(L\setminus\mathcal{P})}$ donde $\mathcal{P}$ son los puntos que explota $\Pi^{-1}$), entonces $\tilde{L}\cap T_{a}$ es un conjunto finito pues $T_{a}=\Pi^{-1}(H^{-1}(a))$, pero $\tilde{L}\cap T_{a}$ es una órbita de $G_{\alpha}$ y por el corolario anterior, existe $n\in\mathbb{N}$ tal que $nA(\alpha)\in\Gamma$.
+
+\noindent $3\Rightarrow 1$\\AUN NO TENGO BIEN LA PRUEBA DE ESTA PARTE PERO YA CASI ESTA.
 \end{proof}
