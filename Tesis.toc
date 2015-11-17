@@ -10,7 +10,7 @@
 \contentsline {section}{\numberline {1.7}El grado de una foliaci\IeC {\'o}n dicr\IeC {\'\i }tica en $\ensuremath {\mathbb {C}}\mathbb {P}^{2}$.}{16}
 \contentsline {chapter}{\numberline {2}Introducci\IeC {\'o}n}{21}
 \contentsline {section}{\numberline {2.1}El problema de Poincar\IeC {\'e}}{21}
-\contentsline {section}{\numberline {2.2}Escacez de foliaciones con hojas algebraicas.}{22}
+\contentsline {section}{\numberline {2.2}Escasez de foliaciones con hojas algebraicas.}{22}
 \contentsline {section}{\numberline {2.3}El teorema de Darboux.}{24}
 \contentsline {section}{\numberline {2.4}Teorema principal.}{25}
 \contentsline {chapter}{\numberline {3}La familia de grado 4.}{27}

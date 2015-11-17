@@ -21,7 +21,7 @@ Observemos que la configuración cumple las siguientes tres propiedades:
 
 \end{enumerate} 
 
-A continuación probaremos que, módulo transformaciones proyectivas, ésta es la única configuración de 9 rectas y 12 puntos que satisfacen los tres propiedades anteriores. Esta proposición y sus dos corolarios serán de gran utilidad en el futuro, pues para muchas cuentas bastará hacer un cálculo en un lugar particular de $\CP$ y después usar alguna transformación proyectiva para argumentar que el cálculo es válido en otros lugares de $\CP$.
+A continuación probaremos que, módulo transformaciones proyectivas, ésta es la única configuración de 9 rectas y 12 puntos que satisfacen las tres propiedades anteriores. Esta proposición y sus dos corolarios serán de gran utilidad en el futuro, pues como dijimos previamente, muchos cálculos se reducirán a hacer un cálculo en un lugar particular de $\CP$ y después usar alguna transformación proyectiva para argumentar que el cálculo es válido en otros lugares de $\CP$.
 \\
 
 Sea $\mathcal{C'=(L',P')}$ una configuración de 9 rectas y 12 puntos que satisfacen las tres propiedades de arriba. Es importante recordar que los 12 puntos son las intersecciones de las nueve rectas.
@@ -63,38 +63,38 @@ Sean $\mathcal{C'},\ \mathcal{P}_{i} = \{p_{1},\ p_{2},\ p_{3} \}$ como en el le
 
 \begin{proof}
 
-Como los puntos de $\mathcal{P}_{i}$ no son colineales, podemos encontrar coordenadas de tal forma que: $p_{1} = [0:0:1]\ p_{2} = [0:1:0]\ p_{3} = [1:0:0]$. En estas coordenadas y en la carta afín $z=1$, las retas por $p_{2} = [0:1:0]$ son de la forma $x=a_{1},\ x=a_{2},\ x=a_{3}$ y las que pasan por $p_{3} = [1:0:0]$ son de la forma $y=b_{1},\ y=b_{2},\ y=b_{3}$. Así, las tres rectas restantes (las que pasan por $p_{1} = [0:0:1]$) tienen la forma $ y = \alpha x,\ y = \beta x,\ y = \gamma x$ y los nueve puntos restantes de $\mathcal{P'}$ son $(a_{1},b_{1})\ (a_{1},b_{2})\ (a_{1},b_{3})\ (a_{2},b_{1})\ (a_{2},b_{2})\ (a_{2},b_{3})\ (a_{3},b_{1})\ (a_{3},b_{2})\ (a_{3},b_{3})\ $
+Como los puntos de $\mathcal{P}_{i}$ no son colineales, podemos encontrar coordenadas de tal forma que: $p_{1} = [0:0:1]\ p_{2} = [0:1:0]\ p_{3} = [1:0:0]$. En estas coordenadas y en la carta afín $z=1$, las rectas por $p_{2} = [0:1:0]$ son de la forma $x=a_{1},\ x=a_{2},\ x=a_{3}$ y las que pasan por $p_{3} = [1:0:0]$ son de la forma $y=b_{1},\ y=b_{2},\ y=b_{3}$. Así, las tres rectas restantes (las que pasan por $p_{1} = [0:0:1]$) tienen la forma $ y = \alpha x,\ y = \beta x,\ y = \gamma x$ y los nueve puntos restantes de $\mathcal{P'}$ son $(a_{1},b_{1})\ (a_{1},b_{2})\ (a_{1},b_{3})\ (a_{2},b_{1})\ (a_{2},b_{2})\ (a_{2},b_{3})\ (a_{3},b_{1})\ (a_{3},b_{2})\ (a_{3},b_{3})\ $
 \\
 
-Reordenando los índices, podemos suponer que $(a_{i}, b_{i}) \in \{ y = \alpha x \},\ i=1,2,3$. $\mathit{i.e.}\ \frac{b_{i}}{a_{i}} = \alpha \ i=1,2,3$.
+Reordenando los índices, podemos suponer que $(a_{i}, b_{i}) \in \{ y = \alpha x \},\ i=1,2,3$. $\mathit{i.e.}\ \frac{b_{i}}{a_{i}} = \alpha, \ i=1,2,3$.
 \\
 
-Supongamos que $(a_{1},b_{2})$ está en la recta $\{ y = \beta x\}$, veamos que otros puntos de $\mathcal{P'}$ están en $\{ y = \beta x\}$. Notemos primero que estos puntos no pueden tener en su primera entrada a $a_{1}$ y en la segunda entrada no pueden tener a $b_{2}$, como además, $(a_{3},b_{3})$ ya está en $\{ y = \alpha x \}$, las únicas posibilidades son: $(a_{2}, b_{3}),\ (a_{2}, b_{1})$ y $(a_{3}, b_{1})$. Pero $(a_{2}, b_{3})$ y $(a_{2}, b_{1})$ no pueden estar ambos en $\{ y = \beta x\}$, así que forzosamente, $(a_{3},b_{1}) \in \{ y = \beta x\}$. De manera análoga, $(a_{2},b_{1})$ y $(a_{3},b_{1})$ no pueden estar ambos en $\{ y = \beta x\}$ y entonces $(a_{2},b_{3}) \in \{ y = \beta x\}$.
+Supongamos que $(a_{1},b_{2})$ está en la recta $\{ y = \beta x\}$, veamos qué otros puntos de $\mathcal{P'}$ están en $\{ y = \beta x\}$. Notemos primero que estos puntos no pueden tener en su primera entrada a $a_{1}$ y en la segunda entrada no pueden tener a $b_{2}$, como además, $(a_{3},b_{3})$ ya está en $\{ y = \alpha x \}$, las únicas posibilidades son: $(a_{2}, b_{3}),\ (a_{2}, b_{1})$ y $(a_{3}, b_{1})$. Pero $(a_{2}, b_{3})$ y $(a_{2}, b_{1})$ no pueden estar ambos en $\{ y = \beta x\}$, así que forzosamente, $(a_{3},b_{1}) \in \{ y = \beta x\}$. De manera análoga, $(a_{2},b_{1})$ y $(a_{3},b_{1})$ no pueden estar ambos en $\{ y = \beta x\}$ y entonces $(a_{2},b_{3}) \in \{ y = \beta x\}$.
 \\
 
-Por lo tanto, $(a_{1},b_{1}),\ (a_{2},b_{2}),\ (a_{3},b_{3})\in \{ y = \alpha x\}$.
+\noindent Por lo tanto, $(a_{1},b_{1}),\ (a_{2},b_{2}),\ (a_{3},b_{3})\in \{ y = \alpha x\}$.
 \\
 $(a_{1},b_{2}),\ (a_{2},b_{3}),\ (a_{3},b_{1})\in \{ y = \beta x\}$.
 \\
 $(a_{1},b_{3}),\ (a_{2},b_{1}),\ (a_{3},b_{2})\in \{ y = \gamma x\}$.
 \\
 
-Y entonces, tenemos las siguintes relaciones:
+\noindent Y entonces, tenemos las siguintes relaciones:
 
 $$\frac{b_{1}}{a_{1}}=\frac{b_{2}}{a_{2}}=\frac{b_{3}}{a_{3}}=\alpha,\ \ \frac{b_{2}}{a_{1}}=\frac{b_{3}}{a_{2}}=\frac{b_{1}}{a_{3}}=\beta,\ \ \frac{b_{3}}{a_{1}}=\frac{b_{1}}{a_{2}}=\frac{b_{2}}{a_{3}}=\gamma.$$
 
-Lo anterior implica que $\alpha^{3} = \beta^{3} = \gamma^{3}$ y así, $\frac{\beta}{\alpha}$ y $\frac{\gamma}{\alpha}$ son raíces cúbicas distintas de la unidad, digamos $j$ y $j^{2}$ respectivamente.
+\noindent Lo anterior implica que $\alpha^{3} = \beta^{3} = \gamma^{3}$ y así, $\frac{\beta}{\alpha}$ y $\frac{\gamma}{\alpha}$ son raíces cúbicas distintas de la unidad, digamos $j$ y $j^{2}$ respectivamente.
 \\
 
 Por último, veamos que $(a_{1},a_{2},a_{3}) = a_{1}(1,j,j^{2})$ y $(b_{1},b_{2},b_{3}) = \alpha a_{1}(1,j,j^{2})$:
 
 $$a_{1}j = a_{1}\frac{\beta}{\alpha}=a_{1}\frac{\frac{b_{2}}{a_{1}}}{\frac{b_{2}}{a_{2}}} = a_{2},\ \ a_{1}j^{2} = a_{1}\frac{\gamma}{\alpha} = a_{1}\frac{\frac{b_{3}}{a_{1}}}{\frac{b_{3}}{a_{3}}} = a_{3}.$$
 
-Y como $\frac{b_{i}}{a_{i}} = \alpha \ i=1,2,3$
+\noindent Y como $\frac{b_{i}}{a_{i}} = \alpha \ i=1,2,3$
 
 $$b_{1} = \alpha a_{1},\ \ b_{2} = \alpha a_{2} = \alpha a_{1}j,\ \ b_{3} = \alpha a_{3} = \alpha a_{1}j^{2}.$$ 
 
-Y así, finalmente, $T([x:y:x]) = [a_{1}^{-1}x : (\alpha a_{1})^{-1}y : z ]$ cumple las condiciones de la proposición.
+\noindent Y así, finalmente, $T([x:y:x]) = [a_{1}^{-1}x : (\alpha a_{1})^{-1}y : z ]$ cumple las condiciones de la proposición.
 
 \end{proof}
 
@@ -102,7 +102,7 @@ De la proposición anterior se siguen los siguientes dos corolarios:
 
 \begin{Corolario}
 \label{Coro1Prop1}
-  Dados dos conjuntos $\mathcal{P}_{i} \neq \mathcal{P}_{k}$, existe un automorfismo $S$ de \CP tal que $S(\mathcal{C'}) = \mathcal{C'}$ y $S(\mathcal{P}_{i}) = \mathcal{P}_{k}$.
+  Dados dos conjuntos $\mathcal{P}_{i} \neq \mathcal{P}_{k}$, existe un automorfismo $S$ de $\CP$ tal que $S(\mathcal{C'}) = \mathcal{C'}$ y $S(\mathcal{P}_{i}) = \mathcal{P}_{k}$.
 
 \end{Corolario}
 
@@ -114,7 +114,7 @@ Por la proposición 1, existen dos automorfismos $R,T$ de $\mathbb{CP^{\mathrm{2
 
 \begin{Corolario}
 \label{Coro2Prop1}
-Dados $p_{i}, p_{j} \in \mathcal{P'}$ existe un automorfismo $S$ de \CP tal que $S(\mathcal{C'}) = \mathcal{C'}$ y $S(p_{i}) = p_{j}$. 
+Dados $p_{i}, p_{j} \in \mathcal{P'}$ existe un automorfismo $S$ de $\CP$ tal que $S(\mathcal{C'}) = \mathcal{C'}$ y $S(p_{i}) = p_{j}$. 
 
 \end{Corolario}
 

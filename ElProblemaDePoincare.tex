@@ -2,21 +2,20 @@ El problema de Poincaré para foliaciones de $\CP$ consiste en acotar, dada una 
  
 \begin{Ejemplo}
 \label{Ej:Intro}
-Consideremos la familia de ecuaciones diferenciales en $\CP$ a un parámetro $\lambda\in\mathbb{R}$ siguiente:
+Consideremos la siguiente familia de ecuaciones diferenciales en $\CP$ a un parámetro $\lambda\in\mathbb{R}$:
 \begin{align*}
 \dot{x} & = x \\
 \dot{y} & = \lambda y.
 \end{align*}
-O lo que es lo mismo, la foliación generada por la 1-forma $x\,dy - \lambda y\,dx$.
+O lo que es lo mismo, la foliación generada por los ceros de la 1-forma $x\,dy - \lambda y\,dx$.
 \end{Ejemplo}
 
-En el ejemplo anterior si $\lambda$ es un número irracional, la foliacion definida por la ecuación diferencial sólo tiene tres hojas algebraicas invariantes, los dos ejes coordenados y la recta al infinito. En efecto, si existiera una hoja algebraica de grado $n$, el teorema de Bézout nos asegura que esta hoja interseca a la recta $x=1$ en $n$ puntos, pero la holonomía asociada a la separatriz $y=0$ y la transversal $x=1$ es $z\mapsto e^{2\pi i\lambda}z$,  y como $\lambda$ es irracional, la órbita de cada punto es infinita, pero por construcción de la holonomía, la órbita de un punto $z$ está contenida en la intersección de la hoja de la foliación $\mathcal{L}_z$ que pasa por $z$ con la transversal $x=1$. 
+\noindent En el ejemplo anterior si $\lambda$ es un número irracional, la foliación definida por la ecuación diferencial sólo tiene tres hojas algebraicas invariantes, los dos ejes coordenados y la recta al infinito. En efecto, si existiera una hoja algebraica de grado $n$, el teorema de Bézout nos asegura que esta hoja interseca a la recta $x=1$ en $n$ puntos, pero la holonomía asociada a la separatriz $y=0$ y la transversal $x=1$ es $z\mapsto e^{2\pi i\lambda}z$,  y como $\lambda$ es irracional, la órbita de cada punto es infinita, pero por construcción de la holonomía, la órbita de un punto $z$ está contenida en la intersección de la hoja de la foliación $\mathcal{L}_z$ que pasa por $z$ con la transversal $x=1$. 
 \\
-
 Por otro lado, si $\lambda = \tfrac{p}{q}$, entonces $H = \tfrac{y^q}{x^p}$ es una primera integral racional ya que $dH = q\tfrac{y^{q-1}}{x^p}\,dy - p\tfrac{y^q}{x^{p+1}}\,dx = \tfrac{y^{q-1}}{x^{p+1}}(qx\,dy -py\,dx)$ y así, todas las hojas $y^q-cx^p=0$ son algebraicas.
 \\
 
-La ecuación del ejemplo es linear y eso hace que el grado de la foliación que genera sea uno. Sin embargo, es fácil ver que no importa que número natural $k$ demos, siempre hay algún parámetro $\lambda$ para el cual se cumplen las siguientes dos propiedades:
+La ecuación del ejemplo anterior es lineal y eso hace que el grado de la foliación que genera sea uno. Sin embargo, es fácil ver que no importa qué número natural $k$ demos, siempre hay algún parámetro $\lambda$ para el cual se cumplen las siguientes dos propiedades:
 
 \begin{enumerate}
 \item La foliación correspondiente a ese parámetro $\Fol{\lambda}$ tiene una primera integral racional y por lo tanto todas sus hojas son algebraicas.
@@ -47,9 +46,9 @@ Si una foliación $\mathcal{F}$ de grado $d$ no tiene puntos singulares dicríti
 
 Para ver una demostración de estos teoremas véase \cite{IlyaYako}.
 
-\section{Escacez de foliaciones con hojas algebraicas.}
+\section{Escasez de foliaciones con hojas algebraicas.}
 
-En los dos resultados anteriores es necesario suponer la existencia de una hoja algebraica, pero de manera genérica, una foliación de grado $d$ no tiene hojas algebraicas. Para ver que quiere decir de manera genérica haremos algunas observaciones.\\
+En los dos resultados anteriores es necesario suponer la existencia de una hoja algebraica, pero de manera genérica, una foliación de grado $d$ no tiene hojas algebraicas. Para precisar qué quiere decir que algo suceda de manera genérica haremos algunas observaciones.\\
 
 El conjunto $\mathbb{L}_{f}$ de polinomios homogéneos de grado $d+1$ es un espacio vectorial y por lo tanto, el conjunto de 1-formas en $\C^{3}$ con coeficientes polinomiales homogéneos de grado $d+1$ es un espacio vectorial. Observemos que si $\omega, \, \omega'$ son 1-formas homogéneas de grado $d+1$ que satisfacen la condición (\ref{EulerFieldCondition}) entonces $\omega + \omega'$ y $\lambda\omega,\, \lambda\in\C$ también satisfacen la condición (\ref{EulerFieldCondition}). Así, el conjunto $\mathbb{L}_{\Foli,d}$ de 1-formas  con coeficientes polinomiales homogéneos  de grado $d+1$ que satisfacen la condición (\ref{EulerFieldCondition}) es un espacio vectorial.\\
 
@@ -63,12 +62,11 @@ Para dar una idea de la demostración de este hecho consideremos $f\in\C[x,y,z]$
 \label{EcuacionAlgebraica} 
 \Omega\wedge df=f\Phi.
 \end{equation}
+\marginpar{que pasa en el caso afin}
+\noindent Notemos que la 2-forma $\Phi$ es polinomial y homogénea de grado $d$ (esto se debe a que los coeficientes de $\Omega$ son de grado $d+1$ y $df$ tiene grado $m-1$). El conjunto $\mathbb{L}_{\Phi,d}$ de 2-formas homogéneas también es un espacio vectorial complejo y si un par $(f,\Phi)\in\mathbb{L}_{f,m}\times\mathbb{L}_{\Phi,d}$ satisface la ecuación (\ref{EcuacionAlgebraica}) entonces $C=\{f=0\}$ es una curva invariante de la foliación determinada por $\{\Omega=0\}$.\\
 
-\noindent Notemos que la 2-forma $\Phi$ es polinomial y homogénea de grado $d$ (esto se debe a que los coeficientes de $\Omega$ son de grado $d+1$ y $df$ tiene grado $m-1$). El conjunto $\mathbb{L}_{\Phi,d}$ de 2-formas homogéneas también es un espacio vectorial y si un par $(f,\Phi)\in\mathbb{L}_{f,m}\times\mathbb{L}_{\Phi,d}$ satisface la ecuación (\ref{EcuacionAlgebraica}) entonces $C=\{f=0\}$ es una curva invariante de la foliación determinada por $\{\Omega=0\}$.\\
+Con todo lo anterior, la ecuación (\ref{EcuacionAlgebraica}) define una variedad algebraica $Q$ en el espacio $\mathbb{L}_{\Omega,d}\times\mathbb{L}_{f,m}\times\mathbb{L}_{\Phi,d}$. En efecto, la operación $\wedge$ sólo involucra sumas y productos, así $\Omega\wedge df-f\Phi=0$ determina tres polinomios (para especificar una 2-forma en $\C^{3}$ necesitamos tres coeficientes) en el espacio afín $\mathbb{L}_{\Omega,d}\times\mathbb{L}_{f,m}\times\mathbb{L}_{\Phi,d}$. Por lo tanto, la proyección de la variedad algebraica $Q$ en el espacio $\mathbb{L}_{\Omega,d}$ es el conjunto de todas las foliaciones de $\CP$ de grado $r\leq d$ que tienen una hoja algebraica de grado $n\leq m$. Como las 1-formas $\omega$ y $\lambda\omega,\ \lambda\neq 0$ generan la misma foliación podemos proyectivizar a $\Pi(Q)$. Veremos que la proyectivización de $\Pi(Q)$ es una variedad algebraica en $\mathbb{P}(\mathbb{L}_{\Omega,d})$. Para eso requeriremos algunos resultados y definiciones. \\
 
-Con todo lo anterior, la ecuación (\ref{EcuacionAlgebraica}) define una variedad algebraica $Q$ en el espacio $\mathbb{L}_{\Omega,d}\times\mathbb{L}_{f,m}\times\mathbb{L}_{\Phi,d}$. En efecto, la operación $\wedge$ sólo involucra sumas y productos, así $\Omega\wedge df-f\Phi=0$ determina tres polinomios (para especificar una 2-forma en $\C^{3}$ necesitamos tres coeficientes) en el espacio afín $\mathbb{L}_{\Omega,d}\times\mathbb{L}_{f,m}\times\mathbb{L}_{\Phi,d}$. Por lo tanto, la proyección de la variedad algebraica $Q$ en el espacio $\mathbb{L}_{\Omega,d}$ es el conjunto de todas las foliaciones de $\CP$ de grado $r\leq d$ que tienen una hoja algebraica de grado $n\leq m$.\\
-
-Para empezar a proyectar vamos a requerir una definición y un par de resultados fuertes:
 
 \begin{defn}
 \label{Def:ProyeccionProyectiva}
@@ -98,7 +96,7 @@ Por lo tanto, podemos pensar a la proyección de $\mathbb{P}(\C^{n+1}\times\C^{m
 Si $X\subset\C^{n}\times\mathbb{CP}^{p}$ es una variedad algebraica, entonces la proyección de $X$ en el primer factor es una variedad algebraica en $\C^{n}$.
 \end{Teorema}
 
-El resultado anterior es muy sorprendente pues no es difícil convenzerse de que si $X\subset\C^{n}\times\C^{m}$ es una variedad algebraica, la proyección de $X$ en cualquiera de los dos factores no siempre es una variedad algebraica. El siguiente lema, conocido como el lema de normalización de Noether, es una consecuencia del teorema anterior.
+El resultado anterior es muy sorprendente pues no es difícil convencerse de que si $X\subset\C^{n}\times\C^{m}$ es una variedad algebraica, la proyección de $X$ en cualquiera de los dos factores no siempre es una variedad algebraica (por ejemplo, el cero no está en la proyección de $\{xy-1=0\}$ en cualquiera de los dos ejes). El siguiente lema, conocido como el lema de normalización de Noether, es una consecuencia del teorema anterior.
 
 \begin{Lema}
 \label{Lema:NormalizacionDeNoether}
@@ -115,9 +113,9 @@ Para todo $d\geq 2$ y $m\geq 1$ las foliaciones de grado $r\leq d$ con una hoja 
 \begin{proof}
 Como vimos anteriormente la ecuación (\ref{EcuacionAlgebraica}) determina una variedad algebraica en $\mathbb{L}_{\Omega,d}\times\mathbb{L}_{f,m}\times\mathbb{L}_{\Phi,d}$. Notemos que si $f$ satisface la ecuación (\ref{EcuacionAlgebraica}) entonces $\lambda f$ también satisface la ecuación y por lo tanto la variedad algebraica está en $\mathbb{L}_{\Omega,d}\times\Pro(\mathbb{L}_{f,m)}\times\mathbb{L}_{\Phi,d}$.
 
- Si llamamos $Q$ a esta variedad, por el teorema (\ref{Teo:CompacidadProyectiva}), la proyección de $Q$ en $\mathbb{L}_{\Omega,d}\times\mathbb{L}_{\Phi,d}$ es una variedad algebraica $Q'$. Observemos que si $(\Omega,\Phi)$ satisfacen la ecuación (\ref{EcuacionAlgebraica}), $(\lambda\Omega,\lambda\Phi)$ también lo hacen, así podemos proyectivizar a $Q'$ para obtener una variedad algebraica $Q''$ en $\Pro(\mathbb{L}_{\Omega,d}\times\mathbb{L}_{\Phi,d})$.
+ Si llamamos $Q$ a esta variedad, por el teorema \ref{Teo:CompacidadProyectiva}, la proyección de $Q$ en $\mathbb{L}_{\Omega,d}\times\mathbb{L}_{\Phi,d}$ es una variedad algebraica $Q'$. Observemos que si $(\Omega,\Phi)$ satisfacen la ecuación (\ref{EcuacionAlgebraica}), $(\lambda\Omega,\lambda\Phi)$ también lo hacen, así podemos proyectivizar a $Q'$ para obtener una variedad algebraica $Q''$ en $\Pro(\mathbb{L}_{\Omega,d}\times\mathbb{L}_{\Phi,d})$.
 
-El subespacio $\{0\}\times\Pro(\mathbb{L}_{\Phi,d})$ de $\Pro(\mathbb{L}_{\Omega,d}\times\mathbb{L}_{\Phi,d})$ (véase ejemplo (\ref{Ej:ProyeccionCanonica})) no interseca a $Q''$. En efecto, si $\Omega=0$ entonces para que la ecuación (\ref{EcuacionAlgebraica}) se satifaga $f=0$ ó $\Phi=0$ y el punto $(0,0)\in\mathbb{L}_{\Omega,d}\times\mathbb{L}_{\Phi,d}$ no está en $\Pro(\mathbb{L}_{\Omega,d}\times\mathbb{L}_{\Phi,d})$. Por lo tanto, si hacemos la proyección con centro en $\{0\}\times\Pro(\mathbb{L}_{\Phi,d})$ obtenemos una variedad algebraica $Q'''$ en $\Pro(\mathbb{L}_{\Omega,d})$. Esta variedad algebraica se corresponde con las foliaciones de grado $r\leq d$ con una hoja algebraica de grado $n\leq m$.  
+El subespacio $\{0\}\times\Pro(\mathbb{L}_{\Phi,d})$ de $\Pro(\mathbb{L}_{\Omega,d}\times\mathbb{L}_{\Phi,d})$ (véase ejemplo \ref{Ej:ProyeccionCanonica}) no interseca a $Q''$. En efecto, si $\Omega=0$ entonces para que la ecuación (\ref{EcuacionAlgebraica}) se satisfaga $f=0$ ó $\Phi=0$ y el punto $(0,0)\in\mathbb{L}_{\Omega,d}\times\mathbb{L}_{\Phi,d}$ no está en $\Pro(\mathbb{L}_{\Omega,d}\times\mathbb{L}_{\Phi,d})$. Por lo tanto, si hacemos la proyección con centro en $\{0\}\times\Pro(\mathbb{L}_{\Phi,d})$ obtenemos una variedad algebraica $Q'''$ en $\Pro(\mathbb{L}_{\Omega,d})$. Esta variedad algebraica se corresponde con las foliaciones de grado $r\leq d$ con una hoja algebraica de grado $n\leq m$.  
 \end{proof}
 
 Una variedad algebraica tiene medida cero a menos que la variedad algebraica sea todo el espacio y entonces tiene medida infinita. Por lo tanto, para demostrar que  el conjunto de las foliaciones de grado $d$ con una hoja algebraica de grado $m$ tiene medida cero, basta exhibir una foliación de grado $d$ que no tenga hojas algebraicas.\\
@@ -143,7 +141,7 @@ df(F) &=\frac{\partial f}{\partial x}F_{1}+\frac{\partial f}{\partial y}F_{2}=0.
 
 \begin{Teorema}
 \label{Teo:AnteDarboux}
-Si un campo vectorial $F$ de grado $r$ tiene $n\geq \frac{1}{2}r(r+1)+1$ soluciones algebraicas $C_{k}=\{f_{k}=0\}, k=1,\ldots,n$ entonces, el campo vectorial $F$ tiene una primera integral multivaluada $H=f_{1}^{\lambda_{1}}\cdots f_{n}^{\lambda_{n}}$.
+Si una foliación esta definida por un campo vectorial $F$ de grado $r$ y tiene $n\geq \frac{1}{2}r(r+1)+1$ soluciones algebraicas $C_{k}=\{f_{k}=0\}, k=1,\ldots,n$ entonces, la foliación tiene una primera integral multivaluada $H=f_{1}^{\lambda_{1}}\cdots f_{n}^{\lambda_{n}}$.
 \end{Teorema}
 
 \begin{proof}
@@ -156,7 +154,7 @@ dH=\lambda_{1}\frac{H}{f_{1}}df_{1}+\cdots+\lambda_{n}\frac{H}{f_{n}}df_{n}=H\su
 \begin{align*}
 dH(F)=H\sum_{i=1}^{n}\lambda_{i}\frac{df_{i}(F)}{f_{i}}=H\sum_{i=1}^{n}\lambda_{i}\frac{f_{i}g_{i}}{f_{i}}=H\sum_{i=1}^{n}\lambda_{i}g_{i}=0.
 \end{align*}
-Esto quiere decir que $H$ es una primera integral del campo vectorial $F$.
+Esto quiere decir que $H$ es una primera integral de la foliación generada por el campo vectorial $F$.
 \end{proof}
 
 Si hay una solución algebraica más podemos encontrar una primera integral racional.
@@ -166,7 +164,7 @@ Si hay una solución algebraica más podemos encontrar una primera integral raci
 Si campo vectorial polinomial $F$ de grado $r$ tiene $n=\frac{1}{2}r(r+1)+2$ soluciones algebraicas, entonces tiene una primera integral racional.
 \end{Teorema}
 \begin{proof}
-Si las curvas algebraicas estás definidas por los ceros de $f_{1},\ldots,f_{n}$ entonces, para algunos $\lambda_{i}$, las funciones $H=f_{1}^{\lambda_{1}}\cdots f_{n-1}^{\lambda{n-1}}$ y $H'=f_{2}^{\lambda_{2}}\cdots f_{n}^{n}$ son primeras integrales multivaluadas del campo vectorial $F$. Así, las 1-formas racionales,
+Si las curvas algebraicas están definidas por los ceros de $f_{1},\ldots,f_{n}$ entonces, para algunos $\lambda_{i}$, las funciones $H=f_{1}^{\lambda_{1}}\cdots f_{n-1}^{\lambda{n-1}}$ y $H'=f_{2}^{\lambda_{2}}\cdots f_{n}^{n}$ son primeras integrales multivaluadas del campo vectorial $F$. Así, las 1-formas racionales,
 \begin{align*}
 \omega=\frac{dH}{H}=\sum_{n=1}^{n-1}\lambda_{i}^{n-1}\frac{df_{i}}{f_{i}}\,\,\,\, \mathrm{y}\\
 \omega'=\frac{dH'}{H'}=\sum_{n=2}^{n}\lambda_{i}^{n-1}\frac{df_{i}}{f_{i}},
@@ -176,7 +174,7 @@ Si las curvas algebraicas estás definidas por los ceros de $f_{1},\ldots,f_{n}$
 
 \section{Teorema principal.}
 
-Como vimos en las secciones anteriores, casi no hay foliaciones de $\CP$ con hojas algebraicas. Las foliaciones de grado a lo más $d$ forman un subconjunto algebraico en el espacio de foliaciones de grado a lo más $d$. Es por eso que es importante encontrar subconjuntos (familias de foliaciones) de esta variedad algebraica.
+Como vimos en las secciones anteriores, casi no hay foliaciones de $\CP$ con hojas algebraicas. Las foliaciones de grado a lo más $d$ con hojas algebraicas de grado a lo más $m$ forman un subconjunto algebraico en el espacio de foliaciones de grado a lo más $d$. Es por eso que es importante encontrar subconjuntos (familias de foliaciones) de esta variedad algebraica.
 \begin{defn}
 \label{Def:TipoAnFijo}
 Sea $(\Fol{s})_{s\in S}$ una familia de foliaciones de \CP\, donde $S$ es una variedad holomorfa tal que los coeficientes de la ecuación que definen a cada foliación de la familia, en una carta afín fija, dependen de manera holomorfa de $s\in S$. Decimos que la familia tiene singularidades de \emph{tipo analítico fijo} si:
