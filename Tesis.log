@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.24)  17 NOV 2015 15:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.24)  17 NOV 2015 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -919,63 +919,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 24--26
-
- []
-
 [27
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 45--47
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--68
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--74
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--81
-
- []
-
-LaTeX Info: Redefining \. on input line 81.
-LaTeX Info: Redefining \% on input line 81.
+LaTeX Info: Redefining \. on input line 71.
+LaTeX Info: Redefining \% on input line 71.
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
  []
 
-) (./FamiliaDeGrado4.tex
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
- [29]
-LaTeX Info: Redefining \. on input line 74.
-LaTeX Info: Redefining \% on input line 74.
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
+
+ []
+
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+[29]) (./FamiliaDeGrado4.tex
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
  [30]
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
@@ -989,10 +988,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+[31]
 Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
  []
@@ -1002,9 +1000,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-LaTeX Info: Redefining \. on input line 26.
-LaTeX Info: Redefining \% on input line 26.
-[31]
+
 Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
@@ -1019,7 +1015,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
 
-
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 42--44
 
  []
@@ -1034,9 +1032,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--50
 
  []
 
-LaTeX Info: Redefining \. on input line 51.
-LaTeX Info: Redefining \% on input line 51.
-[32]
+
 Underfull \hbox (badness 10000) in paragraph at lines 69--71
 
  []
@@ -1046,14 +1042,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
-) (./PuntosSingFin.tex
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+[33]) (./PuntosSingFin.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
 
-LaTeX Info: Redefining \. on input line 19.
-LaTeX Info: Redefining \% on input line 19.
-[33]
+
 Underfull \hbox (badness 10000) in paragraph at lines 41--43
 
  []
@@ -1063,7 +1059,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--46
 
  []
 
-
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 53--55
 
  []
@@ -1073,33 +1071,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
-[34]
+
 Underfull \hbox (badness 10000) in paragraph at lines 70--72
 
  []
 
 ) (./Transversalidad.tex
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
+ [35]
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-LaTeX Info: Redefining \. on input line 32.
-LaTeX Info: Redefining \% on input line 32.
-[35]
+
 Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
-LaTeX Info: Redefining \. on input line 55.
-LaTeX Info: Redefining \% on input line 55.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
 [36]
-LaTeX Info: Redefining \. on input line 96.
-LaTeX Info: Redefining \% on input line 96.
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
  [37])
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
+LaTeX Info: Redefining \. on input line 70.
+LaTeX Info: Redefining \% on input line 70.
  [38]
 Ap\'{e}ndice A.
 (./ApendiceToros.tex
@@ -1126,13 +1123,13 @@ LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 ) ) 
 Here is how much of TeX's memory you used:
- 2659 strings out of 493304
- 33038 string characters out of 6139871
- 111804 words of memory out of 5000000
- 6075 multiletter control sequences out of 15000+600000
+ 2661 strings out of 493304
+ 33081 string characters out of 6139871
+ 111826 words of memory out of 5000000
+ 6077 multiletter control sequences out of 15000+600000
  10455 words of font info for 39 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 27i,9n,32p,1205b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,9n,32p,1205b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
@@ -1150,7 +1147,7 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Tesis.pdf (41 pages, 360892 bytes).
+Output written on Tesis.pdf (41 pages, 361196 bytes).
 PDF statistics:
  210 PDF objects out of 1000 (max. 8388607)
  147 compressed objects within 2 object streams
