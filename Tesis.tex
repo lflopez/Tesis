@@ -8,14 +8,14 @@
 \usepackage[margin = 1.5in]{geometry}
 \usepackage{amscd}
 %amsthm
-\newtheorem{Teorema}{Teorema}
-\newtheorem{Proposicion}{Proposición}
-\newtheorem{Lema}{Lema}
-\newtheorem{Corolario}{Corolario}
+\newtheorem{Teorema}{Teorema}[section]
+\newtheorem{Proposicion}{Proposición}[section]
+\newtheorem{Lema}{Lema}[section]
+\newtheorem{Corolario}{Corolario}[section]
 \newtheorem*{TeoPrin}{TEOREMA PRINCIPAL}
 \theoremstyle{definition}
-\newtheorem{Ejemplo}{Ejemplo}
-\newtheorem{defn}{Definición}
+\newtheorem{Ejemplo}{Ejemplo}[section]
+\newtheorem{defn}{Definición}[section]
 \newtheorem{Not}{Notación}
 
 %Macros de este documento
@@ -65,7 +65,8 @@ Cada foliación de esta familia tiene como hojas invariantes a nueve rectas que 
         \section{La transversalidad de las distintas foliaciones.}
 
             \input{Transversalidad}
-
+        \section{El grado de la primera integral de $\Foli_{\alpha}$.}    
+            \input{GradoPrimeraIntegral.tex}    
 \appendix
 \chapter{Transformaciones entre toros complejos.}
 \label{ApendiceToros}        
