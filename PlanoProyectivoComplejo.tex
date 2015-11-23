@@ -179,8 +179,6 @@ y \mapsto e^{2\pi i \frac{\lambda_{2}}{\lambda_{1}}}y.
 \end{equation}   
 \end{Ejemplo}
 
-\marginpar{referencia}
-
 La transformación de holonomía se puede definir en cualquier transversal a una hoja de la foliación, podemos cambiar de transversal usando, otra vez, a las hojas de la foliación y así obtenemos un biholomorfismo entre las transversales. Por lo tanto, los grupos de holonomía asociados a ambas transversales son conjugados el uno del otro. 
 
 \section{Holonomía global.}
@@ -218,8 +216,6 @@ Si tenemos una separatriz $L$ de la foliación $\mathcal{F}$, y $p\in\overline{L
 
 Lo anterior nos permite heredar algunas propiedades de la transformación de holonomía local a la transformación de holonomía global. Por ejemplo, si la transformación de holonomía local  $f$ tiene orden finito ($\mathit{i.e.},\, f^{n}=Id\,$ para algún $n\in\mathbb{N}$), entonces la transformación de holonomía global que coincide en un abierto con $f$, también tiene orden finito y los órdenes de ambas coinciden.\\
 
-\marginpar{prueba caso particular}
-
 Más adelante necesitaremos el siguiente resultado,
 
 \begin{Lema}
@@ -243,6 +239,11 @@ Como todas las curvas de nivel son homeomorfas a una superficie $F$, para cada $
 
 \noindent Por último, observemos que si fijamos $x_{0}\in H^{-1}(a)$ y $L_{x_{0}}$ es la hoja de $\mathcal{F}$ que pasa por $x_{0}$, entonces $\varphi(t,x_{0})\subset L_{x_{0}}\cap H^{-1}(U)$. Esto quiere decir que,
 $$\varphi^{-1}(L_{x_{0}}\cap H^{-1}(U))=\bigsqcup_{x\in L_{x_{0}}\cap H^{-1}(U)}U\times \{x\}.$$ Como de manera local tenemos que $H=\Pi_{1}\circ \varphi^{-1}$ entonces, si $L$ es una hoja de la foliación $\mathcal{F}$, $H\colon L\rightarrow \Omega$ es una aplicación cubriente.
+
+\begin{Obs}
+\label{Obs:Interseccion}
+En el caso del grupo holonomía local, la órbita de un punto $x$ de una hoja $L$ siempre está contenida en la intersección de la hoja $L$ con la transversal local $\tau$ y hay ejemplos en donde la contención es estricta. Pero en el caso del grupo de holonomía global, como la proyección en el espacio base $\Pi\colon L\rightarrow B$ es una aplicación cubriente, al fijar una transversal $F_{a}$ la órbita de un punto $x\in L\cap F_{a}$ bajo el grupo de holonomía global es la órbita de $x$ bajo el grupo de monodromía de la aplicación cubriente $\Pi$ y es por lo tanto transitiva. Es decir, en el caso del grupo de holonomía global, la órbita de un punto $x$ en una hoja $L$ si coincide con la intersección $\L\cup F_{a}$.  
+\end{Obs}
 
 \section{El plano proyectico complejo $\C\mathbb{P}^{2}$.}
 
@@ -399,8 +400,7 @@ Sean $\lambda_{1},\lambda_{2}\in\C$, si la cerradura convexa del conjunto $\{ \l
 
 Si pensamos a los número complejos $\lambda_{1},\lambda_{2}$ como vectores en $\mathbb{R}^{2}$, estar en el dominio de Siegel se traduce a que $\lambda_{1}$ y $\lambda_{2}$ sean linealmente dependientes y de sentidos opuestos.\\
 
-Con las dos definiciones anteriores podemos enunciar el teorema de linealización de Poincaré.
-\marginpar{referencia}
+Con las dos definiciones anteriores podemos enunciar el teorema de linealización de Poincaré (ver \cite{IlyaYako}).
 \begin{Teorema}
 Si los valores propios de la parte lineal del campo vectorial $F$ son no resonantes y están en el dominio de Poincaré, entonces $F$ es analíticamente equivalente a su parte lineal.
 \end{Teorema}

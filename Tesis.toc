@@ -20,4 +20,5 @@
 \contentsline {section}{\numberline {3.4}La transversalidad de las distintas foliaciones.}{35}
 \contentsline {section}{\numberline {3.5}El grupo de holonom\IeC {\'\i }a global de $\mathaccentV {tilde}07E{\mathcal {F}_{\alpha }^{4}}$.}{37}
 \contentsline {section}{\numberline {3.6}El grado de la primera integral de $\mathcal {F}_{\alpha }$.}{39}
+\contentsline {section}{\numberline {3.7}La topolog\IeC {\'\i }a de las hojas de $\Fol {\alpha }$.}{41}
 \contentsline {chapter}{\numberline {A}Transformaciones entre toros complejos.}{43}
