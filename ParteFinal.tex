@@ -1,0 +1,53 @@
+En este sección vamos a usar la función $F(U,V,W)=(U^{r},V^{r},W^{r}),\, r\in\mathbb{N}$ para jalar a la familia de foliaciones $(\Fol{\alpha})_{\alpha\in\overline{\C}}$ de $\CP$. Notemos que la función $F$ si define una función en $\CP$ pues respera las clases. Veremos que si $\alpha\notin\{\, 1,j,j^{2},\infty\, \}$ la familia de foliaciones $(\K_{\alpha})_{\alpha\in\overline{\C}}$, donde $\K_{\alpha}:=F^{*}(\Fol{\alpha})$, tiene singularidades de tipo analítico fijo y cada foliación de la familia es de grado $3r+1$. Sabemos que para un conjunto denso de parámetros $E\subset\overline{\C}$, si $\alpha\in E$ entonces la foliación $\Fol{\alpha}$ tiene una primera integral racional y dado $k\in\mathbb{N}$, el subconjunto de parámetros de $E$ cuya foliación asociada tiene una primera integral racional de grado menor que $k$ es finitio. Si jalamos estas primeras integrales con la función $F$ observamos que la familia $(\K_{\alpha})_{\alpha\in\overline{\C}}$ también cumple estas dos propiedades. La gran diferencia entre las familias $(\K_{\alpha})_{\alpha\in\overline{\C}}$ y $(\Fol{\alpha})_{\alpha\in\overline{\C}}$ es que para la familia $(\K_{\alpha})_{\alpha\in\overline{\C}},$ dado un número $k\in\mathbb{N}$, las foliaciones de la familia cuya hoja genérica tiene género menor que $k$ es un conjunto finito mientras que para la familia $(\Fol{\alpha})_{\alpha\in\overline{\C}}$, una hoja génerica tiene género uno (cer sección anterior).\\
+
+Antes de empezar a jalar las foliaciones haremos un cambio de coordenadas que lleve tres rectas $\mathit{l}_{1},\mathit{l}_{2},\mathit{l}_{3}$ que deja invariante cualquier foliación $\Fol{\alpha}$ tales que $\mathit{l}_{1}\cap\mathit{l}_{2}\neq\mathit{l}_{1}\cap\mathit{l}_{3}$, en los ejes coordenados $\{\,  U=0\, \},\{\, V=0 \, \}$ y $\{\, W=0 \, \}$. Una vez hecho este cambio usamos la función $F(U,V,W)=(U^{r},V^{r},W^{r}),\, r\in\mathbb{N}$ para definir a la familia $(\K_{\alpha})_{\alpha\in\overline{\C}},$ como $\K_{\alpha}=F^{*}(\Fol{\alpha})$. Notemos que las rectas $\{\,  UVW=0\,\}$ son invariantes bajo la función $F$ y como también son hojas de la foliación $\Fol{\alpha}$, estas rectas también son hojas de la foliación $\K_{\alpha}$. Así mismo, los puntos de ramificación de $F$ están todos en las rectas $\{\,  UVW=0\,\}$. Estas rectas tienen 12 puntos singulares de la foliación $\Fol{\alpha},\, \alpha\notin\{\, 1,j,j^{2},\infty\, \}$, 9 puntos radiales y 3 puntos sillas. De los 9 puntos radiales, los puntos $[1:0:0],[0:1:0]$ y $[0:0:1]$ sólo tienen una preimagen bajo $F$ mientras que los otros 6 puntos radiales y los 3 puntos silla tienen $r$ preimagenes. Así, estos 12 puntos singulares generan $9r+3$ puntos singulares para la foliación $\K_{\alpha}$.
+
+Los 9 puntos singulares restantes de la foliación $\Fol{\alpha}$ no son valores críticos de la función $F$ y cada uno de ellos tiene $r^{2}$ preimagenes. En total, la foliación tiene $9r^{2}+9r+3=(3r+1)^{2}+(3r+1)+1$. Por lo tanto, si mostramos que cada uno de esto puntos singulares es no degenerado, la foliación $\K_{\alpha},\, \alpha\notin\{\, 1,j,j^{2},\infty\, \}$ es de grado $3r+1$ (ver teorema \ref{Teo:NumeroDeSingularidades}).
+
+\begin{Proposicion}
+\label{Prop:SingularidadesK}
+Todas las singularidades de la foliación $\K_{\alpha},\, \alpha\notin\{\, 1,j,j^{2},\infty\, \}$ son no degeneradas.
+\end{Proposicion}
+\begin{proof}
+Basta probar la proposición para los puntos singulares de $\K_{\alpha}$ que están en las rectas $\{\,  UVW=0\,\}$ ya que en todos los demás puntos singulares, $F$ es un biholomorfismo loca y todos los puntos singulares de la foliación $\Fol{\alpha}$ son no degenerados (proposición \ref{Prop:2}).
+
+Los puntos $[1:0:0],[0:1:0]$ y $[0:0:1]$ se aplican bajo $F$ en ellos mismos y la foliación $\Fol{\alpha}$ tiene por primera integral local alrededor de estos puntos a la función $\tfrac{y}{x}$, así $k_{\alpha}$ tiene por primera local a $\tfrac{v^{r}}{u^{r}}$ y está función genera la misma foliación que la función $\tfrac{v}{u}$. Los valores propios del campo vectorial que generan esta foliación son iguales y distintos de cero y por lo tanto los puntos singulares $[1:0:0],[0:1:0]$ y $[0:0:1]$ son no degenerados.
+
+Para cualquier punto de la forma $(u,0),0, U\neq 0$ podemos encontrar coordenadas tal que $F(u,v)=(u,v^{r})$. Así, los puntos singulares de la foliación $\K_{\alpha}$ que $F$ aplica en un punto silla de la foliación $\Fol{\alpha}$ tienen por primera integral a la función $u^{3}v^{r}$ y localmente esta función genera la misma foliación que el campo vectorial $X=ru\tfrac{\partial}{\partial u}+-3v\tfrac{\partial}{\partial v}$ que es no degenerado. De manera análoga, un punto que $F$ aplique en un punto radial tiene por primera integral local a $\tfrac{v^{r}}{u}$ y así la foliación está generada, de manera local por $X=ru\tfrac{\partial}{\partial u}+ v\tfrac{\partial}{\partial v}$. 
+\end{proof}
+
+Recordemos que $E\subset\overline{\C}$ es el conjunto de parámetros para los cuales la foliación $\Fol{\alpha}$, y por lo tanto la foliación $\K_{\alpha}$ tiene una primera integral racional.
+
+\begin{defn}
+\label{Def:HojaKGenerica}
+Diremos que una hoja $L$ de la foliación $\K_{\alpha},\, \alpha\in E$ es \emph{genérica}, si la hoja $F(L)$ de la foliación $\Fol{\alpha}$ es genérica (ver definición \ref{Def:HojaGenerica}). 
+\end{defn}
+
+A continuación vamos a estudiar el género de una hoja genérica de la foliación $\K_{\alpha}$. Para ello, vamos a usar la función $F\colon L\rightarrow F(L)$ y la fórmula de Riemann-Hurwitz. Observemos que no podemos aplicar directamente esta fórmula pues $L$ y $F(L)$ pueden no ser superficies de Riemann. Por eso, tenemos que considerar la resolución de singularidades $\Pi\colon S\rightarrow L$ y $\Pi_{1}\colon \tilde{S}\rightarrow F(L)$ de ambas hojas y aplicar la fórmula de Riemann-Hurwitz a la función $F_{1}$ que hace conmutar el diagrama siguiente \marginpar{Diagrama}.\\
+
+En la sección anterior vimos que la superficie $\tilde{S}$ es un toro y por lo tanto, si denotamos por $z_{1},\ldots,z_{k}$ a los puntos de ramifación de $F_{1}$, la fórmula de Riemann-Hurwitz se reduce a:
+\begin{equation}
+\label{For:RiemannToro}
+\chi(L)=-\sum_{i=1}^{k}(n_{i}-1),
+\end{equation}
+\noindent donde $n_{i}$ es la multiplicidad de $z_{i}$ en $F_{1}$. Vamos a estudiar pues los puntos de ramificación de la función $F_{1}$.\\
+
+\begin{Proposicion}
+\label{Prop:OrdenDeRamificacion}
+Sea $L$ una hoja genérica de la foliación $\K_{\alpha}$, si $\Pi\colon S\rightarrow L$ y $\Pi_{1}\colon\tilde{S}\rightarrow F(L)$ son la resolución de singularidades de $L$ y $F(L)$ respectivamente, entonces cada punto de ramificación de $F_{1}\colon S\rightarrow\tilde{S}$ tiene multiplicidad $r$.
+\end{Proposicion}
+\begin{proof} 
+Como observamos anteriormente los puntos de ramificación de la función $F$ están en las rectas $\{\,  UVW=0\,\}$ y si la hoja $L$ es genérica, $L$ no pasa por ninguno de los puntos silla que se encuentran en estas rectas.
+
+ De estos puntos, aquellos que tienen primera integral local $\tfrac{v^{r}}{u}$, necesitamos explotar $r$ veces para resolver todas las hojas que pasan por este punto singular (ver apéndice...). En la última explosión obtenemos un divisor $D$ el cual intersecan de manera transversal todas las hojas que pasaban por el punto singular original. En una carta adecuada $(t,v)$ este divisor queda descrito por $D=\{\, v=0\, \}$ y la composición de todas las explosiones adquiere la expresión $\Pi(t,v)=(tv^{r},v)$. Así, $F\circ\Pi(t,v)=(tv^{r},v^{r})$ (estamos usando las coordenadas en las que $F(u,v)=(u,v^{r})$). Para resolver a la curva $F(L)$ sólo necesitamos explotar una vez cada punto singular de $F(L)$ (proposición \ref{Prop:2}) y así, en cada uno de estos puntos $\Pi_{1}^{-1}$ adquiere la expresión local $\Pi_{1}^{-1}(x,y)=(\tfrac{y}{x},y)=(z,w)$ y por lo tanto, $F_{1}=\Pi_{1}^{-1}\circ F\circ\Pi(t,v)=(t,v^{r})$.\\
+
+Como la superficie $S$ interseca al divisor $\{\, v=0\, \}$ y lo mismo ocurre con la superficie $\tilde{S}$ y el divisor $\{\, w=0\, \}$, podemos ver de manera local a $S$ y $tilde{S}$ como gráfica de algunas funciones holomorfas $t(v)$ y $z(w)$. En estas cartas $F_{1}$ adquiere la expresión $v\mapsto (t(v),v)\mapsto (t(v),v^{r})\mapsto v^{r}$ y por lo tanto este punto tiene multiplicidad $r$. Para los otros 3 puntos singulares restantes un cálculo análogo muestra la proposición.
+\end{proof} 
+
+\begin{Proposicion}
+\label{Prop:UltimaProposicion}
+Sea $k\in\mathbb{N}$, entonces las foliaciones $\K_{\alpha},\, \alpha\in E$ cuyas hojas genéricas tienen género menor que $k$ son un número finito
+\end{Proposicion}
+\begin{proof}
+Sea $L$ una hoja genérica de la foliación $\K_{\alpha}$. Si la primera integral de la foliación $\Fol{\alpha}$ es de grado $d_{\alpha}$, entonces la hoja $L$ es de grado $rd_{\alpha}$. Por el teorema de Bézout, $\#L\cap\{\,  UVW=0\,\}=3rd_{\alpha}$, por la proposición anterior, tenemos $3rd_{\alpha}$ puntos de ramificación cada uno con multiplicidad $r$. Por la fórmula de Riemann-Hurwitz, $\chi(L)<-3rd_{\alpha}$ y por lo tanto el género de $L$ es más grande que $d_{\alpha}$. De acuerdo al teorema \ref{Teo:GradosGrandes} sólo hay un número finito de parámetros para los cuales $d_{\alpha}<k$. Así, sólo un número finito de foliaciones $\K_{\alpha}$ tienen hojas genéricas con género menor que k.
+\end{proof}
