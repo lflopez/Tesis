@@ -30,15 +30,15 @@ A pesar de contar con el teorema de existencia y unicidad para ecuaciones difere
 \begin{defn}
 \label{Def:EquivalenciaAnalitica}
 Decimos que dos ecuaciones diferenciales determinadas, respectivamente, por dos campos vectoriales $F$ y $F'$ definidos en los conjuntos abiertos $U$ y $U'$ son \emph{analíticamente equivalentes} si existe un biholomorfismo $H\colon U \rightarrow U'$ que cumple la siguiente relación:
-\begin{equation}
+\begin{equation*}
 \label{EquivalenciaAnalitica}
 \Big(\frac{\partial H}{\partial x}\Big)F(x)=F'(H(x)).
-\end{equation}
+\end{equation*}
 \end{defn}
 
-Lo anterior quiere decir que la diferencial del biholomorfismo $H$ lleva el vector $F(x)$, anclado en el punto $x$, en el vector $F'(H(x))$ anclado en el punto $H(x)$.\\
+Lo anterior quiere decir que la derivada del biholomorfismo $H$ lleva el vector $F(x)$, anclado en el punto $x$, en el vector $F'(H(x))$ anclado en el punto $H(x)$.\\
 
-Es muy común que en los textos sobre foliaciones ó ecuaciones diferenciales en variedades analíticas de dimensión dos, se usen las palabras foliación, campo vectorial y 1-forma para referirse al mismo objeto. Esta costumbre está justificada por los teoremas (\ref{Teo:FoliacionesGeneradas}) y (\ref{Teo:CamposEquivalentes}) que básicamente nos dicen que cuando en una ecuación diferencial nos olvidamos del tiempo y la parametrización de las soluciones, nos quedamos con una foliación. No es el propósito de esta tesis probar estos resultados, pero es bueno entender bien lo que éstos dicen para comprender como es que se relacionan estos objetos geométricos aparentemente distintos.\\
+Es muy común que en los textos sobre foliaciones ó ecuaciones diferenciales en variedades analíticas de dimensión dos, se usen las palabras foliación, campo vectorial y 1-forma para referirse al mismo objeto. Esta costumbre está justificada por los teoremas \ref{Teo:FoliacionesGeneradas} y \ref{Teo:CamposEquivalentes} que básicamente nos dicen que cuando en una ecuación diferencial nos olvidamos del tiempo y la parametrización de las soluciones, nos quedamos con una foliación y, los planos tangentes a hojas de una foliación resultan ser los ceros de una 1-forma. No es el propósito de esta tesis probar estos resultados, pero es bueno entender bien lo que éstos dicen para comprender cómo es que se relacionan estos objetos geométricos en primera instancia distintos.\\
 \begin{defn}
 \label{Def:PuntoSingular}
 A un punto $x\in U$ tal que $F(x)=(0,0)$ se le conoce como \emph{punto singular}. A lo largo de este trabajo denotaremos por $\Sigma$ al conjunto de puntos singulares de $F$.
@@ -47,19 +47,19 @@ A un punto $x\in U$ tal que $F(x)=(0,0)$ se le conoce como \emph{punto singular}
 
 \begin{Teorema}
 \label{Teo:Rectificacion}
-Todo ecuación diferencial definida por un campo vectorial holomorfo $F$ es, en una vecindad de un punto no singular, analíticamente equivalente a la ecuación diferencial determinada por el campo vectorial constante $\tilde{F}(x)=(1,0)$.
+Toda ecuación diferencial definida por un campo vectorial holomorfo $F$ es, en una vecindad de un punto no singular, analíticamente equivalente a la ecuación diferencial determinada por el campo vectorial constante $\tilde{F}(x)=(1,0)$.
 \end{Teorema}
 \begin{proof}
-  El flujo del campo vectorial $\tilde{F}$ es $\tilde{\varphi}((x,y,t))=(x+t,y)$. Observemos que para toda $(x,y)$, $\tilde{\varphi}((x,y,-x))\in\Pi':=\{x=0\}$. Sea $\Pi$ una transversal al vector $F((x_{0},y_{0}))$ en el punto $(x_{0},y_{0})$. Si $h\colon\Pi'\rightarrow\Pi$ es un isomorfismo lineal y $\varphi((x,y,t))$ es el flujo del campo vectorial $F$, entonces la función $H=\varphi(h[\tilde{\varphi}((x,y,-x))],x)$ lleva las soluciones del campo vectorial $\tilde{F}$ en las soluciones del campo vectorial $F$. Además, $H$ manda a la transversal $\Pi'$ en la transversal $\Pi$ y el vector $(1,0)$ en el vector $F((x_{0},y_{0}))\neq 0$, esto nos permite concluir que $H$ es invertible.   
+  El flujo asociado al campo vectorial $\tilde{F}$ es $\tilde{\varphi}((x,y,t))=(x+t,y)$. Observemos que para toda $(x,y)$, $\tilde{\varphi}((x,y,-x))\in\Pi':=\{x=0\}$. Sea $\Pi$ una transversal al vector $F((x_{0},y_{0}))$ en el punto $(x_{0},y_{0})$. Si $h\colon\Pi'\rightarrow\Pi$ es un isomorfismo lineal y $\varphi((x,y,t))$ es el flujo del campo vectorial $F$, entonces la función $H=\varphi(h[\tilde{\varphi}((x,y,-x))],x)$ lleva las soluciones del campo vectorial $\tilde{F}$ en las soluciones del campo vectorial $F$. Además, $H$ manda a la transversal $\Pi'$ en la transversal $\Pi$ y el vector $(1,0)$ en el vector $F((x_{0},y_{0}))\neq 0$, esto nos permite concluir que $H$ es invertible.   
 \end{proof}
 Al teorema anterior se le conoce como el teorema de rectificación. Las soluciones de la ecuación diferencial definida por el campo $F'=(1,0)$ son $x=x_{0}+t,y=y_{0}$, y como afirma el teorema, si no hay puntos singulares, localmente podemos escribir a las soluciones de esta manera; esto motiva la siguiente definición:
 
 \begin{defn}
 \label{Def:FoliacionEstandar}
 La \emph{foliación estándar} del disco $B:=\{(x,y)\in\C^{2} \mid \left|x\right|<1, \left|y\right|<1 \}$ es la partición de $B$ por conjuntos $L_{y}=\{ \left|x\right|<1 \}\times\{y \} $ que llamaremos \emph{hojas de la foliación}, $\mathit{i.e.}$:
-\begin{equation}
+\begin{equation*}
 B=\bigsqcup_{\left|y\right|<1}L_{y}.
-\end{equation}
+\end{equation*}
 \end{defn}
 
 En la mayor parte de este trabajo trabajaremos en $\CP$, es por eso que necesitamos la siguiente definición:
@@ -69,26 +69,26 @@ En la mayor parte de este trabajo trabajaremos en $\CP$, es por eso que necesita
 Una \emph{foliación no singular} $\mathcal{F}$ en una dos variedad analítica $M$, es una partición de $M$ en hojas $L_{\alpha}$ de tal forma que todo punto $x\in M$ tiene una vecindad $B'$ y un biholomorfismo $H\colon B'\rightarrow B $ que manda las hojas locales $L_{\alpha}\cap B'$ de $\mathcal{F}$ en las hojas de la foliación estándar. A la pareja $(H,B')$ la llamaremos una \emph{carta distinguida} de la foliación $\mathcal{F}$.
 \end{defn}
 
-Es decir, una foliación no singular en una dos variedad analítica $M$, es una partición de $M$ que localmente se ve como la foliación estándar. El teorema (\ref{Teo:Rectificacion}) nos asegura que las soluciones de una ecuación diferencal definida por un campo vectorial holomorfo sin puntos singulares, generan una foliación no singular.\\
+Es decir, una foliación no singular en una dos variedad analítica $M$, es una partición de $M$ que localmente se ve como la foliación estándar. El teorema \ref{Teo:Rectificacion} nos asegura que las soluciones de una ecuación diferencal definida por un campo vectorial holomorfo sin puntos singulares, generan una foliación no singular.\\
 
-Como en los puntos que no son singulares una ecuación diferencial tiene un comportamiento local sencillo, el verdadero interés es estudiar el comportamiento de una ecuación diferencial en una vecindad de un punto singular y, eventualmente, hacer un análisis global del comportamiento de una ecuación cuando este sea posible.
+Como en los puntos que no son singulares una ecuación diferencial tiene un comportamiento local sencillo, el verdadero interés es estudiar el comportamiento de una ecuación diferencial en una vecindad de un punto singular y, eventualmente, hacer un análisis global del comportamiento de una ecuación cuando esto sea posible.
 
 \begin{defn}
 Una \emph{foliación singular holomorfa} en una dos variedad analítica $M$ es una foliación no singular en $M\setminus\Sigma$ donde $\Sigma$ es un conjunto de puntos aislados al cual llamaremos el \emph{conjunto singular de la foliación}.
 \end{defn}
 
-Todo campo vectorial $F$ en $M$, con conjunto singular $\Sigma$, define, mediante las soluciones de la ecuación diferencial que determina,  una foliación no singular $\mathcal{F}$ en $M\setminus\Sigma$. Pero en principio, $\Sigma$ podría ser un conjunto muy grande (por ejemplo, $\Sigma$ podría ser toda una curva analítica) como para definir una foliación singular en M. El siguiente resultado afirma que para foliaciones en dos variedades analiticas, siempre es posible encontrar un conjunto de puntos aislados $\Sigma'\subset\Sigma$ y una foliación no singular $\tilde{\mathcal{F}}$ de $M\setminus\Sigma'$ de tal forma que las hojas de $\tilde{\mathcal{F}}$ coincidan con las hojas de $\mathcal{F}$ en $M\setminus\Sigma$.
+Todo campo vectorial $F$ en $M$, con conjunto singular $\Sigma$, define, mediante las soluciones de la ecuación diferencial que determina,  una foliación no singular $\mathcal{F}$ en $M\setminus\Sigma$. Pero en principio, $\Sigma$ podría ser un conjunto muy grande (por ejemplo, $\Sigma$ podría ser toda una curva analítica) como para definir una foliación singular en M. El siguiente resultado afirma que para foliaciones en dos variedades analíticas, siempre es posible encontrar un conjunto de puntos aislados $\Sigma'\subset\Sigma$ y una foliación no singular $\tilde{\mathcal{F}}$ de $M\setminus\Sigma'$ de tal forma que las hojas de $\tilde{\mathcal{F}}$ coincidan con las hojas de $\mathcal{F}$ en $M\setminus\Sigma$, esto quiere decir que siempre podemos extender a la foliación $\Foli$ a una foliación no singular en $M$.
 
 \begin{Teorema}
 \label{Teo:ExtensionFoliaciones}
-Sea $F$ un campo vectorial definido en una dos variedad analítica $M$. Si $\Sigma$ es el conjunto singular de $F$, entonces existe un conjunto de puntos aislados $\Sigma'\subset\Sigma$ y una foliación no singular holomorfa $\tilde{\mathcal{F}}$ de $M\setminus\Sigma'$ cuya restricción a $M\setminus\Sigma$ coincide con la foliación generada por el campo vectorial $F$.
+\cite{IlyaYako} Sea $F$ un campo vectorial definido en una dos variedad analítica $M$. Si $\Sigma$ es el conjunto singular de $F$, entonces existe un conjunto de puntos aislados $\Sigma'\subset\Sigma$ y una foliación no singular holomorfa $\tilde{\mathcal{F}}$ de $M\setminus\Sigma'$ cuya restricción a $M\setminus\Sigma$ coincide con la foliación generada por el campo vectorial $F$.
 \end{Teorema}
 
 El teorema anterior básicamente dice que en las foliaciones singulares generadas por campos vectoriales holomorfos siempre podemos suponer que el conjunto singular $\Sigma$, es un conjunto de puntos aislados. El resultado recíproco también es cierto.
 
 \begin{Teorema}
 \label{Teo:FoliacionesGeneradas}
-Sea $\Sigma\subset M$ un conjunto aislado de puntos de la dos variedad analítica $M$, $\mathcal{F}$ una foliación no singular holomorfa en $\Sigma\setminus M$ que no se puede extender a ningún subconjunto de $\Sigma$.
+\cite{IlyaYako} Sea $\Sigma\subset M$ un conjunto aislado de puntos de la dos variedad analítica $M$, $\mathcal{F}$ una foliación no singular holomorfa en $M\setminus\Sigma$ que no se puede extender a ningún subconjunto de $\Sigma$.
 
 Entonces, en una vecindad $U$ de cada punto $a\in\Sigma$, la foliación $\mathcal{F}$ está generada por un campo vectorial holomorfo $F$ con conjunto singular $\Sigma\cap U$.
 \end{Teorema} 
@@ -96,30 +96,30 @@ Entonces, en una vecindad $U$ de cada punto $a\in\Sigma$, la foliación $\mathca
 Así como definimos equivalencia analítica entre campos vectoriales, ahora damos la definición correspondiente para foliaciones.
 
 \begin{defn}
-Decimos que dos foliaciones $\mathcal{F}$ y $\mathcal{F}'$ definidas en las variedades $M$ y $M'$ son \emph{analíticamente equivalentes} si existe un biholomorfismo $H\colon M\rightarrow M'$ que manda las hojas de $\mathcal{F}$ en las hojas de $\mathcal{F}'$ y el conjunto singular $\Sigma$ de $\mathcal{F}$ en el conjunto singular $\Sigma'$ de $\tilde{\mathcal{F}}$.
+Decimos que dos foliaciones $\mathcal{F}$ y $\mathcal{F}'$ definidas en las variedades $M$ y $M'$ son \emph{analíticamente equivalentes} si existe un biholomorfismo $H\colon M\rightarrow M'$ que manda las hojas de $\mathcal{F}$ en las hojas de $\mathcal{F}'$ y el conjunto singular $\Sigma$ de $\mathcal{F}$ en el conjunto singular $\Sigma'$ de $\mathcal{F}'$.
 \end{defn}
 
 El siguiente teorema relaciona campos vectoriales equivalentes con foliaciones equivalentes y foliaciones equivalentes con campos vectoriales ``casi'' equivalentes.
 
 \begin{Teorema}
 \label{Teo:CamposEquivalentes}
-Sean $\dot{x=F(x)}$ y $\dot{x}=F'(x)$ dos ecuaciones diferenciales definidas por los campos vectoriales $F$ y $F'$ respectivamente. Si las ecuaciones diferenciales son analíticamente equivalentes, entonces las foliaciones que generan son analíticamente equivalentes.
+\cite{IlyaYako} Sean $\dot{x}=F(x)$ y $\dot{x}=F'(x)$ dos ecuaciones diferenciales definidas por los campos vectoriales $F$ y $F'$ respectivamente. Si las ecuaciones diferenciales son analíticamente equivalentes, entonces las foliaciones que generan son analíticamente equivalentes.
 
 Recíprocamente, si las foliaciones $\mathcal{F}$ y $\mathcal{F}'$ que generan los campos vectoriales $F$ y $F'$ respectivamente, son analíticamente equivalentes, entonces existe una función holomorfa $\rho$ que no se anula fuera del conjunto singular de $\mathcal{F}$ y cumple:
-\begin{equation}
+\begin{equation*}
 \rho(x)\Big( \frac{\partial H}{\partial x}\Big)F(x) = F'(H(x)).
-\end{equation} 
+\end{equation*} 
 \end{Teorema}
 
 El teorema anterior nos dice que, cuando hablamos de foliaciones, ya no importa tanto el vector tangente (y por lo tanto la parametrización de la solución) si no todo el subespacio uno dimensional que es tangente a la hoja de la foliación (la multiplicación por la función $\rho$ es lo que nos permite concluir esto). Una manera de codificar estos subespacios tangentes es usando 1-formas.\\
 
-A todo campo vectorial $F=(F_{1},F_{2})$ le podemos asociar la 1-forma $F_{1}\, dy - F_{2}\, dx $. Observemos que nuestro campo vectorial anula a esta 1-forma, pero como la 1-forma es lineal, también anula a todo el subespacio generado por el vector $(F_{1},F_{2})$. Así, el kernel de la 1-forma está formado por todos los subespacios tangentes a las soluciones de la ecuación diferencial determinada por el campo vectorial $F$.\\
+A todo campo vectorial $F=(F_{1},F_{2})$ le podemos asociar la 1-forma $F_{1}\, dy - F_{2}\, dx $. Observemos que nuestro campo vectorial anula a esta 1-forma, pero como la 1-forma es lineal, también anula a todo el subespacio generado por el vector $(F_{1},F_{2})$. Así, el kernel de la 1-forma en el putno $(x_{0},y_{0})$ está formado por el espacio tangente a la solución de la ecuación determinada por el campo vectorial $F$ que pasa por el punto $(x_{0},y_{0})$.\\
 
-Una de las ventajas de usar 1-formas es que si tenemos una función holomorfa $H$ entre dos variedades analíticas $M$ y $N$, podemos ``jalar'' cualquier 1-forma $\omega$ en $N$ a una 1-forma $H^{*}(\omega)$ en $M$. Esto lo podemos lograr usando la diferencial de $H$ para empujar vectores tangentes a $M$ en vectores tangentes a $N$ y después evaluarlos en $\omega$, $\mathit{i.e.}$:
+Una de las ventajas de usar 1-formas es que si tenemos una función holomorfa $H$ entre dos variedades analíticas $M$ y $N$, podemos ``jalar'' cualquier 1-forma $\omega$ en $N$ a una 1-forma $H^{*}(\omega)$ en $M$. Esto lo podemos lograr usando la derivada de $H$ para empujar vectores tangentes a $M$ en vectores tangentes a $N$ y después evaluarlos en $\omega$, $\mathit{i.e.}$:
 
-\begin{equation}
+\begin{equation*}
 H^{*}(\omega)(v):=\omega\Big(\Big(\frac{\partial H}{\partial x}\Big)v\Big),\ v\in TM.
-\end{equation}
+\end{equation*}
 
 \section{Holonomía local.}
 
@@ -129,16 +129,16 @@ Una transversal a una hoja $L$ de una foliación $\mathcal{F}$ de $M$ en el punt
 
 Si en un punto $a\in L$ tomamos una carta distinguida $(H=(h_{1},h_{2}),B')$ del punto $a$ tal que $H(L)=L_{0}=\{(x,0)\}\subset B$ entonces, para todo punto $b\in L\cap B'$, si consideramos las transversales locales a $L$ en los puntos $a$ y $b$ definidas por $\tau:=H^{-1}(\,\{\,(h_{1}(a),y); \left|y\right|<1 \,\}\,)$ y $\tau':=H^{-1}(\,\{\,(h_{1}(b),y); \left|y\right|<1 \,\}\,)$, podemos definir una transformación entre las transversales $\tau$ y $\tau'$.
 
-En efecto, si en la hoja $L$ tomamos un curva $\gamma\colon [0,1]\rightarrow L$ que una a los puntos $a$ y $b$ entonces, la curva imagen $\tilde{\gamma}:=H(\gamma)$ que une a los puntos $(h_{1}(a),0)$ y $(h_{1}(b,0)$ puede ser levantada a curvas $\tilde{\gamma_{\alpha}}$ en las hojas $L_{\alpha}$ de la foliación estándar para así, mediante el biholomorfismo $H^{-1}$, obtener curvas $\gamma_{\alpha}$ que unan a las transversales $\tau$ y $\tau'$.\\
+En efecto, si en la hoja $L$ tomamos un curva $\gamma\colon [0,1]\rightarrow L$ que una a los puntos $a$ y $b$ entonces, la curva imagen $\tilde{\gamma}:=H(\gamma)$ que une a los puntos $(h_{1}(a),0)$ y $(h_{1}(b),0)$ puede ser levantada a curvas $\tilde{\gamma_{\alpha}}$ en las hojas $L_{\alpha}$ de la foliación estándar para así, mediante el biholomorfismo $H^{-1}$, obtener curvas $\gamma_{\alpha}$ que unan a las transversales $\tau$ y $\tau'$.\\
 
 Así, para un punto $x\in\tau$, existe una curva $\gamma_{\alpha}\colon[0,1]\rightarrow L_{\alpha}$ tal que $\gamma_{\alpha}(0)\in\tau$ y $\gamma_{\alpha}(1)\in\tau'$ y por lo tanto, podemos definir la  \emph{transformación de correspondencia} entre $\tau$  y $\tau'$ asociada a $\gamma$ como $\Delta^{\gamma}_{\tau,\tau'}(x)=\gamma_{\alpha}(1)$. Como las soluciones de una ecuación diferencial dependen de manera holomorfa de la condición inicial, la transformación de correspondencia es una función holomorfa.\\
 
 Si tomamos un tercer punto $c\in\gamma([0,1])$ y una tercera transversal $\tau''$ a $L$ por el punto $c$, entonces se satisface la identidad:
 
-\begin{equation}
+\begin{equation*}
 \label{IdentidadCorrespondencia}
 \Delta^{\gamma}_{\tau,\tau''}=\Delta^{\gamma}_{\tau',\tau''}\circ\Delta^{\gamma}_{\tau,\tau'},
-\end{equation}
+\end{equation*}
 
 \noindent además, la transformación de correspondencia sólo depende de la clase de homotopía de $\gamma$. Estas dos observaciones nos van a permitir definir una transformación de correspondencia entre dos transversales a una hoja $L$ que sean unidas por un camino $\gamma$.\\  
 
@@ -157,19 +157,19 @@ Con las construcciones anteriores, por cada elemento $\gamma$ del grupo fundamen
 \begin{Ejemplo}
 \label{Ej:HolonomiaLineal}
 La ecuación diferencial lineal
-\begin{equation}
+\begin{equation*}
 \begin{aligned}
 \dot{x} &= \lambda_{1}x\\
 \dot{y} &= \lambda_{2}y
 \end{aligned}
-\end{equation}
+\end{equation*}
 tiene por solución a 
-\begin{equation}
+\begin{equation*}
 \begin{aligned}
 x(t) &= c_{1}e^{\lambda_{1}t}\\
 y(t) &= c_{2}e^{\lambda_{2}t},\ \  c_{1},c_{2}\in\C.
 \end{aligned}
-\end{equation}
+\end{equation*}
 Vamos a calcular el grupo de holonomía asociado a la hoja $L=\{y=0\}\setminus\{0\}$ y la transversal $\{x=1\}$.
 
 Un generador del grupo fundamental de $L$ es el lazo $\gamma=\{\left|x\right| = 1\}$. Si consideramos el segmento de recta $\{t\tfrac{2\pi i}{\lambda_{1}} \mid t\in[0,1]\}\subset\C$, su imagen bajo la solución con condición inicial (1,0) coincide con el lazo $\gamma$, y su imagen bajo cualquier otra solución que tenga condición inicial en la recta $\{x=1\}$ termina de nuevo en esta transversal pues, $x(\tfrac{2\pi i}{\lambda_{1}})=c_{1}e^{2\pi i}=c_{1}$ y si la condición inicial está en la transversal, entonces $c_{1}=1$ y así, $x(\tfrac{2\pi i}{\lambda_{1}})=1$. Por lo tanto, el mapeo de holonomía es: 
@@ -201,7 +201,7 @@ Sea $E$ una dos variedad analítica y $\Pi\colon E\rightarrow B$ un haz fibrado 
 
 Si tenemos que la foliación $\mathcal{F}$ es transversal a las fibras de $(E,\Pi)$, por cada elemento $[\gamma]$ del grupo fundamental $\pi_{1}(B,b)$ del espacio base $B$, podemos asociar un biholomorfismo de la fibra $\varphi_{[\gamma]}\colon F\rightarrow F$ de la siguiente manera.\\
 
-Sea $\gamma\colon [0,1]\rightarrow B$ es una lazo tal que $\gamma(0)=\gamma(1)=b$ y sea $y\in\Pi^{-1}(b)=F$. Si $L_{y}$ es la hoja de $\mathcal{F}$ que pasa por el punto $y$, entonces, como $\Pi\colon L \rightarrow B $ es una aplicación cubriente, podemos levantar a $\gamma$ a una única curva $\tilde{\gamma}\colon [0,1] \rightarrow L_{y}$ tal que, $\tilde{\gamma}(0)=y$ y $\Pi\circ\tilde{\gamma}=\gamma$. Esto quiere decir que $\Pi(\tilde{\gamma}(1))=\gamma(1)=b$ y por lo tanto $\tilde{\gamma}(1)\in\Pi^{-1}(b)=F$.\\
+Sea $\gamma\colon [0,1]\rightarrow B$ es un lazo tal que $\gamma(0)=\gamma(1)=b$ y sea $y\in\Pi^{-1}(b)=F$. Si $L_{y}$ es la hoja de $\mathcal{F}$ que pasa por el punto $y$, entonces, como $\Pi\colon L \rightarrow B $ es una aplicación cubriente, podemos levantar a $\gamma$ a una única curva $\tilde{\gamma}\colon [0,1] \rightarrow L_{y}$ tal que, $\tilde{\gamma}(0)=y$ y $\Pi\circ\tilde{\gamma}=\gamma$. Esto quiere decir que $\Pi(\tilde{\gamma}(1))=\gamma(1)=b$ y por lo tanto $\tilde{\gamma}(1)\in\Pi^{-1}(b)=F$.\\
 
 Así, para un punto $y\in\Pi^{-1}(b)$ podemos definir $\varphi_{\gamma}(y)=\tilde{\gamma}(1)$. Como el punto final de $\tilde{\gamma}$ sólo depende de la clase de homotopía de $\gamma$, la asociación anterior asigna a cada elemento $[\gamma]\in\pi_{1}(B,b)$ una transformación $\varphi_{[\gamma]}\colon F\rightarrow F$.\\
 
@@ -220,11 +220,10 @@ Más adelante necesitaremos el siguiente resultado,
 
 \begin{Lema}
 \label{Lema:HazTopologico}
-Sea $V$ una dos variedad analitica y $H\colon V \rightarrow\Omega\subset\C$ una función analítica sin puntos críticos tal que existe una foliación no singular $\mathcal{F}$ que corta de manera transversal a todas las curvas de nivel de $H$ y, para cualesquiera $a,b\in \Omega$, $H^{-1}(a)$ es compacta y topológicamente equivalente a $H^{-1}(b)$. Entonces, $(V,H,\Omega)$ es un haz topológico.
+Sea $V$ una dos variedad analítica y $H\colon V \rightarrow\Omega\subset\C$ una función analítica sin puntos críticos tal que existe una foliación no singular $\mathcal{F}$ que corta de manera transversal a todas las curvas de nivel de $H$ y, para cualesquiera $a,b\in \Omega$, $H^{-1}(a)$ es compacta y topológicamente equivalente a $H^{-1}(b)$. Entonces, $(V,H,\Omega)$ es un haz topológico.
 \end{Lema}
 \begin{proof}
-Para exhibir a las trivializaciones locales alrededor de un punto $a\in \Omega$ vamos a usar el flujo de el campo vectorial que genera a la foliación $\mathcal{F}$ en una vecindad de cada punto $z\in H^{-1}(a)$.\\
-Alrededor de este punto $z$, existe una vecindad $\tilde{W_{z}}\subset V$, un disco $D_{\epsilon}$ y una función $g\colon \tilde{W_{z}}\times D_{\epsilon}$ tal que para $z_{0}\in W_{z}:=\tilde{W_{z}\cap H^{-1}(a)}$, $g(z_{0},t)$ es la hoja de la foliación $\mathcal{F}$ que pasa por $z_{0}$.\\
+Para exhibir a las trivializaciones locales alrededor de un punto $a\in \Omega$ vamos a usar el flujo $g$ de el campo vectorial que genera a la foliación $\mathcal{F}$ en una vecindad de cada punto $z\in H^{-1}(a)$. Alrededor de este punto $z$, existe una vecindad $\tilde{W_{z}}\subset V$, un disco $D_{\epsilon}$ y una función $g\colon \tilde{W_{z}}\times D_{\epsilon}$ tal que para $z_{0}\in W_{z}:=\tilde{W_{z}\cap H^{-1}(a)}$, $g(z_{0},t)$ es la hoja de la foliación $\mathcal{F}$ que pasa por $z_{0}$.\\
 Sea $U_{z}=H(\tilde{W_{z}})$ y consideremos la función $H\circ g\colon W_{z}\times D_{\epsilon}\subset H^{-1}(a)\times D_{\epsilon}\rightarrow U_{z}$. Como  para toda $p\in\Omega$, $H^{-1}(p)$ corta de manera transversal a todas las hojas de la foliación $\mathcal{F}$ tenemos que,
 
 $$\frac{\partial (H\circ g)}{\partial t}=\nabla H\frac{\partial g}{\partial t}\neq 0.$$
@@ -242,10 +241,10 @@ $$\varphi^{-1}(L_{x_{0}}\cap H^{-1}(U))=\bigsqcup_{x\in L_{x_{0}}\cap H^{-1}(U)}
 
 \begin{Obs}
 \label{Obs:Interseccion}
-En el caso del grupo holonomía local, la órbita de un punto $x$ de una hoja $L$ siempre está contenida en la intersección de la hoja $L$ con la transversal local $\tau$ y hay ejemplos en donde la contención es estricta. Pero en el caso del grupo de holonomía global, como la proyección en el espacio base $\Pi\colon L\rightarrow B$ es una aplicación cubriente, al fijar una transversal $F_{a}$ la órbita de un punto $x\in L\cap F_{a}$ bajo el grupo de holonomía global es la órbita de $x$ bajo el grupo de monodromía de la aplicación cubriente $\Pi$ y es por lo tanto transitiva. Es decir, en el caso del grupo de holonomía global, la órbita de un punto $x$ en una hoja $L$ si coincide con la intersección $\L\cup F_{a}$.  
+En el caso del grupo holonomía local, la órbita de un punto $x$ de una hoja $L$ siempre está contenida en la intersección de la hoja $L$ con la transversal local $\tau$ y hay ejemplos en donde la contención es estricta. Pero en el caso del grupo de holonomía global, como la proyección en el espacio base $\Pi\colon L\rightarrow B$ es una aplicación cubriente, al fijar una transversal $F_{a}$ la órbita de un punto $x\in L\cap F_{a}$ bajo el grupo de holonomía global es la órbita de $x$ bajo el grupo de monodromía de la aplicación cubriente $\Pi$ y es por lo tanto transitiva. Es decir, en el caso del grupo de holonomía global, la órbita de un punto $x$ en una hoja $L$ si coincide con la intersección $L\cup F_{a}$.  
 \end{Obs}
 
-\section{El plano proyectico complejo $\C\mathbb{P}^{2}$.}
+\section{El plano proyectivo complejo $\C\mathbb{P}^{2}$.}
 
 El espacio proyectivo complejo $\C\mathbb{P}^{n}$ es el conjunto de todos los subespacios uno dimensionales de $\C^{n+1}\setminus\{0\}$. Si en este conjunto consideramos la relación de equivalencia $x\sim y$ sí y sólo sí $x=\lambda y, \lambda\in\C\setminus\{0\}$, entonces $\C\mathbb{P}^{n} = \C^{n+1}\setminus\{0\} / \sim$.\\
 
@@ -294,7 +293,7 @@ Los cambios de coordenadas de $\psi_{x}(U_{x})$ a $\psi_{z}(U_{z})$ y de $\psi_{
 \end{equation}
 
 
-\section{El teorema de linealización de Poinacaré.}
+\section{El teorema de linealización de Poincaré.}
 \label{sec:LinenalizacionDePoincare}
 Como mencionamos anteriormente, un problema fundamental de la teoría de ecuaciones diferenciales es simplificar, mediante un cambio de coordenadas, un campo vectorial $F$. Si este campo vectorial tiene parte lineal, una pregunta natural es cuándo este campo vectorial es analíticamente equivalente a su parte lineal. El teorema de linealización de Poincaré nos dice bajo qué condiciones un campo vectorial es analíticamente equivalente a su parte lineal.\\
 
@@ -302,25 +301,25 @@ Sea $F(x)=Ax+V_{2}(x)+\cdots+V_{m}(x)+\cdots$ donde $A=(\tfrac{\partial F}{\part
 
 Supongamos que tenemos un campo vectorial  $F=(F_{1},F_{2})$ del siguiente estilo:
 
-\begin{equation}
+\begin{equation*}
 \label{CampoVectInicial}
 \begin{aligned}
 F_{1} &= \lambda_{1}x +ax^{\alpha}y^{\beta}+O(||(x,y)||^{\alpha+\beta})\\
 F_{2} &= \lambda_{2}y + O(||(x,y)||^{\alpha+\beta}).
 \end{aligned}
-\end{equation}
+\end{equation*}
 
 \noindent El objetivo es encontrar un biholomorfimso $H\colon (\C^{2},0)\rightarrow(\C^{2},0)$ que conjugue este campo vectorial con un campo vectorial $\tilde{F}=(\tilde{F}_{1},\tilde{F}_{2})$ de la forma:
 
-\begin{equation}
+\begin{equation*}
 \label{CampoVectFinal}
 \begin{aligned}
 \tilde{F}_{1} &= \lambda_{1}x +O(||(x,y)||^{\alpha+\beta})\\
 \tilde{F}_{2} &= \lambda_{2}y + O(||(x,y)||^{\alpha+\beta}).
 \end{aligned}
-\end{equation}
+\end{equation*}
 
-\noindent Para lograr esto, el biholomorfismo $H$ y los campos vectoriales tienen que statisfacer la igualdad:
+\noindent Para lograr esto, el biholomorfismo $H$ y los campos vectoriales tienen que satisfacer la igualdad:
 \begin{equation}
 \label{NuevaEquivalenciaAnalitica}
 \Big(\frac{\partial H}{\partial x}\Big)F(x)=\tilde{F}(H(x)).
@@ -335,22 +334,24 @@ F_{2} &= \lambda_{2}y + O(||(x,y)||^{\alpha+\beta}).
 
 \noindent La primera entrada de este vector es,
 
-\begin{equation*}
+\begin{equation}
+\label{asa}
 \lambda_{1}x +ax^{\alpha}y^{\beta}+cx^{\alpha}y^{\beta}(\alpha\lambda_{1} +\beta\lambda_{2}) +O(||(x,y)||^{\alpha+\beta}).
-\end{equation*} 
+\end{equation} 
 %\begin{pmatrix}\lambda_{1}(x+p(x,y)) + O(||(x,y)||^{\alpha+\beta}) \\ \lambda_{2}y\end{pmatrix}.
 
-\noindent La primera coordenada del campo vectorial $\tilde{F}(H(x,y))=\tilde{F}((x,y)+c(x^{\alpha}y^{\beta},0))$ es,
-
-\begin{equation*}
-\lambda_{1}(x+cx^{\alpha}y^{\beta}) + O(||(x,y)||^{\alpha+\beta}).
-\end{equation*}
-
-\noindent Si queremos que el bihlomorfismo $H$ conjugue a los campos vectoriales $F$ y $\tilde{F}$, los monomios de grado uno y de grado $\alpha + \beta$ de ambos campos vectoriales deben ser iguales. Así,
+\noindent La primera coordenada del lado derecho de la ecuación (\ref{NuevaEquivalenciaAnalitica}), $\tilde{F}(H(x,y))=\tilde{F}((x,y)+c(x^{\alpha}y^{\beta},0))$ es,
 
 \begin{equation}
-a+c(\alpha\lambda_{1}+\beta\lambda_{2})=\lambda_{1}c.
+\label{usa}
+\lambda_{1}(x+cx^{\alpha}y^{\beta}) + O(||(x,y)||^{\alpha+\beta}).
 \end{equation}
+
+\noindent Si queremos que el bihlomorfismo $H$ conjugue a los campos vectoriales $F$ y $\tilde{F}$, los monomios de grado uno y de grado $\alpha + \beta$ de ambos campos vectoriales deben ser iguales. Así igualando las expresiones (\ref{asa}) (\ref{usa}) tenemos que,
+
+\begin{equation*}
+a+c(\alpha\lambda_{1}+\beta\lambda_{2})=\lambda_{1}c.
+\end{equation*}
 
 En caso de que $\lambda_{1}-\alpha\lambda_{1}+\beta\lambda_{2}\neq 0$ podemos despejar a $c$ y obtener:
 
@@ -358,11 +359,11 @@ En caso de que $\lambda_{1}-\alpha\lambda_{1}+\beta\lambda_{2}\neq 0$ podemos de
 %\lambda_{1}x +(a+c(\alpha\lambda_{1} +\beta\lambda_{2}))x^{\alpha}y^{\beta} +O(||(x,y)||^{\alpha+\beta +1}) = \lambda_{1}x + \lambda_{1}cx^{\alpha}y^{\beta}+O(||(x,y)||^{\alpha+\beta +1}).
 %\end{equation*}
 
-\begin{equation}
+\begin{equation*}
 c = \frac{a}{\lambda_{1} -(\alpha\lambda_{1} + \beta\lambda_{2})}.
-\end{equation}
+\end{equation*}
 
-Con nuestra elección de $H$, es claro que la segunda coordenada de ambos vectores de la ecuación (\ref{NuevaEquivalenciaAnalitica}). Por lo tanto, si $\lambda_{1}-\alpha\lambda_{1}+\beta\lambda_{2}\neq 0$, existe un biholomorfismo $H$ que conjuga a los campos vectoriales $F$ y $\tilde{F}$.
+Con nuestra elección de $H$, es claro que la segunda coordenada de ambos vectores de la ecuación (\ref{NuevaEquivalenciaAnalitica}) es la misma. Por lo tanto, si $\lambda_{1}-\alpha\lambda_{1}+\beta\lambda_{2}\neq 0$, existe un biholomorfismo $H$ que conjuga a los campos vectoriales $F$ y $\tilde{F}$.
 \begin{defn}
 \label{Def:Resonancias}
 Diremos que la pareja $\lambda=(\lambda_{1},\lambda_{2})\in\C^{2}$ es \emph{resonante} si existen números naturales $\alpha_{1},\alpha_{2}$, $\alpha_{1}+\alpha_{2}>1$ tales que:
@@ -374,21 +375,21 @@ Diremos que la pareja $\lambda=(\lambda_{1},\lambda_{2})\in\C^{2}$ es \emph{reso
 
 En el cáclulo anterior si remplazamos el campo vectorial $F$ por un campo vectorial de la forma,
 
-\begin{equation}
+\begin{equation*}
 \begin{aligned}
 F_{1} &= \lambda_{1}x +V_{\alpha+\beta}(x,y)+O(||(x,y)||^{\alpha+\beta})\\
 F_{2} &= \lambda_{2}y + O(||(x,y)||^{\alpha+\beta}),
 \end{aligned}
-\end{equation}
+\end{equation*}
 
 \noindent donde $V_{\alpha+\beta}(x,y)$ es un polinomio homogéneo de grado $\alpha+\beta$ en el cual aparece el monomio $ax^{\alpha}y^{\beta}$, no es difícil convencerse de que $H(x,y)=(x,y)+(cx^{\alpha}y^{\beta},0)$ conjuga a este campo vectorial con:
  
-\begin{equation}
+\begin{equation*}
 \begin{aligned}
 \tilde{F}_{1} &= \lambda_{1}x + V_{\alpha+\beta}-ax^{\alpha}y^{\beta}+O(||(x,y)||^{\alpha+\beta})\\
 \tilde{F}_{2} &= \lambda_{2}y + O(||(x,y)||^{\alpha+\beta}).
 \end{aligned}
-\end{equation}
+\end{equation*}
 
 Una vez eliminado el monomio $ax^{\alpha}y^{\beta}$, si la pareja $(\lambda_{1},\lambda_{2})$ es no resonante, podemos eliminar los demás monomios de grado $\alpha+\beta$ en la primera coordenada. Si en la segunda coordenada también hay monomios de grado $\alpha+\beta$, con un procedimiento similar podemos eliminarlos. \\ 
 Si los valores propios de $A$ son no resonantes entonces podemos eliminar cualquier término no lineal de $F$ mediante un biholomorfismo pero, si queremos eliminar todos los términos no lineales de un jalón, tendremos que componer una infinidad de biholomorfismos y el resultado no siempre será un biholomorfismo sino simplemente una serie de potencias formal. Esto se debe a que los números $\lambda_{j}-\alpha_{1}\lambda_{1}-\alpha_{2}\lambda_{2}$ pueden ser muy pequeños y en consecuencia, al dividir por ellos, podemos afectar la convergecia de la serie de potencias que linealiza (de manera formal) al campo vectorial. Es por eso que si queremos que la serie de potencias converja, tenemos que pedir algo adicional a los valores propios de $A$.
@@ -418,11 +419,9 @@ Intuitivamente, si un campo vectorial no tiene parte lineal en el origen, el cam
 
 Consideremos la proyección canónica de $p\colon\C^{2}\setminus\{0\}\rightarrow\C\mathbb{P}^{1}$. Esta proyección asocia a cada punto $(x,y)\in\C^{2}\setminus\{0\}$ su clase de equivalencia $[x:y]\in\C\mathbb{P}^{1}$, o lo que es lo mismo, $p$ envía a todo un subespacio 1-dimensional menos el origen en un solo punto de $\C\mathbb{P}^{1}$.\\
 
-La gráfica de esta función $graf(p)$ es un subconjunto del producto $\C^{2}\times\C\mathbb{P}^{1}$ y está determinada por los puntos de la forma $((x,y),[x:y])$. En esta gráfica, todos los subespacios 1-dimensionales de $\C^{2}$ ya están ``separados'' pues a subespacios 1-dimensional distintos de $\C^{2}$ les corresponden puntos distintos en $\C\mathbb{P}^{1}$ .\\
+La gráfica de esta función $graf(p)$ es un subconjunto del producto $\C^{2}\times\C\mathbb{P}^{1}$ y está determinada por los puntos de la forma $((x,y),[x:y])$. En esta gráfica, todos los subespacios 1-dimensionales de $\C^{2}$ ya están ``separados'' pues a subespacios 1-dimensional distintos de $\C^{2}$ les corresponden puntos distintos en $\C\mathbb{P}^{1}$ .\
 
-La proyección $\Pi\colon\C^{2}\times\C\mathbb{P}^{1}\rightarrow\C^{2}$ es una función biyectiva entre $graf(p)$ y $\C^{2}\setminus\{0\}$ y además la imagen inversa del origen es \emph{el divisor excepcional} $E:=\Pi^{-1}(0)=\{0\}\times\C\mathbb{P}^{1}\simeq\C\mathbb{P}^{1}$. Si con una transformación queremos alterar la parte lineal de un campo vectorial, no podemos utilizar transformaciones analíticas invertibles, ya que éstas preservan la parte lineal del campo vectorial.
-
-Observemos que si $M:=graf(p)\cup E$, entonces, $\Pi\colon M\rightarrow\C^{2}$ es una función biyectiva entre $M\setminus E$ y $\C^{2}\setminus\{0\}$, la imagen inversa del origen es toda una curva y además, en $M$ ya están ``separados'' los subespacios 1-dimensionales de $\C^{2}$.\\
+La proyección $\Pi\colon\C^{2}\times\C\mathbb{P}^{1}\rightarrow\C^{2}$ es una función biyectiva entre $M:=graf(p)$ y $\C^{2}\setminus\{0\}$ y además la imagen inversa del origen es \emph{el divisor excepcional} $E:=\Pi^{-1}(0)=\{0\}\times\C\mathbb{P}^{1}\simeq\C\mathbb{P}^{1}$. Si con una transformación queremos alterar la parte lineal de un campo vectorial, no podemos utilizar transformaciones analíticas invertibles, ya que éstas preservan la parte lineal del campo vectorial.\\
 
 Por todo lo anterior, la pareja $(M,\Pi)$ es un buen candidato para desingularizar un campo vectorial. Pero todo el proceso de desingularización lo debemos llevar acabo de manera analítica, es por eso que debemos darle a $M$ una estructura de variedad analítica y mostrar que con esa estructura, $\Pi$ es una función analítica.\\   
 
@@ -443,11 +442,11 @@ Las dos cartas anteriores hacen de $M$ una dos variedad analítica y en la carta
 
 Lo anterior prueba que, con la estructura analítica que le hemos dado a $M$, $\Pi$ es una función analítica y entonces podemos usarla para jalar 1-formas en $\C^{2}$ (y en consecuencia foliaciones y campos vectoriales) a $M$.\\
 
-Si tenemos una 1-forma $\omega$ con punto singular aislado en el origen, esta 1-forma define una foliación no singular $\mathcal{F}$ en $\C^{2}\setminus\{0\}$. Así, $\Pi^{*}(\omega)$ define una foliación no singular $\Pi^{*}(\mathcal{F})$ en $M\setminus E$. Pero gracias al Teorema (\ref{Teo:ExtensionFoliaciones}) podemos extender a $\Pi^{*}(\mathcal{F})$ a todo $M$ como una foliación singular con puntos singulares aislados en el divisor excepcional $E$. Al proceso anterior se le conoce como \emph{explosión de la 1-forma} $\omega$ ó \emph{explosión de la foliación} $\mathcal{F}$. A esta técnica de explosión de singularidades también se le conoce como \emph{desingularización}.
+Si tenemos una 1-forma $\omega$ con punto singular aislado en el origen, esta 1-forma define una foliación no singular $\mathcal{F}$ en $\C^{2}\setminus\{0\}$. Así, $\Pi^{*}(\omega)$ define una foliación no singular $\Pi^{*}(\mathcal{F})$ en $M\setminus E$. Pero gracias al teorema \ref{Teo:ExtensionFoliaciones} podemos extender a $\Pi^{*}(\mathcal{F})$ a todo $M$ como una foliación singular con puntos singulares aislados en el divisor excepcional $E$. Al proceso anterior se le conoce como \emph{explosión de la 1-forma} $\omega$ ó \emph{explosión de la foliación} $\mathcal{F}$. A esta técnica de explosión de singularidades también se le conoce como \emph{desingularización}.
 
 \begin{Ejemplo}
 \label{Ej:BlowUpLineal}
-Haremos el blow-up de la 1-forma $\omega=x\, dy-\lambda y\, dx,\lambda\in\C$ en la carta $(x,u)$.\\
+Haremos la explosión de la 1-forma $\omega=x\, dy-\lambda y\, dx,\lambda\in\C$ en la carta $(x,u)$.\\
 
 $\Pi^{*}(\omega)=x\, d(ux)-\lambda ux\, dx=x(u\, dx +x\, du)-\lambda ux\, dx=x(x\, du-(\lambda-1)u\, dx)$.\\
 
@@ -496,7 +495,7 @@ La variedad $M'$ se puede construir explotando un punto $p_{1}\in\Sigma$, obteni
 
 Si repetimos este procedimiento con todos los puntos restantes de $\Sigma$, como $\Sigma$ es un conjunto finito, al final obtendremos una variedad $M_{n}$, un divisor $E_{p_{n}}$ y un mapeo $\Pi_{n}\colon M_{n}\rightarrow M_{n-1}$ que es un biholomorfismo entre $M_{n}\setminus E_{p_{n}}$ y $M_{n-1}\setminus \{\Pi^{-1}_{n-1}(p_{n})\}$. Si llamamos $M'$ a $M_{n}$ y $\Pi$ a $\Pi_{1}\circ\cdots\circ\Pi_{n}$, la variedad $M'$ y el mapeo $\Pi$ satisfacen las propiedades deseadas.   
  
-\section{El grado de una foliación dicrítica en $\C\mathbb{P}^{2}$.}
+\section{El grado de una foliación de $\C\mathbb{P}^{2}$.}
 
 Dada una foliación holomorfa del plano proyectivo complejo $\CP$ se tiene que, como consecuencia del teorema de Chow (el cual afirma que todo subconjunto analítico de una variedad proyectiva es algebraico, ver \cite{Mumford}) , ésta es generada, en cualquier carta afín, por un campo vectorial polinomial \cite[p.~477]{IlyaYako}.\\
 
@@ -652,7 +651,7 @@ Una observación muy importante que nos va a permitir definir el grado de una fo
 Sea $\mathcal{F}$ una foliación de $\C\mathbb{P}^{2}$. Si en coordenadas homogéneas esta foliación está generada por la 1-forma $\Omega=A\, dx+B\, dy+ C\, dz$ con coeficientes polinomiales homogéneos de grado $d+1$ diremos que la foliación $\mathcal{F}$ tiene \emph{grado} $d$. 
 \end{defn} 
 
-Un resultado que será muy importante, es que toda foliación de grado $d$ tiene, contando multiplicidades, $d^{2}+d+1$ puntos singulares. Es por eso que apesar de que la foliación esté generada, en coordenadas homogéneas, por una 1-forma de grado $d+1$ diremos que la foliación tiene grado $d$. Cabe mencionar que algunos autores no hacen esta convención y definen el grado de una foliación como el grado de la 1-forma que genera a la foliación en coordenadas homogéneas.\\
+Un resultado que será muy importante, es que toda foliación de grado $d$ tiene, contando multiplicidades, $d^{2}+d+1$ puntos singulares. Es por eso que a pesar de que la foliación esté generada, en coordenadas homogéneas, por una 1-forma de grado $d+1$ diremos que la foliación tiene grado $d$. Cabe mencionar que algunos autores no hacen esta convención y definen el grado de una foliación como el grado de la 1-forma que genera a la foliación en coordenadas homogéneas.\\
 
 A continuación veremos algunas propiedades que cumplen los polinomios $A,B,C$ de la 1-forma $\Omega=A\, dx+B\, dy+C\, dz$ que nos van a ayudar a probar que el número de puntos singulares que tiene la foliación generada por $\{ \Omega=0\}$ es $d^{2}+d+1$.\\
 
@@ -724,7 +723,7 @@ Donde $a_{k},b_{k}\in\C[x,y]$ son polinomios homgéneos de grado $k$ y $g\in\C[x
 
 Es fácil convencerse, usando la expresión (\ref{EcuacionEnCP2Infinito}), que el caso no dicrítico se da cuando $g(x,y)\equiv 0$ y el caso dicrítico se da cuando $g(x,y)$ no se anula idénticamente.\\
 
-Como mencionamos anteriormente, podemos pensar que toda foliación en una dos variedad analítica $M$ sólo tiene singularidades aisladas, y en caso de que $M$ sea compacta, sólo hay un número finito de ellas. Así, como $\C\mathbb{P}^{2}$ es compacto, cualquier foliación de él tiene un número finito de singularidades y esto nos permite que siempre podamos tomar una carta afín en la cual la recta al infinito no tenga singularidades. Vamos a usar esta observación en la prueba del siguiente teorema:
+Como mencionamos anteriormente, podemos pensar que toda foliación en una dos variedad analítica $M$ sólo tiene singularidades aisladas, y en caso de que $M$ sea compacta, sólo hay un número finito de ellas. Así, como $\C\mathbb{P}^{2}$ es compacto, cualquier foliación de él tiene un número finito de singularidades y esto nos permite encontrar una carta afín en la cual la recta al infinito no tiene singularidades. Vamos a usar esta observación en la prueba del siguiente teorema:
 
 \begin{Teorema}
 \label{Teo:NumeroDeSingularidades}
