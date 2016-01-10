@@ -21,5 +21,5 @@
 \contentsline {section}{\numberline {3.5}El grupo de holonom\IeC {\'\i }a global de $\mathaccentV {tilde}07E{\mathcal {F}_{\alpha }^{4}}$.}{38}
 \contentsline {section}{\numberline {3.6}El grado de la primera integral de $\mathcal {F}_{\alpha }$.}{40}
 \contentsline {section}{\numberline {3.7}El g\IeC {\'e}nero de las hojas de $\Fol {\alpha }$.}{42}
-\contentsline {section}{\numberline {3.8}Aun no hay nombre.}{44}
-\contentsline {chapter}{\numberline {A}Transformaciones entre toros complejos.}{47}
+\contentsline {section}{\numberline {3.8}Aun no hay nombre.}{45}
+\contentsline {chapter}{\numberline {A}Transformaciones entre toros complejos.}{49}
