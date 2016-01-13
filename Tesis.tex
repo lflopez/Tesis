@@ -2,11 +2,14 @@
 \usepackage[spanish]{babel}
 \selectlanguage{spanish}
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath}
+\usepackage{amsmath,amscd}
 \usepackage{amsfonts}
 \usepackage{amsthm}
 \usepackage[margin = 1.5in]{geometry}
-\usepackage{amscd}
+%tikz
+\usepackage{tikz}
+\usetikzlibrary{matrix,arrows}
+\usepackage{tikz-cd}
 %amsthm
 \newtheorem{Teorema}{Teorema}[section]
 \newtheorem{Proposicion}{Proposición}[section]
@@ -68,13 +71,16 @@ Cada foliación de esta familia tiene como hojas invariantes a nueve rectas que 
         \section{El grado de la primera integral de $\Foli_{\alpha}$.}    
             \input{GradoPrimeraIntegral.tex}    
 
-        \section{Aun no hay nombre.}
+        \section{Familias con hojas de género arbitrariamente grande.}
         \input{ParteFinal}
 \appendix
+\chapter{Superficies de Riemann.}
+\label{ApendiceSuperficesDeRiemann}
+\input{SuperficiesDeRiemann}
 \chapter{Transformaciones entre toros complejos.}
 \label{ApendiceToros}        
             \input{ApendiceToros}
-
+            
 \input{Bibliografia}
 
 

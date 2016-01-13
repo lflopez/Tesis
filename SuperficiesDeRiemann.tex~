@@ -1,0 +1,67 @@
+En este apéndice veremos algunos resultados básicos sobre superficies de Riemann.
+
+\begin{defn}
+Sea $X$ un espacio topológico, una \emph{carta compleja} en $X$ es un homeomorfismo $\phi\colon U\rightarrow V$, donde $U\subset X$ es un subconjunto abierto de $X$ y $V\subset\C$ es un subconjunto abierto de $\C$. Diremos que dos cartas complejas $\phi_{1}\colon U_{1}\rightarrow V_{1},\phi_{2}\colon U_{2}\rightarrow V_{2}$ son \emph{compatibles} si $U_{1}\cap U_{2}=\emptyset$ ó $\phi_{2}\circ\phi^{-1}_{1}\colon (U_{1}\cap U_{2})\rightarrow (U_{1}\cap U_{2})$ es una función holomorfa.
+\end{defn}
+
+\begin{Ejemplo}
+Si $X=\mathbb{S}^{2}$ entonces la proyección estereográfica desde el polo norte ó el polo sur $\phi_{1}\colon \mathbb{S}^{2}\setminus\{\, N\, \}\rightarrow \C, \phi_{1}\colon \mathbb{S}^{2}\setminus\{\, S\, \}\rightarrow \C$ son cartas complejas que además son compatibles pues $\phi_{1}(\mathbb{S}^{2}\setminus\{\, N\, \}\cap \mathbb{S}^{2}\setminus\{\, S\, \})=\phi_{1}(\mathbb{S}^{2}\setminus\{\, N,S\, \})=\C\setminus\{\, 0\, \}$ y $\phi_{2}\circ\phi^{-1}_{1}(z)=\tfrac{1}{z}$.
+\end{Ejemplo}
+
+\begin{defn}
+Un \emph{atlas complejo} en un espacio topológico $X$ es una colección de cartas complejas compatibles $\mathcal{A}=\{\, \phi_{\alpha}\colon U_{\alpha}\rightarrow V_{\alpha}\, \}$ tal que $X=\cup_{\alpha}U_{\alpha}$. Diremos que dos atlases $\mathcal{A}$ y $\tilde{\mathcal{A}}$ \emph{son compatibles} si toda carta del atlas $\mathcal{A}$ es compatible con toda carta del atlas $\tilde{\mathcal{A}}$.
+\end{defn}
+
+De la definición anterior se sigue inmediatamente que la relación ser compatible induce una relación de equivalencia en el conjunto de atlases de un espacio topológico $X$.
+
+\begin{defn}
+Una \emph{estructura compleja} en un espacio topológico $X$ es una clase de equivalencia en el conjunto de atlases de $X$.
+\end{defn}
+
+\begin{defn}
+Una \emph{superficie de Riemann} es un espacio topológico $X$, conexo, Hausdorff y segundo numerable junto con una estructura compleja. 
+\end{defn}
+
+\begin{Ejemplo}
+El toro. Sean $\omega_{1}$ y $\omega_{2}$ dos números complejos linealmente independientes sobre $\mathbb{R}$. Al subgrupo aditivo de $\C$, $\Gamma:=\omega_{1}\mathbb{Z}\oplus\omega_{2}\mathbb{Z}$ lo llamaremos la retícula generada por $\omega_{1}$ y $\omega_{2}$. Vamos a dotar al grupo cociente $\C/\Gamma$ de una estructura compleja. Si a $\C/\Gamma$ le damos la topología cociente, entonces $\C/\Gamma$ es un espacio Hausdorff y segundo numerable y la proyección canónica $\Pi\colon\C\rightarrow\C/\Gamma$ que a cada punto asocia su clase de equivalencia es una función continua y abierta. Las cartas que van a dar una estructura compleja a $\C/\Gamma$ las obtenemos de la siguiente manera. Sea $V\subset\C$ un abierto tal que cualesquiera dos puntos en $V$ no son equivalentes bajo $\Gamma$. Entonces, $U:=\Pi(V)$ es un abierto y $\Pi\colon V\rightarrow U$ es un homeomorfismo y su inversa es una carta de $\C/\Gamma$. Si $\mathcal{A}$ es la colección de todas las cartas que se obtienen de esta manera entonces cualesquiera dos cartas $\phi_{i}\colon U_{i}\rightarrow V_{i}, i=1,2$ son compatibles. En efecto, si $V_{1}\cap V_{2}\neq\emptyset$ entonces el cambio de coordenadas es la identidad y si $V_{1}\cap V_{2}=\emptyset$ entonces el cambio de coordenadas es una traslación por algún elemento de $\Gamma$.
+
+Notemos además que la función que a un punto $\lambda\omega_{1}+\mu\omega_{2}\in\C/\Gamma$ le asocia el punto $(e^{2\pi i\lambda},e^{2\pi i\mu})\in\mathbb{S}^{1}\times\mathbb{S}^{1}$ es un homeomorfismo entre $\C/\Gamma$ y $\mathbb{S}^{1}\times\mathbb{S}^{1}$.
+\end{Ejemplo}
+
+\section{Funciones entre superficies de Riemann.}
+
+\begin{defn}
+Sea $f\colon X\rightarrow Y$ una función entre dos superficies de Riemann. Diremos que $f$ es \emph{holomorfa} en $p\in X$ si existen cartas $\phi_{1}$ y $\phi_{2}$ alrededor de $p$ y $F(p)$ respectivamente tal que la composición $\phi_{2}\circ f\circ\phi^{-1}_{1}$ es holomorfa.
+\end{defn}
+
+La definición anterior no depende de las cartas que se usen para verificar si $f$ es holomorfa. El siguiente teorema muestra que una función holomorfa entre superficies de Riemann tiene un comportamiento local sencillo.
+
+\begin{Teorema}
+Sea $f\colon X\rightarrow Y$ una función holomorfa en $p\in X$. Entonces existe un entero $k\geq 1$ cartas $\phi_{1}\colon U_{1}\rightarrow V_{1}, \phi_{2}\colon U_{2}\rightarrow V_{2}$ alrededor de $p$ y $f(p)$ respectivamente tal que $\phi_{2}\circ f \circ\phi^{-1}_{1}=z^{k}$.
+\end{Teorema}
+\begin{proof}
+Dadas cualesquiera cartas $\psi$ y $\phi_{2}$ alrededor de $p$ y $f(p)$ respectivamente, al componer con una traslación (que es una función biholomorfa), siempre podemos suponer que $\psi(P)=\phi_{2}(f(p))=0$. Una vez hecha esta traslación tenemos que $f_{1}(0):=\phi_{2}\circ f \circ\psi(0)=0$ y por lo tanto existe un entero $k\geq 1$ y una función $g$ tal que $f_{1}(z)=z^{k}g(z)$, donde $g(0)\neq 0$. Por continuidad la función $g$ no se anula en una vecindad del cero y entonces existe una función holomorfa $h$ tal que $h^{k}=g$. Si llamamos $\eta(z)=zh(z)$ entonces $f_{1}(z)=(zh)^{k}=(\eta(z))^{k}$. Como $\eta'(0)=h(0)\neq 0$, la función $\eta$ es invertible alrededor del cero y en consecuencia la composición $\phi_{1}=\eta\circ\psi$ vuelve a ser una carta alrededor de $p$. En esta carta,
+\begin{align*}
+\phi_{2}\circ f\circ\phi_{1}^{-1}(z) &= (\phi_{2}\circ f\circ\psi^{-1})\circ\eta^{-1}(z)\\
+\, &= f_{1}\circ\eta^{-1}(z)\\
+\, &= z^{k}.
+\end{align*}
+\end{proof}
+
+\begin{Corolario}
+Sean $X$ y $Y$ superficies de Riemann y $f\colon X\rightarrow Y$ una función holomorfa no constante. Entonces $f$ es abierta.
+\end{Corolario}
+\begin{proof}
+Por el teorema anterior para cualquier abierto  $U$ suficientemente pequeño de $X$, $f(U)$ es abierto en $Y$. 
+\end{proof}
+
+\begin{Teorema}
+Sean $X,Y$ superficies de Riemann. Si $X$ es compacta y $f\colon X\rightarrow Y$ es una función holomorfa no constante, entonces $Y$ es compacta y $f$ es suprayectiva
+\end{Teorema}
+\begin{proof}
+Por el corolario anterior, $f(X)$ es un subconjunto abierto de $Y$. Como $X$ es compacto, $f(X)$ es compacto y por lo tanto cerrado en $Y$. De la conexidad de $Y$ se sigue que $f(X)=Y$ y en consecuencia $Y$ es compacto y $f$ es suprayectiva.
+\end{proof}
+
+\section{El género de una supericie de Riemann compacta.}
+
+Si a una función holomorfa $f\colon U\subset\C\rightarrow\C$ la pensamos como una función diferenciable $f\mathbb{R}^{2}\rightarrow\mathbb{R}^{2}$ entonces el determinante de la matriz derivada de $f$ (pensada como transformación en el plano real) en un punto $z=(x,y)$ es igual a la norma de $f'(z)$. En consecuencia, toda función holomorfa preserva la orientación. Como el cambio de coordenadas en una superficie de Riemann es una función holomorfa, tenemos que todos los cambios de coordenadas preservan la orientación. Así, toda superficie de Riemann es orientable.

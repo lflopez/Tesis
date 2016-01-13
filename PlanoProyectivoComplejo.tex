@@ -446,43 +446,30 @@ Si tenemos una 1-forma $\omega$ con punto singular aislado en el origen, esta 1-
 
 \begin{Ejemplo}
 \label{Ej:BlowUpLineal}
-Haremos la explosión de la 1-forma $\omega=x\, dy-\lambda y\, dx,\lambda\in\C$ en la carta $(x,u)$.\\
+Haremos la explosión de la 1-forma $\omega=rx\, dy- y\, dx, r\in\mathbb{N}$. La foliación que esta 1-forma genera tiene un punto singular tipo nodo en el origen. Si usamos la carta $(x,u)$, entones $\Pi(x,u)=(x,ux)$ y, 
 
-$\Pi^{*}(\omega)=x\, d(ux)-\lambda ux\, dx=x(u\, dx +x\, du)-\lambda ux\, dx=x(x\, du-(\lambda-1)u\, dx)$.\\
+$$\Pi^{*}(\omega)=rx\, d(ux)- ux\, dx=x[r(x\, du+u\, dx)-u\, dx]=x[rx\, du-(1-r)u\, dx].$$
 
-$\Pi^{*}(\omega)$ define una foliación no singular en $M\setminus E$ y como en esta carta $E=\{x=0\}$, la función $x$ no se anula en $M\setminus E$. Así, podemos multiplicar a la 1-forma $\Pi^{*}(\omega)$ por $x$ para obtener una nueva 1-forma $\omega_{1}=x\, du-(\lambda-1)u\, dx$ que define la misma foliación que $\Pi^{*}(\omega)$ en $M\setminus E$ pero tiene singularidades aisladas en el divisor excepcional $E$.
+$\Pi^{*}(\omega)$ define una foliación no singular en $M\setminus E$ y como en esta carta $E=\{x=0\}$, la función $x$ no se anula en $M\setminus E$. Así, podemos multiplicar a la 1-forma $\Pi^{*}(\omega)$ por $x$ para obtener una nueva 1-forma $\omega_{1}=rx\, du-(1-r)u\, dx$ que define la misma foliación que $\Pi^{*}(\omega)$ en $M\setminus E$ pero tiene singularidades aisladas en el divisor excepcional $E$.
+La foliación que esta 1-forma genera tiene un punto singular tipo silla.\\
+
+Si usamos la otra carta $(v,y)$ de $M$ en la cual $\Pi(v,y)=(vy,y)$ entonces,
+
+$$\Pi^{*}(\omega)=(r-1)v\, dy-y\, dv.$$
+
+\noindent Esto quiere decir que en esta carta la foliación que $\Pi^{*}$ genera tiene un punto singular tipo nodo pero es más ``plano'' que el nodo original.\\
+
+Nada nos impide volver a explotar este nodo y cuando lo hacemos, nuevamente obtenemos un punto silla en la primera carta y un nodo más ``plano'' en la segunda. Si siempre usamos la carta en donde aparece el nodo, después de $r$ explosiones vamos a obtener una foliación que es transversal al divisor que aparece en la última explosión. En efecto, si componemos las $r$ explosiones sucesivas obtenemos,
+
+$$(v,y)\mapsto(vy,y)\mapsto(vy^{2},y)\mapsto\cdots\mapsto(vy^{r},y),$$
+
+\noindent en esta carta el último divisor queda descrito por $\{\, y=0\, \}$ y si $\Pi_{r}(v,y)=(vy^{r},y)$ entonces,
+
+$$\Pi^{*}_{r}(\omega)=rvy^{r}\, dy-yd(vy^{r})=rvy^{r}\, dy-y(y^{r}\, dv+rvy^{r-1}\, dy)=y^{r+1}\, dv\sim dv.$$
+
+Observemos que en el caso $r=1$ (la foliación radial) sólo necesitamos explotar una vez para obtener una foliación transversal al divisor.
 \end{Ejemplo}
 
-%%La 1-forma que explotamos en el ejemplo anterior se corresponde con el campo vectorial:
-
-%\begin{equation}
-%\begin{aligned}
-%\dot{x}&=x\\
-%\dot{y}&=\lambda y.
-%\end{aligned}
-%\end{equation}
-
-%Y el campo vectorial que obtenemos en la carta $(u,x)$ al explotar es:
-
-%\begin{equation}
-%\begin{aligned}
-%\dot{x}&=x\\
-%\dot{u}&=(\lambda-1) u.
-%\end{aligned}
-%\end{equation}
-
-Un caso particular del ejemplo anterior que utilizaremos más adelante es cuando $\lambda=1$. En este caso $\Pi^{*}(\omega)=x^{2}du$, pero en $M\setminus E$ la función $x^{2}$ tampoco se anula y por lo tanto podemos multiplicar por ella para así obtener la 1-forma $\omega_{1}=du$.
-
-Esta 1-forma no tiene puntos singulares y las hojas de la foliación que determina quedan descritas por $u=cte$. Usando la otra carta $(y,v),\ v=\tfrac{x}{y}$ podemos ver que, en la parte de $M$ que la carta $(x,u)$ no nos permite ver, tampoco hay puntos singulares. Es decir, al explotar la foliación generada por $\omega=x\, dy-y\, dx$ obtenemos una foliación en $M$ sin puntos singulares.\\
-
-En este caso particular, $\lambda=1$, el campo vectorial que se corresponde con la 1-forma $\omega=x\, dy-y\, dx$ es el campo vectorial radial:
-
-\begin{equation}
-\begin{aligned}
-\dot{x}&=x\\
-\dot{y}&=y.
-\end{aligned}
-\end{equation}
 
 Una observación muy importante es que todo el proceso de desingularización puede llevarse acabo de manera local (sólo hay que restringir toda la construcción a una vecindad del origen $(\C^{2},0)$). Si tenemos una foliación $\mathcal{F}$ con un número finito de singularidades $\Sigma$ en una dos variedad analítica $M$, la observación anterior nos permite hacer una explosión local en cada uno de los puntos singulares para así obtener una nueva variedad $M'$ y una función holomorfa $\Pi\colon M' \rightarrow M$ que satisface las siguientes propiedades:
 
